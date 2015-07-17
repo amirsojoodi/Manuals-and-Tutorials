@@ -59,10 +59,6 @@ LoopBack:
 cmp al, 0
 jne Loop
 
-;pop [rdi]
-test al,al  ;code will jump only if al is not equ 0
-jnz Loop
-
 ;print new version of target
 lea     rdi, [rel target]
 mov     al, 0
