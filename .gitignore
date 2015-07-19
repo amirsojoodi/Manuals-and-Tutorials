@@ -1,3 +1,5 @@
 *.o
 *.in
 *.swp
+*.class
+bin/
