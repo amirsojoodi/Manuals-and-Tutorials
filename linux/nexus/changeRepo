@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [ -f ~/.m2/settings.xml ]
+then
+	if [ -f ~/.m2/settings.xml.orig ]
+	then
+		mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp
+		mv ~/.m2/settings.xml.orig ~/.m2/settings.xml
+		mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml.orig
+		# echo "settings.xml and settings.xml.orig replaced successfully!"
+		if grep --quiet "nexus" ~/.m2/settings.xml ; then
+			echo "Maven is behind nexus!"
+		else
+			echo "Maven isn't behind nexus!"
+		fi
+	else
+		echo "settings.xml.orig doesn't exist!"
+	fi
+else
+	echo "settings.xml doesn't exist!"
+fi
+
+exit 0
+
