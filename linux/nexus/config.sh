@@ -42,7 +42,7 @@ NEXUS_HOME="/usr/local/nexus"
 echo "Set this variable in $NEXUS_HOME/bin/nexus"
 echo "INSTALL4J_JAVA_HOME_OVERRIDE=/usr/lib/jvm/java-8-oracle"
 
-confirm "Do you want to viw nexus file now?(y/n default yes)" && sudo vim /usr/local/nexus/bin/nexus
+confirm "Do you want to viw nexus file now?(y/n recommended yes)" && sudo vim /usr/local/nexus/bin/nexus
 
 cd $NEXUS_HOME/bin
 ./nexus run | echo "Type ctrl+c to continue the installation!"
@@ -62,5 +62,5 @@ changeRepo
 
 echo "Installation finished! you can visit configuration UI at (defaults)localhost:8081."
 echo "Also your settings.xml file updated in your home directory. to enable maven to nexus or not to use it, run changeRepo"
-
+echo "Make sure to edit settings.xml and settings.xml.orig in the ~/.m2/ directory and put the correct values for <localrepository> and <url> vice versa."
 
