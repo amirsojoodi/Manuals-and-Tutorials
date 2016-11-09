@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sudo /etc/init.d/openvpn stop
+
+killall openvpn
