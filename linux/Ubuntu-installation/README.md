@@ -4,36 +4,43 @@
 2.	Select your preferred configuration
 3.	Attach installation iso (e.g. Ubuntu 12.04 x64.iso)
 4.	Start the VM
-a.	If you face the error after creating a VM, that it cannot boot any ISO or CD Image to install your system, probably the boot order is not correctly set.
-b.	Login to XenServer with secure shell
-c.	Find the VM uuid by # xe vm-list
-d.	Check the boot parameter first by # xe vm-param-list uuid=<vm-uuid> |grep HVM-boot
-e.	Set the boot order by # xe vm-param-set uuid=<vm-uuid> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
+ - If you face the error after creating a VM, that it cannot boot any ISO or CD Image to install your system, probably the boot order is not correctly set.
+ - Login to XenServer with secure shell
+ - Find the VM uuid by # xe vm-list
+ - Check the boot parameter first by # xe vm-param-list uuid=<vm-uuid> |grep HVM-boot
+ - Set the boot order by # xe vm-param-set uuid=<vm-uuid> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
 5.	Proceed the Installation process
 6.	Configure apt:
-a.	$ sudo gedit /etc/apt/apt.conf
-b.	Put these lines in it:
-i.	Acquire::http::proxy ÎéÎíhttp://user:pass@proxy:portÎéÎí;
-ii.	Acquire::https::proxy ÎéÎíhttps://user:pass@proxy:portÎéÎí;
+ - $ sudo gedit /etc/apt/apt.conf
+ - Put these lines in it:
+ - Acquire::http::proxy "http://user:pass@proxy:port";
+ - Acquire::https::proxy "https://user:pass@proxy:port";
 7.	Configure network:
-a.	$ sudo apt-get purge network-manager
-b.	$ sudo gedit /etc/network/interfaces
-i.	E.g.
-auto eth0
-iface eth0 inet static
-	address 192.168.2.200
-	netmask 255.255.255.0
-	gateway 192.168.2.193
-	dns-nameserver 10.0.10.9 10.0.10.8
-c.	$ sudo ifup eth0
-d.	$ sudo ifdown eth0
-e.	$ sudo ifup eth0
+ - $ sudo apt-get purge network-manager
+ - $ sudo gedit /etc/network/interfaces
+ - E.g.
+ - auto eth0
+ - iface eth0 inet static
+ - 	address 192.168.2.200
+ - 	netmask 255.255.255.0
+ - 	gateway 192.168.2.193
+ - 	dns-nameserver 10.0.10.9 10.0.10.8
+ - $ sudo ifup eth0
+ - $ sudo ifdown eth0
+ - $ sudo ifup eth0
+
 8.	Attach xen-tools.iso to the VM
+
 9.	$ sudo mount /dev/sr0 /media
+
 10.	$ sudo /media/Linux/install.sh
+
 11.	Reboot VM
+
 12.	$ sudo apt-get update
+
 13.	Install a good editor with $ sudo apt-get install vim
+
 14.	Install ssh server with $ sudo apt-get install openssh-server 
 
 15.	Put these useful aliases in .bashrc
