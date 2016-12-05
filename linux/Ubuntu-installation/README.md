@@ -43,7 +43,15 @@
 
 14.	Install ssh server with $ sudo apt-get install openssh-server 
 
-15.	Put these useful aliases in .bashrc
+15.	Install Java with $ sudo apt-get install openjdk-8-jdk
+
+16.	Install git with $ sudo apt-get install git
+
+17.	Install maven with $ sudo apt-get install maven
+
+18.	Install axel with $ sudo apt-get install axel
+
+19.	Put these useful aliases in .bashrc
  - alias c='clear'
  - alias cd..='cd ..'
  - alias ..='cd ..'
