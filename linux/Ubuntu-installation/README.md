@@ -2,7 +2,7 @@
 
 1.	Right click on the server click on new VM
 2.	Select your preferred configuration
-3.	Attach installation iso (e.g. Ubuntu 12.04 x64.iso)
+3.	Attach installation iso (e.g. Ubuntu 16.04 x64.iso)
 4.	Start the VM
  - If you face the error after creating a VM, that it cannot boot any ISO or CD Image to install your system, probably the boot order is not correctly set.
  - Login to XenServer with secure shell
@@ -15,6 +15,7 @@
  - Put these lines in it:
  - Acquire::http::proxy "http://user:pass@proxy:port";
  - Acquire::https::proxy "https://user:pass@proxy:port";
+ - If you have configured local repository, you can add its address as the proxy.
 7.	Configure network:
  - $ sudo apt-get purge network-manager
  - $ sudo gedit /etc/network/interfaces
@@ -39,19 +40,25 @@
 
 12.	$ sudo apt-get update
 
-13.	Install a good editor with $ sudo apt-get install vim
+13.	Install a good editor with `sudo apt-get install vim`
 
-14.	Install ssh server with $ sudo apt-get install openssh-server 
+14.	Install ssh server with `sudo apt-get install openssh-server` 
 
-15.	Install Java with $ sudo apt-get install openjdk-8-jdk
+15.	Install Java with `sudo apt-get install openjdk-8-jdk`
 
-16.	Install git with $ sudo apt-get install git
+16.	Install git with `sudo apt-get install git`
 
-17.	Install maven with $ sudo apt-get install maven
+17.	Install maven with `sudo apt-get install maven`
 
-18.	Install axel with $ sudo apt-get install axel
+18.	Install axel with `sudo apt-get install axel`
 
-19.	Put these useful aliases in .bashrc
+19. Install gradle with	`sudo apt-get install gradle`
+
+20. Install npm with `sudo apt-get install npm`
+
+21. Install bower with `sudo npm install -g bower`
+
+22.	Put these useful aliases in .bashrc
  - alias c='clear'
  - alias cd..='cd ..'
  - alias ..='cd ..'
