@@ -99,3 +99,19 @@
  - alias myip="curl http://ipecho.net/plain; echo"
  - alias DU="du --max-depth=1 -B M |sort -rn"
 
+23.	Create multiple users 
+
+ - Open a terminal and type: `vim /tmp/name` to create a file and the names of the users. e.g:
+ - vim /tmp/name
+ - kalam
+ - havij
+ - etc
+
+ - Create User with Home Dir and default shell:
+ - `for i in `cat /tmp/name`; do useradd -m -d /home/$i -s /bin/bash $i; done`
+
+ - Create password for each user:
+ - `for i in `cat /tmp/name`; do passwd $i; done`
+
+
+
