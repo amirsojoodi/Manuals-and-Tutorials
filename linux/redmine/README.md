@@ -9,3 +9,7 @@
  2. Configure MySQL:
  - `mysql -u root -p`
  - After logging in, create a new database 
+
+ 3. Configure redmine with gmail as notification sender
+ click "here"[http://www.redmine.org/boards/2/topics/30670?page=2"]
+ - remember to run `sudo setsebool httpd_can_network_connect 1`
