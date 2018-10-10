@@ -1,7 +1,7 @@
 # Some git instructions that maybe needed
 
 # initialization configuration
-git gonfig --global user.name "username"
+git config --global user.name "username"
 git config --global user.email "mail"
 git config --global colur.ui true
 git config --global core.editor 
