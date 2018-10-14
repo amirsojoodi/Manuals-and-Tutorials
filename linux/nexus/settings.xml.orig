@@ -3,7 +3,7 @@
 		<mirror>
 			<!--This sends everything else to /public -->
 			<id>nexus</id>
-			<mirrorOf>*</mirrorOf>
+			<mirrorOf>external:*</mirrorOf>
 			<url>http://serverIP:8081/repository/maven-public</url>
 		</mirror>
 	</mirrors>
