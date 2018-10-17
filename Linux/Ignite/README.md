@@ -41,11 +41,12 @@ to
 
 You have to add these maven repositories(proxy) to the Nexus:
 (It's pretty simple. but don't forget to add all of them to the proxy group)
-http://clojars.org/repo/
-http://central.maven.org/maven2/
-https://repository.ow2.org/nexus/content/repositories/public
-http://h2database.com/m2-repo
-https://repository.apache.org/content/repositories/public/
+
+  * http://clojars.org/repo/
+  * http://central.maven.org/maven2/
+  * https://repository.ow2.org/nexus/content/repositories/public
+  * http://h2database.com/m2-repo
+  * https://repository.apache.org/content/repositories/public/
 
 Sometimes you have to use -U for maven to force update the packages through Nexus. 
 
