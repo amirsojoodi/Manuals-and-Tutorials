@@ -1,3 +1,42 @@
+## Instruction to run an example on an Ignite cluster (Ubuntu 16.04)
+
+Download the binary version from ignite homepage, unzip it and place it in an arbitrary directory. (e.g /usr/local)
+
+```
+wget https://www-eu.apache.org/dist//ignite/2.6.0/apache-ignite-fabric-2.6.0-bin.zip
+unzip apache-ignite-fabric-2.6.0-bin.zip
+sudo mv apache-ignite-fabric-2.6.0-bin/ /usr/local
+
+```
+Now set `IGNITE_HOME` variable in your bashrc:
+
+```
+export IGNITE_HOME="/usr/local/apache-ignite-fabric-2.6.0-bin/"
+```
+
+To setup the cluster, the only thing you need to do is to run this:
+```
+$IGNITE_HOME\bin\ignite.sh 
+```
+
+Without any option passed it will load the default configuration file. You can run the command with `-i` option for interactive run. You have to do these steps for all of the nodes in the network. The find eachother immediately. You can check the state of the cluster with:
+
+```
+ignitevisorcmd.sh
+```
+
+To run an example on the cluster, change current directory to `IGNITE_HOME/examples` and build the sources:
+
+```
+mvn clean install
+```
+
+After a successful build go to `IGNITE_HOME/examples/target` directory and run one of the examples. (you have to include libs, libs/optional, libs/ignite-spring and ignite-examples.jar to your java classpath):
+
+```
+java -cp ../../libs/*:../../libs/optional/*:../../libs/ignite-spring/*:ignite-examples-2.6.0.jar org.apache.ignite.examples.computegrid.ComputeBroadcastExample
+```
+
 ## Detailed Instructions to build Ignite
 
 ### It's recommended to update mvn at least to version 3.5.x
