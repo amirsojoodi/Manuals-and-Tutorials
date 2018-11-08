@@ -58,3 +58,4 @@ set autoindent
 
 set foldmethod=indent
 set foldlevel=99
+set number
