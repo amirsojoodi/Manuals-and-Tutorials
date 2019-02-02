@@ -315,5 +315,7 @@ logs/*.log
 ```
 
 ## Add it to the repo so every body will have it.
+```
 git add .gitignore
 git commit -m "Ignore all log files"
+```
