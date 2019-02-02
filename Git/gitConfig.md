@@ -12,7 +12,7 @@ git config --global alias.br branch
 git config --global alias.cm commit
 git config --global alias.lol "log --graph --decorate --pretty=oneline --abbrev-commit --all"
 git config --global alias.mylog "log --pretty=format:'%h %s [%an]' --graph"
-git config --global push.default = current
+git config --global push.default current
 git config --list
 git config --global credential.helper cache
 
