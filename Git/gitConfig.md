@@ -192,6 +192,23 @@ git branch -D <branch_name>
 git remote prune origin
 ```
 
+## Add remote branches 
+
+First, you must create your branch locally
+```
+git checkout -b your-branch
+```
+After that, you can work locally in your branch, when you are ready to share the branch, push it. The next command push the branch to the remote repository origin and tracks it:
+```
+git push -u origin your-branch
+```
+Teammates can reach your branch, by doing:
+```
+git fetch
+git checkout origin/your-branch
+```
+You can continue working in the branch and pushing whenever you want without passing arguments to git push (argumentless git push will push the master to remote master, your-branch local to remote your-branch, etc...)
+
 ## List all tags
 ```
 git tag
