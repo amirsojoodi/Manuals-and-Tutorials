@@ -319,3 +319,19 @@ logs/*.log
 git add .gitignore
 git commit -m "Ignore all log files"
 ```
+
+## How to view the differences between two commits:
+```
+git diff *commit_id1* *commit_id2*
+```
+
+## How to view the differences between two commits (name of files only):
+```
+git diff --name-only *commit_id1* *commit_id2*
+```
+
+## How to view the differences between two commits (stats: number of insertions and deletions):
+```
+git diff --stat *commit_id1* *commit_id2*
+```
+
