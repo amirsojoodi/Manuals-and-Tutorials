@@ -1,4 +1,4 @@
-## Lesson 01 - Family
+## Lesson 10 - Sports
 
 Welcome to the sports news! Without wasting any more time, let's hear about today’s game highlights with our reporter, Kalam!
 “Hello everyone. As you saw, we were with the final stage of the biggest football tournament on Earth, World Cup! On one side was the Netherland who had never won the trophy, and on the other hand, was the world record holders in the number of championships, Brazil. Taking how many finals they have attended into account, it was more like a **home game** for them!
