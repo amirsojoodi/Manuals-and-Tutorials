@@ -113,5 +113,13 @@
  - Create password for each user:
  - `for i in `cat /tmp/name`; do passwd $i; done`
 
+24. Configure remote desktop connection
 
+ - `sudo apt-get install xfce4 xrdp"
+ - `sudo apt-get install xfce4-terminal"
+ - `sudo apt-get install gnome-icon-theme-full tango-icon-theme"
+ - `echo xfce4-session >~/.xsession
+ - Put this line instead of the last line in this file (/etc/xrdp/startwm.sh):
+	 - `startxfce4`
+ - `sudo service xrdp restart`
 
