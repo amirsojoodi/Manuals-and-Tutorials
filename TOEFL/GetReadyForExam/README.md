@@ -1,16 +1,16 @@
 ## Good Sentences:
 
-0. This new world, and the challenges and characters it holds, is both terrifying as well as exhilarating.
+0. This new world and the challenges and characters it holds is both terrifying as well as exhilarating.
 
 1. Apparently, A and B are woven into the very fabric of C.
 
 2. Conspicuously, A in denotation and connotation can prohibit B as well as promote it.
 
-3. At the same time, it also raises the question whether ...
+3. At the same time, it also raises the question of whether ...
 
 4. The advent of A is considered to be the herald of a new era in which ...
 
-5. It is of paramount importance that they do A, otherwise, they neglect B and begin to take C for granted.
+5. It is of paramount importance that they do A. Otherwise, they neglect B and begin to take C for granted.
 
 6. Modern life has become utterly complex and complicated to its core, making it unexpectedly far more confusing and unpredictable than previous decades.
 
@@ -24,7 +24,7 @@
 
 11. It is essential for him that he not be manipulated by his friend's malicious intent.
 
-12. Therefore, one has but to put their efforts into resolving afformentioned difficulties should they aspire being successful.
+12. Therefore, one has but to put their efforts into resolving the difficulties mentioned above should they aspire to be successful.
 
 13. To achieve this goal, one's effort has to be vigorous in its scope and energy, and exceptional in its aspiration.
 
@@ -36,7 +36,7 @@
 
 17. A plays a pivotal role in B.
 
-18. A has made outstanding/significant contribution to B.
+18. A has made an outstanding/significant contribution to B.
 
 19. A is the key factor influencing B.
 
@@ -54,7 +54,7 @@
 
 27. While some people oppose A, others are proponents of A since ...
 
-28. Undoubtadely, under such circumstances, A will be unavoidable.
+28. Undoubtedly, under such circumstances, A will be unavoidable.
 
 29. Being endowed with A, they can do B.
 
@@ -66,17 +66,17 @@
 
 33. Both sides of the war have manifested a stubborn unwillingness to compromise.
 
-34. Beware of rash judgements and impetuous commitments.
+34. Beware of rash judgments and impetuous commitments.
 
 35. The tragic accident became an impetus for changing the regulations.
 
-36. A makes one wonder what future holds.
+36. A makes one wonder what the future holds.
 
-37. A is compareble to B.
+37. A is comparable to B.
 
 38. A is similar(analogous) to B.
 
-39. One may be exhilarated to roll these thoughts in his mind like marbles in his hand, and play with their arrangement.
+39. One may be exhilarated to roll these thoughts in his mind like marbles in his hand and play with their arrangement.
 
 40. Juveniles have become tech-innate, hyper-informed consumers and extremely savvy.
 
@@ -84,17 +84,17 @@
 
 42. It does seem that the future of this calamity is in people's hands and they can use their collective power to force changes if it is needed.
 
-43. It is better to redress the balance that creats this problem.
+43. It is better to redress the balance that creates this problem.
 
 44. Humanity is guzzling up the A's supplies faster than it can be replenished.
 
 45. Because of A, serious measures (actions) should be taken.
 
-46. This issue can be veiwed from two different perspectives.
+46. This issue can be viewed from two different perspectives.
 
-47. Lets transform hostility to reciprocity.
+47. Let's transform hostility to reciprocity.
 
-48. A is runnig fast lest B catch him.
+48. A is running fast lest B catches him.
 
 49. In light of this evidence, it is crystal clear now that, ...
 
@@ -102,15 +102,15 @@
 
 51. Along similar lines, the passage (article) argues that ...
 
-52. A's argument against B's reasons rests on three claims.
+52. His argument against B's reasons rests on three claims.
 
 ## Good Collocations and Expressions:
 
-0. Invaluable information.
+0. Valuable information.
 
 1. To Help address this issue, ...
 
-2. A adversely affect B
+2. A adversely affect B.
 
 3. There is a general consensus that ...
 
@@ -136,13 +136,13 @@
 
 15. Become more humane (adj.) = civilized, humanistic 
 
-16. Domesting and foreign plicies.
+16. Domestic and foreign policies.
 
-## Words with similar meenings
+## Words with similar meanings
 
 0. Important -> foremost, primary, crucial, pivotal, necessary, significant, vital
 
-1. Good -> beneficial, pleasant, advantageous, useful, adequate, appropriate, profitable, desirable, favorable, satisfying, acceptance, comforing, satisfactory, lucrative
+1. Good -> beneficial, pleasant, advantageous, useful, adequate, appropriate, profitable, desirable, favorable, satisfying, acceptance, comforting, satisfactory, lucrative
 
 2. Effective -> efficiacious, impressive, potent
 
@@ -156,13 +156,13 @@
 
 7. Bad -> detrimental, pitfall, hazard, drawback
 
-8. Hard -> laborious, arduous, strenous, demanding, wearing
+8. Hard -> laborious, arduous, strenuous, demanding, wearing
 
 9. Big -> immense, greate, enormous, extensive, massive, tremendous
 
 10. Destroy -> demolish, abolish, invalidate, annul, collapse
 
-11. Practival -> viable, feasible, promising, pragmatic
+11. Practical -> viable, feasible, promising, pragmatic, effective
 
 12. Decrease -> decline, deteriorate, plummet, plunge, drop, collapse, fall
 
