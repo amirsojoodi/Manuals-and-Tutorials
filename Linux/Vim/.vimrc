@@ -59,3 +59,18 @@ set autoindent
 set foldmethod=indent
 set foldlevel=99
 set number
+
+" clang-format can be found at this address:
+" https://github.com/rhysd/vim-clang-format
+"
+" follow instruction to install clang-format 
+" and then uncomment these lines:
+" let g:clang_format#code_style = 'google'
+" let g:clang_format#style_options = {
+"     \ 'TabWidth' : 4,
+"     \ "ColumnLimit' : 100,
+"     \ 'IndentWidth' : 4,
+"     \ 'IndentCaseLabels' : 'true',
+"     \ 'NamespaceIndentation' : 'All',
+"     \ 'Standard' : 'Auto'}
+
