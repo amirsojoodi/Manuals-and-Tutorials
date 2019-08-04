@@ -19,7 +19,7 @@ To setup the cluster, the only thing you need to do is to run this:
 $IGNITE_HOME\bin\ignite.sh 
 ```
 
-Without any option passed it will load the default configuration file. You can run the command with `-i` option for interactive run. You have to do these steps for all of the nodes in the network. The find eachother immediately. You can check the state of the cluster with:
+Without any option passed it will load the default configuration file. You can run the command with `-i` option for interactive run. You have to do these steps for all of the nodes in the network. They will find eachother immediately. You can check the state of the cluster with:
 
 ```
 ignitevisorcmd.sh
