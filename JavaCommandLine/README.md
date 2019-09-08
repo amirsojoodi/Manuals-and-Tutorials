@@ -1,4 +1,4 @@
-# Working with Java from Command Line
+## Working with Java from Command Line
 
 - Compile a Java source file into class file and place it into a directory:
 ```     
@@ -17,7 +17,7 @@ javag -cp libfolder/*:anotherLib/* org.apache.tez.examples.OrderedWordCount inpu
 ```
 
 - Creating a jarfile from the compiled classes:
-        
+
 ```        
 jar -cvf  example.jar -C Example_classes/ .
 ```
