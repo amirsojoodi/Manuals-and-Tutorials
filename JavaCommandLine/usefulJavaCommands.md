@@ -24,6 +24,6 @@ jar -cvf  example.jar -C Example_classes/ .
 
 - Add this line to bashrc to give arbitrary options to netbeans:
 ```
-alias netbeans='netbeans -J-server -J-Xms10g -J-Xmx10g -J-XX:+AlwaysPreTouch -J-XX:+UseG1GC -J-XX:+ScavengeBeforeFullGC -J-XX:+DisableExplicitGC'
+alias netbeans='netbeans -J-server -J-Xms10g -J-Xmx10g -J-XX:MaxDirectMemorySize=2G -J-XX:+AlwaysPreTouch -J-XX:+UseG1GC -J-XX:+ScavengeBeforeFullGC -J-XX:+DisableExplicitGC'
 ```
 If you want to give these JVM options to any project, edit nbactions.xml in the corresponding project directory and edit the tag `<exec.args>` wherever you find in it.

@@ -59,7 +59,7 @@ set autoindent
 set foldmethod=indent
 set foldlevel=99
 set number
-
+set tags=tags		" This is to use ctags
 " clang-format can be found at this address:
 " https://github.com/rhysd/vim-clang-format
 "
