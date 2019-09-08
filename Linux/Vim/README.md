@@ -5,7 +5,7 @@
 - After completing [Vundle] setup, install your desired plugins, then launch vim and run `:PluginInstall`
 
 
-### Plugin for markdown preview
+### Plugin for [Vim-Markdown-Preview]
 
 Add `Plugin 'JamshedVesuna/vim-markdown-preview'` to your .vimrc.
 Launch vim and run `:PluginInstall`
@@ -33,3 +33,4 @@ $ sudo apt-get install xdotool
 Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on your default browser.
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
+[Vim-Markdown-Preview]:https://github.com/JamshedVesuna/vim-markdown-preview
