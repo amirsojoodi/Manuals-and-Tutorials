@@ -134,6 +134,28 @@
 
 52. His argument against B's reasons rests on three claims.
 
+53. One would not need to be a Rocket Scientist to figure out ...
+
+54. The meat needed only the merest hint of persuasion to drop from the bone and was the melt-in-your-mouth lamb you dream of.
+
+55. Government officials always seem so reluctant to define qualifications for recipients of social welfare.
+
+56. A good story and setting can create an immersion that even superior technology cannot match.
+
+57. Her tenacity, her fight for life, surprised even the doctors.
+
+58. In other words, the government is between the proverbial rock and the hard place.
+
+59. Some events cause the proverbial light bulb to flash over your head and serve as a trigger.
+
+60. You can refine your message by calling attention to the important words.
+
+61. Ask not what your country can do for you, but what you can do for your country.
+
+62. You have to make sure you have finished speaking before your audience have finished listening.
+
+63. Depending on your perspective, such an event may be a contingency or an eventuality.
+
 ## Good Collocations and Expressions:
 
 0. Valuable information.
@@ -167,6 +189,8 @@
 15. Become more humane (adj.) = civilized, humanistic 
 
 16. Domestic and foreign policies.
+
+17. Merest Hint of sth. 
 
 ## Words with similar meanings
 
