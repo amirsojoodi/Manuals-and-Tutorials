@@ -1,3 +1,33 @@
+## Good Transitions
+
+0. **Thereby** = by which; through which; through this action; similar to *due to*.
+- The team lost the final game of the season, **thereby** missing the playoffs. 
+- Lisa studied for three straight weeks and was **thereby** able to pass her test.
+
+1. **Therein** = in that; into that situation, problem, position, and etc.
+- The new contract does not allow for extended mathernity leave; **therein** lies the problem for the union, 60% of whose membership is young women.
+- The tomb, and all the contents **therein**, were photographed before analysis could begin.
+
+2. **Thereof** = of that
+- Both parties had their sights focused on the northern regions, especially the demographics **thereof**, and were preparing for and ad war.
+- Find wines, and a knowledge **thereof**, are a luxury few can afford.
+
+3. **Therefore** = because of that
+- I think, **therefore** I am.
+- I am well-prepared; there is no reason, **therefore**, that I should stumble.
+
+4. **Thereafter** = after that
+- He worked at the university unitl he retired; **thereafter**, he took on sporadic work as a consultant.
+
+5. **Wherein** = in that, in what way, which (*old-fashioned and not commonly used*)
+- The affidavit did not implicitly outline **wherein** Mr. Smith had broken any laws.
+
+6. **Whereby** = by which, through which, in accordance with which
+- The company introduced a new incentive program **whereby** all employees were given an equal shot at the bonuses.
+
+7. **Hereby** = by means of this declaration, speech, state
+- Given the present circumstances, I **hereby** resign my post as CEO.
+
 ## Good Sentences:
 
 0. This new world and the challenges and characters it holds is both terrifying as well as exhilarating.
@@ -104,6 +134,28 @@
 
 52. His argument against B's reasons rests on three claims.
 
+53. One would not need to be a Rocket Scientist to figure out ...
+
+54. The meat needed only the merest hint of persuasion to drop from the bone and was the melt-in-your-mouth lamb you dream of.
+
+55. Government officials always seem so reluctant to define qualifications for recipients of social welfare.
+
+56. A good story and setting can create an immersion that even superior technology cannot match.
+
+57. Her tenacity, her fight for life, surprised even the doctors.
+
+58. In other words, the government is between the proverbial rock and the hard place.
+
+59. Some events cause the proverbial light bulb to flash over your head and serve as a trigger.
+
+60. You can refine your message by calling attention to the important words.
+
+61. Ask not what your country can do for you, but what you can do for your country.
+
+62. You have to make sure you have finished speaking before your audience have finished listening.
+
+63. Depending on your perspective, such an event may be a contingency or an eventuality.
+
 ## Good Collocations and Expressions:
 
 0. Valuable information.
@@ -137,6 +189,8 @@
 15. Become more humane (adj.) = civilized, humanistic 
 
 16. Domestic and foreign policies.
+
+17. Merest Hint of sth. 
 
 ## Words with similar meanings
 
