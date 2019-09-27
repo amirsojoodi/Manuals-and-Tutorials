@@ -47,3 +47,9 @@ $ coverage html
 >>> l[7:0:-1]
 ['vwx', 'stu', 'pqr', 'mno', 'jkl', 'ghi', 'def']
 ```
+
+### How to define a 3 dimension list in python:
+```python
+# to create l[6][5][4] filled with zero
+>>> l = [[[0 for z in range(4)]for col in range(5)] for row in range(6)]
+```
