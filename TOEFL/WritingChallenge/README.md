@@ -2,7 +2,7 @@
 
 The idea came to my mind when one of my friends(Iman) and I talked about the importance of topic-specific writing in preparation of the English tests(TOEFL, IELTS, ...).
 
-We decided to find some general topics in which we can expand our vocabularies and collocations, thereby becoming more resilient and robust in various topics of writing.
+We decided to find some general topics in which we can expand our vocabularies and collocations, thereby becoming more resilient and robust in various topics of writing. So, here we are!
 
 The writing challange takes 10 days to complete
 
