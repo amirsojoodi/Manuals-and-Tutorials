@@ -36,6 +36,28 @@
 
 17. The government think they can solve the problem by **throwing money at it**.
 
+18. If he continues to work hard, his **success** next year **is guaranteed**.
+
+19. He has been training hard and is now able to **enjoy the fruits of his hard work**.
+
+20. Working for that company has certainly **brought out the best in** him and he has rightly **won the respect** of all his co-workers.
+
+21. Hopes were initially hight for the new project but it has proved to be a **dismal failure**(a total failure).
+
+22. I wsa put on a **fast-track scheme** (a system for rapid training and promotion of talented staff) and **was moving up the ladder** fast.
+
+23. One day I **had a change of heart** and I started to **get my priorities right**.
+
+23. I decided that other aspects of my life should **take priority over** my work, therefore, I **handed in my resignation** and moved to the country.
+
+24. Their new model will **go into production** in the spring and this is expected to **bost** their **sales** and **profits** even more.
+
+25. It will be easy for us to **maintain quality** and **promote the interests**  of our shareholders at the same time as **satisfying demands** of our **target market**.
+
+26. This **hike in prices**(rise in prices) will seriously **affect the bottom line**(affect the net income).
+
+27. It is a considerable challenge for us as we already operate on **narrow profit margins**.
+
 #### Good Words
 
 1. Subsidise
@@ -66,7 +88,7 @@
 
 14. Stimulate = raise levels of physiological or nervous activity in (the body or any biological system).
 
-17. 
+15. Devidend = a sum of money paid regularly (typically quarterly) by a company to its shareholders out of its profits (or reserves).
 
 #### Good Collocations
 
@@ -94,12 +116,22 @@
 
 12. Job:
 	- A fulfilling job
-	- A demanding job
+	- A demanding job = an intense job with lots of responsibilities
 	- A steady job
+	- An entry-level job
 	- To offer someone a job
 	- A high-powered job = an important job
 	- To apply for a job
 	- A permanent job
+	- Change job
+	- Lose a job
+	- Do a job-share = share the investment of a job with somebody
+	- Fit the job description = be good for a job
+	- Land a new job = (informal) get a new (and usually good) job
+	- Menial job = not requiring much skill and lacking prestige
+	- Job seeker
+	- A job offer
+	- Dream job
 
 13. Work:
 	- To carry out work
@@ -108,15 +140,18 @@
 	- To take on work
 	- To work closely with
 	- To supervise work
+	- To work overtime = work extra hours
 
 14. Career:
 	- To wreck/ruin someone's career
 	- At the height/peak of your career
 	- Her career lasted ...
 	- To climb the career ladder
+	- Start your career
 	- A promising career
 	- A brilliant career
 	- To embark on a career = to start a career
+	- A career change
 
 15. Business:
 	- **Do business** NOT make business
@@ -126,8 +161,9 @@
 	- The business will fold = the business close because of failure
 	- Run a (successful) business 
 	- Close a business = **cease trading**
-	- Go out of business
+	- Go out of business = stop doing business
 	- Business is booming = doing extremely well
+	- Generate business
 
 16. We say **have a job**, not have a work.
 
@@ -181,4 +217,89 @@
 	- **Reasonably priced**
 	- **Ridiculous price** = too cheap or too expensive
 
+34. Make a breakthrough
 
+35. Remarkable achievement
+
+36. Dramatic improvement
+
+37. Crowning achievement
+
+38. Has an excellent grasp of something = be really good at something
+
+39. Make (useful) contributions
+
+40. Spectacular failure = extremely unsuccessful
+
+41. Doomed to fail = are certain to fail
+
+42. Join the staff of a company
+
+43. Maternity Leave
+
+44. Go part-time
+
+45. Lay off staff = dismiss staff 
+
+46. Go freelance
+
+46. Earn a good living
+
+47. Practice medicine = work as a doctor
+
+48. Carve a niche for myself = make a special for myself
+
+49. Take up the post of editor = started working as editor
+
+50. Hold a position
+
+51. Be open to offers
+
+52. Put together my CV
+
+53. Tempting offer
+
+54. Work as a team
+
+55. Mastering new skills
+
+56. Taking on responsibility
+
+57. Be relieved of his duties = (formal) dismessed
+
+58. Wrongfully dismissed = (formal) unfairly dismissed
+
+59. Heavy workload
+
+60. Throw a sickie = (informal) take a day off work pretending to be sick
+
+61. Get the sack = (informal) be dismissed
+
+62. Sweated labour = workers who are paid very little and work in very bad conditions
+
+63. Meet the target
+
+64. Allocate a part of budget; ex = Government allocates a large part of its development budget to ...
+
+65. To describe **trends**:
+	- Use these subjects: **sales, profits, the market, exports/imports**
+	- with these verbs: **show, see, experience, and NOT had**
+	- with these objects: **a rise, a fall, a decline, a growth**.
+
+66. A slight decreas/increase; NOT a little decrease/increase
+
+67. A substantial decrease/increase; NOT a strong decrease/increase
+
+68. **Show an increase/decrease** and **show an upward / a downward trend**, NOT have an increase
+
+69. Figures **increase dramatically or significantly**, NOT increase strongly.
+
+70. Minimum wage = the minimum salary required by law
+
+71. Get a promotion
+
+72. Get a raise = get an increase in salary
+
+73. Generous benefits = extra benefits like health insurance, discounts, a company car, etc.
+
+74. Financially savvy = intelligent, perceptive, and well-informed on the subject of money
