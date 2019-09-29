@@ -2,11 +2,9 @@
 
 The idea came to my mind when one of my friends(Iman) and I talked about the importance of topic-specific writing in preparation of the English tests(TOEFL, IELTS, ...).
 
-We decided to find some general topics in which we can expand our vocabularies and collocations, thereby becoming more resilient and robust in various topics of writing.
+We decided to find some general topics in which we can expand our vocabularies and collocations, thereby becoming more resilient and robust in various topics of writing. So, here we are!
 
-The writing challange takes 10 days to complete
-
-The selected topics are as following which by the way are originated from this book: **IELTS BAND 9 VOCAB SECRET**:
+The writing challange takes 10 days to complete, and the selected topics are as following which by the way are originated from this book: **IELTS BAND 9 VOCAB SECRET**:
 
 1. Work and careers
 
