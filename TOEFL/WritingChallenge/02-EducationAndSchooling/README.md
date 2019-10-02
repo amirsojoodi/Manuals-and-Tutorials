@@ -77,6 +77,22 @@ will lose focus.
 
 37. If you are **undertaking a study** which involves informants or volunteers, read the advice on **research ethics** in the department handbook.
 
+38. **Literature review** is no simply a summary of your **background reading**, but an **in-depth critique** of the most important books and articles, where you can show your awareness of current research.
+
+39. The book **makes the case for** privatisation of all state-owned industries, and it **confront issues** which are of current importance in developing countries.
+
+40. He fails to **tackle** all of **the issues** that opponents of the approach to early schooling have **raised**.
+
+41. This essay cannot give an **exhaustive account**(extremely detailed account) of climate change.
+
+42. Physicists have recently begun to **formulate**(develop, produce, propose) **new theories** about the nature of the universe.
+
+43. Although the book **covers a lot of ground**, it doesn not offer a **full explanation** of the events leading to the civil war. 
+
+44. Indeed, the **thrust of his argument** is that such an account cannot be written, since the people with **first-hand knowledge**(experienced directly) of those events are no longer living.
+
+45. This essay provides a **critical analysis** of international trade agreements. 
+
 #### Good Words
 
 1. Curriculum = the full range of subjects offered by a school or group of shools
@@ -102,6 +118,12 @@ will lose focus.
 11. leaflet = booklet, brochure
 
 12. Hypothesis = a theory which can be used **provisionally**(temporarily) but may change
+
+13. Rational(adj.) = logical
+
+14. Rationale(n.) = a set of reasons or a logical basis
+
+15. Ethics = moral code
 
 #### Good Collocations
 
@@ -223,3 +245,50 @@ will lose focus.
 58. Select a reserach topic
 
 59. Formulate a working hypothesis
+
+60. Literature review
+
+61. Background reading
+
+62. In-depth critique
+
+63. Provide a rationale
+
+64. Back up your conclusions
+
+65. Vigorous defence **of** something = strong and forceful defence
+
+66. Make a (convincing) case for something = to argure that something is the best thing to do, giving your reasons.
+
+67. Put the case for something = make a case for something
+
+68. Give a lecture/presentations
+
+69. Make a presentation
+
+70. Grade the assignment
+
+71. Give somebody feedback
+
+72. Withdraw from the course (formal) = drop the course (informal)
+
+73. Get a diploma
+
+74. Have a (bachelor's, master's, doctorate, Ph.D.) degree
+
+75. Research:
+	- Detailed research
+	- In-depth research
+	- Extensive research
+	- Basic research
+	- Further research
+	- Ground-breaking research
+	- Pioneering research
+	- Collaborative research
+	- Empirical research
+	- The research demonstrate/indicate/reveal/prove sth
+	- The research show/suggest/produce/yield sth
+	- Research exhaustively/extensively/meticulously
+	- Research fully/properly/well/poorly
+
+
