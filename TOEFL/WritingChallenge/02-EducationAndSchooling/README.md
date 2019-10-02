@@ -43,7 +43,7 @@ will lose focus.
 
 20. Even people who are used to **public speaking** can feel nervous about **dealing with questions** after a presentation.
 
-21. If you **prepare handouts**, it is better to give them out at the end of your presentation so the audience focuse**s** on your, rather than the handouts.
+21. If you **prepare handouts**, it is better to give them out at the end of your presentation so the audience focuse**s** on you, rather than the handouts.
 
 22. He **sets out** some **powerful arguments** which **shape our thinking** for years to come.
 
@@ -97,7 +97,7 @@ will lose focus.
 
 1. Curriculum = the full range of subjects offered by a school or group of shools
 
-2. Pedagogic = of or relating to teaching
+2. Pedagogic /pede'gäjik/ = of or relating to teaching
 
 3. Incorporate = take in or contain (something) as part of a whole; include.
 
@@ -111,7 +111,7 @@ will lose focus.
 
 8. Agility = the state of being quick and strong
 
-9. Initiative 
+9. Initiative = the ability to assess and initiate things independently; an act or strategy intended to resolve a difficulty or improve a situation; a fresh approach to something.
 
 10. Formulae = plural form of formula
 
@@ -124,6 +124,8 @@ will lose focus.
 14. Rationale(n.) = a set of reasons or a logical basis
 
 15. Ethics = moral code
+
+16. Rote(n) = the process of learning something by repetition, rather than by really understanding it; ex = She learned multiplication by rote.
 
 #### Good Collocations
 
@@ -139,7 +141,7 @@ will lose focus.
 
 6. Teacher-led lessons = traditional lessons where the teacher delivers a long talk and the students take notes
 
-7. Autnomous learning = when a student learns through independent study and research
+7. Autonomous learning = when a student learns through independent study and research
 
 8. Rote-learning = learning by repetition and memorising items
 
@@ -291,4 +293,10 @@ will lose focus.
 	- Research exhaustively/extensively/meticulously
 	- Research fully/properly/well/poorly
 
-
+76. Learning:
+	- Effective learning
+	- Rapid learning
+	- Independent/autonomous learning
+	- Learning environment
+	- Learning curve
+	- Learning process/experience
