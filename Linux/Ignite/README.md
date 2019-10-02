@@ -89,5 +89,18 @@ You have to add these maven repositories(proxy) to the Nexus:
 
 Sometimes you have to use -U for maven to force update the packages through Nexus. 
 
+### Netbeans configuarions for example projects:
+In this path: run -> configuarion -> customise
+Add these options to the the run config:
+```
+-Xms10g
+-Xmx10g
+-server
+-XX: MaxDirectMemorySize = 2G
+-XX: +AlwaysPreTouch
+-XX: +UseG1GC
+-XX: +ScavengeBeforeFullGC
+-XX: +DisableExplicitGC
+```
 ### You can check Ignite tutorials and docs pages for more
 https://ignite.apache.org
