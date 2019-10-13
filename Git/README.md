@@ -335,3 +335,8 @@ git diff --name-only *commit_id1* *commit_id2*
 git diff --stat *commit_id1* *commit_id2*
 ```
 
+## To see the changes done by a commit, copy the first four or more characters of the commit ID with this command:
+```
+# if the commit id is : 27c0f0ce1340dkljadlk...
+git show 27c0
+```
