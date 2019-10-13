@@ -303,3 +303,13 @@
 73. Generous benefits = extra benefits like health insurance, discounts, a company car, etc.
 
 74. Financially savvy = intelligent, perceptive, and well-informed on the subject of money
+
+75. Dead-end job = a job that has few prospects of leading somewhere interesting or successful
+
+76. Glittering career = an impressive carrer, one that is admired by many people.
+
+77. A **career spanning** five decades
+
+78. Lucrative job = a job where the person earns a lot of money for doing the work.
+
+79. Rewarding job = a job where the person gets a lot of personal satisfaction - emotional rather than financial - from doing the work.
