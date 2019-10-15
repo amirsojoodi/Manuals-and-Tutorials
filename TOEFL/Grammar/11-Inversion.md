@@ -1,4 +1,4 @@
-### Inversions (very formal):
+## Inversions (very formal):
 
 1. Not only **did he win**, but he also broke the record.
 
@@ -18,4 +18,5 @@
 
 9. Man, is it could out! (to give emphasis)
 
-#### Instructed by Adam at engvid.com
+---
+#### Instructed by Adam at [EngVid](www.engvid.com)

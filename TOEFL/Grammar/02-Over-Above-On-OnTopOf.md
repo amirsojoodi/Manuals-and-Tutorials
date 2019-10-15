@@ -1,4 +1,4 @@
-### Over, Above, On, and On top of:
+## Over, Above, On, and On top of:
 
 #### Over usages:
 
@@ -10,27 +10,23 @@
 #### Above usages:
 
 1. When something is higher in relation to something else. (on the same plane)
-- The clouds lingered above the city.
+> - The clouds lingered above the city.
 2. Higher than a reference point (or a point on a scale).
-- Above average (it's a reference), freezing degree, expectaions, ...
+> - Above average (it's a reference), freezing degree, expectaions, ...
 
 #### On / On top of:
 
-**In relation to something, touching.**
-- Put the book on the table.
-- Put the book on top of the other books on the table.
+- **In relation to something, touching.**
+> - Put the book on the table.
+> - Put the book on top of the other books on the table.
 
-`on top of` is used when we have a pile of sth.
+- `on top of` is used when we have a pile of sth.
 
 #### Sometimes they are interchangeable:
-- Lets hang the painting over/above the fireplace.
-- Can you please put a blanket over/on my legs?
-- On top of all my other problems, I have a new boss to deal with. (On top of = In addition to)
 
-#### Instructed by Adam at engvid.com
+> - Lets hang the painting over/above the fireplace.
+> - Can you please put a blanket over/on my legs?
+> - On top of all my other problems, I have a new boss to deal with. (On top of = In addition to)
 
-~
-~
-~
-~
-
+---
+#### Instructed by Adam at [EngVid](www.engvid.com)

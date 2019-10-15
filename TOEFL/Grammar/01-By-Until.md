@@ -1,5 +1,4 @@
-### By, Until, By the time, no ... than
----
+## By, Until, By the time, no ... than
 
 These sentences are different:
 

@@ -1,4 +1,4 @@
-### Reciprocal Pronount: Each other, One another
+## Reciprocal Pronount: Each other, One another
 
 **HINT**: These should not be mistaken with `themselves`.
 **Themselves** is not a reciprocal pronoun. It is a `relexive pronoun`. 
@@ -12,10 +12,5 @@
 
 4. Linda and Kate were bridesmade at each other's weddings. (Pay attention to `S` and `Apastrophe`)
 
-#### Instructed by Adam at engvid.com
-
-~
-~
-~
-~
-
+---
+#### Instructed by Adam at [EngVid](www.engvid.com)

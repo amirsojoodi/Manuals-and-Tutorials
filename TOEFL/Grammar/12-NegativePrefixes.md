@@ -1,9 +1,9 @@
-### Negative Prefixes: dis-, un-, in/im-, il/ir-, non-
+## Negative Prefixes: dis-, un-, in/im-, il/ir-, non-
 
 There are some words that take both, but they are totally different in their meanings.
 
 1. Dislike (n., v.)
-	- I dislike pizza. (It is not equal to: I don't like pissa.)
+> I dislike pizza. (It is not equal to: I don't like pissa.)
 
 2. Unlike (prep.) = not similar to 
 
@@ -28,24 +28,25 @@ There are some words that take both, but they are totally different in their mea
 12. Unorganized = the room, place, an organization
 
 13. Im -> with words that begin with `b, m, p`
-	- **Not always means negative.**
-	- Immigrate = to migrate into
-	- Intensify
+> - **Not always means negative.**
+> - Immigrate = to migrate into
+> - Intensify
 	
 14. Il -> with words that begin with `l`
 
 15. Ir -> with words that begin with `r`
 
 16. **Mis- doesn't mean *NOT*. It means *wrongly / in a wrong way*.**
-	- Inappropriate = not appropriate (adj.)
-	- Missappropriate = take something in a wrong/dishonest way
+> - Inappropriate = not appropriate (adj.)
+> - Missappropriate = take something in a wrong/dishonest way
 
 17. Insecure = A person who lacks confidence, who doesn't have self security.
 
 18. Unsecure = Not safe. open to the threats.
 
-#### How to know about the differences?
+### How to know about the differences?
 
-You have to **feel** the language. How? By reading a lot, a lot, alot, ...
+- You have to **feel** the language. How? By reading a lot, a lot, alot, ...
 
-#### Instructed by Adam at engvid.com
+---
+#### Instructed by Adam at [EngVid](www.engvid.com)
