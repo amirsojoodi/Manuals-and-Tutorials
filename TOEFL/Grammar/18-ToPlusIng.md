@@ -1,10 +1,11 @@
 ## To + ...ing
-```
+<pre>
 There are some cases that we can have both of these together.
 - In certain collocations.
 - In sentence with *prefer ... to ... *
-- If *to* is used as a preposition.
-```
+- If <i>to</i> is used as a preposition.
+</pre>
+
 1. Some collocations:
 > - I `look forward to` meeting you.
 > - They `admit to` cheating.
@@ -24,9 +25,9 @@ There are some cases that we can have both of these together.
 > - She dedicated her life to helping the poor.
 > - After many years in the corporate world, Cynthia returned to teaching in university.
 
-```
-**To Recap:**
+<pre>
+<b>To Recap:</b>
 - Prepositional phrases used as complements not objects. 
-```
+</pre>
 ---
 #### Instructed by Adam at [EngVid](www.engvid.com)
