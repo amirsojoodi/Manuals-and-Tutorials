@@ -5,6 +5,7 @@
 </pre>
 
 - Subordinate conjunctions:
+
 | Reason | Contrast | Condition | Time | Purpose | Comparison |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | because | (al)though | if | when | so that | as |
