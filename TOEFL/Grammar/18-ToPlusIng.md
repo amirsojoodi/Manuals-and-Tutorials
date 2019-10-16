@@ -2,7 +2,7 @@
 <pre>
 There are some cases that we can have both of these together.
 - In certain collocations.
-- In sentence with *prefer ... to ... *
+- In sentence with <i>prefer ... to ... </i>
 - If <i>to</i> is used as a preposition.
 </pre>
 
