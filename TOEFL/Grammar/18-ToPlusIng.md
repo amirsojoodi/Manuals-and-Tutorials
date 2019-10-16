@@ -21,6 +21,8 @@ There are some cases that we can have both of these together.
 > - I am interested in writing.
 > - I am concerned about giving away all my secrets.
 > - The company is committed to providing top-quality customer care.
+> - She dedicated her life to helping the poor.
+> - After many years in the corporate world, Cynthia returned to teaching in university.
 
 ```
 **To Recap:**
