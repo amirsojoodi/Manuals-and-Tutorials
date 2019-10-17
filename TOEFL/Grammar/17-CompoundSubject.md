@@ -7,10 +7,9 @@
 **- Note the difference in this example:**
 > - The doctor as well as the nurse `is` off this week. 
 
-```
-All of these expressions are not compound conjunctions:
-**As long as, along with, together with, accompanied by, ...**
-```
+> All of these expressions are not compound conjunctions:
+> **As long as, along with, together with, accompanied by, ...**
+
 
 > - Spaghetti and meatballs `is` delicious.
 **- Spaghetti and meatball are always go together. They are one item.**
@@ -31,9 +30,8 @@ All of these expressions are not compound conjunctions:
 
 ### More Examples:
 
-```
-**HINT**: Try to replace your compound noun with a pronoun to figure out the sentence grammar easier. If it cannot be replaced by a pronoun, then it might be replaced by *t*. 
-```
+> **HINT**: Try to replace your compound noun with a pronoun to figure out the sentence grammar easier. If it cannot be replaced by a pronoun, then it might be replaced by *t*. 
+
 > - *Bill and I* (we) are going to see a movie.
 > - *She and Bill* (they) are going to see a movie.
 
@@ -45,7 +43,7 @@ All of these expressions are not compound conjunctions:
 > - Winning and losing `is` a mindset. **They are not two seperate things.**
 > - Wins and loses do not affect player's salaries.
 
-> 10 successes and 1 failure amounts to the same thing.
+> - 10 successes and 1 failure amounts to the same thing.
 
 ---
 #### Instructed by Adam at [EngVid](www.engvid.com)

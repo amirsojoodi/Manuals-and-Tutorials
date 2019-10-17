@@ -1,15 +1,17 @@
 ## Adverb clause (subordinate clause):
 
-```
-**These clauses don't modify words. They show *relationship*.**
+<pre>
+<b>These clauses don't modify words. They show <i>relationship</i>.</b>
+</pre>
 
 - Subordinate conjunctions:
 
-| **Reason** | **Contrast** | **Condition** | **Time** | **Purpose** | **Comparison** |
-|;---;|;---;|;---;|;---;|;---;|;---;|
+| Reason | Contrast | Condition | Time | Purpose | Comparison |
+|:---:|:---:|:---:|:---:|:---:|:---:|
 | because | (al)though | if | when | so that | as |
 | since | whereas | as long as | while | | -er than |
-```
+
+
 ### Examples:
 
 > 1. Although I love pizza, I rarely eat it because it's unhealthy. 

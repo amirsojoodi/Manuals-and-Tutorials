@@ -1,21 +1,22 @@
 ## Noun Clause:
-```
+<pre>
 - It can be a dependent clause or a part of an independent clause. 
 
 - Conjunctions (can be used to connect dependent clauses to independent ones):
-** - that, which, who, whom, whose, what, if, whether, when, where, how, why**
-** - whichever, whatever, whenever, wherever, who(m)ever**
+<b> - that, which, who, whom, whose, what, if, whether, when, where, how, why</b>
+<b> - whichever, whatever, whenever, wherever, who(m)ever</b>
 
-**HINT:** Some of these conjunctions, like which, can be used as conjunction and the the subject of the dependent clause:
-- *Which/who/what/whatever/whichever/whoever* -> can also be the subject
-- *whom/whomever* -> can only be the object
+<b>HINT:</b> Some of these conjunctions, like which, can be used as conjunction and the the subject of the dependent clause:
+- <i>Which/who/what/whatever/whichever/whoever></i> -> can also be the subject
+- <i>whom/whomever</i> -> can only be the object
 
-**- Noun clause usages:**
+<b>- Noun clause usages:</b>
 1. Subject
 2. Object
-3. 
-4. 
-```
+3. Object of a preposition
+4. Subject complement
+5. Adjective complement
+</pre>
 
 **1. Noun clause as the `subject`:**
 > - What she wore to the party really turned some heads.
@@ -25,13 +26,15 @@
 > `whoever wants to know` -> subject of `should ask`
 
 **2. Noun clause as the `object`:**
-```
-**- Let's refresh our memories:**
-- *Object* answers the question of *what/whom* about the verb.
-- *Complement* answers the question of *what/whom* about the subject.
+<pre>
+<b>- Let's refresh our memories:</b>
+- <i>Object</i> answers the question of <i>what/whom</i> about the verb.
+- <i>Complement</i> answers the question of <i>what/whom</i> about the subject.
 
-We have subject complements with be verbs, or any linking verbs like *seem*, *appears*, *looks like*, etc. These are not action verbs, they are situation verbs which are used like an **equal sign** or a **be verb**.
-```
+We have subject complements with <i>be</i> verbs, or any linking verbs like:
+- <i>seems, appears, looks like</i>, etc. 
+These are not action verbs, they are situation verbs which are used like an <b>equal sign</b> or a <b>be verb</b>.
+</pre>
 > - Please ask mom what we're having for dinner.
 > `what we're having for dinner` -> object of `ask`
 
