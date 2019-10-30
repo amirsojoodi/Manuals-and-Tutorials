@@ -90,6 +90,16 @@
 
 44. There are a couple researches which study on the young people who **feel alienated** from society.
 
+45. Some parents are very possessive and demanding, rarely impulsive or casual.
+
+46. Her **distraught mother** had spent all night waiting by the phone.
+
+47. When it was nearly evening and she had not returned home, her mother **grew frantic**.
+
+48. The two boys were like their father in character, but Louise **took after** her mother.
+
+49. She **inherited** the urge to travel **from** her mother.
+
 #### Good Words
 
 1. Foster(v., adj.) = (v.) bring up or raise (a child that is not one's own by birth).
@@ -135,6 +145,14 @@
 21. Abortion = the deliberate termination of a human pregnancy
 
 22. Domineering(adj) = Someone who is domineering tries to control other people without considering their feelings or ideas.
+
+23. Possessive(adj.) = controlling; dominating; demanding someone's total attention and love.
+
+24. Stern(adj.) = (of a person or their manner) serious and strict, especially in the assertion of authority and exercise of discipline.
+
+25. Distraught(adj) = so upset and worried that you cannot think clearly; deeply upset and worried
+
+36. Frantic(adj.) = wild or distraught with fear, anxiety, or other emotion. 
 
 #### Good Collocations
 
@@ -219,14 +237,24 @@
 		- Carefree childhood
 		- Troubled childhood
 		
-28. Parent:
-		- Caring, devoted, fond, loving, adoring parent
-		- Over-protective, controlling parent
-		- Doting, indulgent parent
+28. Parent(father/mother):
+		- Caring parent
+		- Devoted parent
+		- Fond parent
+		- Loving parent
+		- Adoring parent
+		- Over-protective parent
+		- Controlling parent
+		- Doting parent
+		- Indulgent parent
 		- Stern, strict parent
-		- Domineering parent
-		
-29. Mother/Father:
+		- Firm, tough parent
+		- Harsh parent
+		- Authoritarian parent
+		- Disciplinarian parent
+		- Domineering, Dominant parent
+		- Distraught, anxious parent
+		- Frantic parent
 		
 29. Family:
 		- Immediate family
