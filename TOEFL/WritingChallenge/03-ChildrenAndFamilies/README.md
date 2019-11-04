@@ -215,6 +215,7 @@
 24. Disaffected youth = young people who do not accept society's values.
 
 25. Home: 
+
 		- A secure/stable home
 		- A happy home
 		- A broken home
@@ -228,6 +229,7 @@
 		- Home study = The course is suitable for classroom or home study.
 
 26. Child:
+
 		- (Dis)obedient child
 		- Well-behaved child
 		- Delinquent child
@@ -243,6 +245,7 @@
 		- Have children; not ~~get~~ children
 
 27. Childhood:
+
 		- (Un)happy childhood
 		- A deprived childhood
 		- Early/late childhood
@@ -253,6 +256,7 @@
 		- Troubled childhood
 		
 28. Parent(father/mother):
+
 		- Caring parent
 		- Devoted parent
 		- Fond parent
@@ -274,6 +278,7 @@
 		- Liberal parent
 		
 29. Family:
+
 		- Immediate family
 		- Extended family
 		- Nuclear family = parents and children
@@ -295,6 +300,7 @@
 		- Start a family; not ~~begin~~ a family
 		
 30. Behavior:
+
 		- Exemplary behavior
 		- (Un)acceptable behavior
 		- (Un)desirable behavior
