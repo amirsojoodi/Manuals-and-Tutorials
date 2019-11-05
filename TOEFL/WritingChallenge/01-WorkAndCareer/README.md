@@ -1,6 +1,6 @@
-### Work and Career Related Words and Collocations
+## Work and Career Related Words and Collocations
 
-#### Good Sentences
+### Good Sentences
 
 1. In my country, **pay increments** have been very low because of the financial crisis.
 
@@ -58,7 +58,7 @@
 
 27. It is a considerable challenge for us as we already operate on **narrow profit margins**.
 
-#### Good Words
+### Good Words
 
 1. Subsidise
 
@@ -90,7 +90,7 @@
 
 15. Devidend = a sum of money paid regularly (typically quarterly) by a company to its shareholders out of its profits (or reserves).
 
-#### Good Collocations
+### Good Collocations
 
 1. Industrial Output
 
@@ -313,3 +313,113 @@
 78. Lucrative job = a job where the person earns a lot of money for doing the work.
 
 79. Rewarding job = a job where the person gets a lot of personal satisfaction - emotional rather than financial - from doing the work.
+
+### Good Phrases and Idioms
+
+1. Angel investor = a rich person who invests money or provides financial backing to help an entrepreneur or start-up business
+
+2. Blue-eyed boy = a favorite male who is liked very much and treated very well by people in authority
+
+3. Cash cow = a product or service that brings in a regular source of income
+
+4. Eager beaver = a very hard-working, enthusiastic employee
+
+5. Eagle eyes = a person who has eagle eyes (not “is eagle eyes”) can see or notice details very well
+
+6. Gift of the gab = someone who has the gift of the gab (not “is the gift of the gab”) can speak easily, confidently, and well
+
+7. Go-getter = someone with a lot of energy, drive, and motivation
+
+8. Jack of all trades = a person who can do many different things
+
+9. Made of money = a rich, wealthy person with a lot of money and/or assets
+
+10. Man of his word; Woman of her word = a reliable, trustworthy person who does what he/she promises to do
+
+11. Mover and shaker = a person who has a lot of influence in a company and gets a lot of good things done
+
+12. Smart cookie = an intelligent person who is able to handle difficult situations
+
+13. Top dog = a person who has a lot of power, influence, and success, especially after a tough competition
+
+14. Whiz kid = a brilliant, very intelligent, highly talented young person
+
+15. Big fish in a small pond = a person who has a high-level, important position in a small group, company, or organization
+
+16. Bigwig = an important, influential person in a group, company, or organization
+
+17. Blue-collar worker = an employee who works with his hands or does manual labor; traditionally, such employees used to wear blue uniforms and worked in trade occupations; examples include construction workers, plumbers, electricians, and mechanics
+
+18. Company man = a person who supports company policies, even over the interests of fellow employees
+
+19. Dark horse = a secretive person who has qualities and talents people do not know about; also someone who competes in a competition or election and is not expected to win
+
+20. Head honcho = the top person in an organization; someone with a lot of authority or influence
+
+21. Major player = a large, important and/or influential person, group, or company in a particular field or market
+
+22. Number cruncher = a person who works with numbers, statistics, or financial information, and is comfortable and skilled at doing so
+
+23. People person = a warm, friendly person who is good at working with others and communicates well with them
+
+24. Poker face = a person who has a poker face (not “is a poker face”) does not show or reveal any emotion
+
+25. Quiet as a mouse = describes someone who doesn’t make any noise; a very quiet person
+
+26. Salt of the earth = describes a good person who is simple, reliable, and trustworthy; can also be negative because it implies the person is not sophisticated
+
+27. Silent partner = a person who invests money in a business but does not participate in the daily operation of the business
+
+28. Voice in the wilderness = a person who warns people about something that others do not take seriously
+
+29. Whistleblower = a person who exposes improper, illegal, immoral, or corrupt practices in a group, company, or organization by informing the authorities, police, public, or media
+
+30. White-collar worker = an employee who works at an office job; traditionally, such employees wore white shirts; examples include accountants, executives, and bankers
+
+31. Armchair critic = a theoretical person who criticizes the way others handle problems or issues, without trying to do anything to solve the problem himself/herself
+
+32. Ambulance chaser = a lawyer who specializes in personal injury claims against large companies 
+
+33. Bean counter = an accountant 
+
+34. Cog in a machine = a person who is or feels like he/she has a small, unimportant job in a large organization or company
+
+35. Dead duck = a person, thing, or project that is sure to fail because of a big mistake; someone or something for which there is no hope
+
+36. Dead wood; dead weight = people in a group, company, or organization that are not useful, needed, or productive anymore, and need to be dismissed
+
+37. Fast talker = a confident person who can persuade others to do something dishonest because of his/her ability to speak well; someone who can get others to believe something that is not true
+
+38. Fuddy-duddy = an old-fashioned person who has not learned modern behavior or thinking 
+
+39. Know-it-all = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and wise guy
+
+40. Lame duck = a person, group, or organization that is weak or unsuccessful; also an elected leader who does not have much time left in office
+
+41. Loan shark = a dangerous person who lends money to desperate people at very high interest rates and may threaten violence if the money is not repaid
+
+42. Pain in the neck; pain in the ass = a difficult, unpleasant, or annoying person
+
+43. Pen pusher; pencil pusher = an employee or clerk with a “boring” job, who handles a lot of paperwork
+
+44. Rotten apple = a dishonest, corrupt person who has a negative influence on his/her colleagues; someone who usually causes problems for the management, organization, or company
+
+45. Sitting duck = a person who is an easy victim, open to attack, influence, or deception because of his/her weaknesses
+
+46. Stool pigeon = a police informer
+
+47. Smart alec = an employee or clerk with a “boring” job, who handles a lot of paperwork
+
+48. Smart aleck = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as wise guy and know-it-all
+
+49. Stick-in-the-mud = someone who prevents other people from having fun; same as a wet blanket
+
+50. Stickler for the rules = a person who insists on following rules and regulations exactly
+
+51. Wet blanket = someone who prevents other people from having fun; same as a stick-in-the-mud
+
+52. Wise guy = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and know-it-all
+
+53. Wolf in sheep’s clothing = a dangerous person who seems to be harmless
+
+54. Yes man = someone who always agrees with his/her superiors, mainly in order to gain their approval, even if he/she does not accept their ideas or practices
