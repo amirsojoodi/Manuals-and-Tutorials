@@ -1,7 +1,7 @@
 ## Install Python packages on Windows 10:
 
 **Preferably install python 3.7 (64 bit) and Git bash.**
-```
+```bash
 # If there is a file requirements.txt you can install the packages using this command:
 $ pip3 install -r requirements.txt
 
