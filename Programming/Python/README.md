@@ -11,8 +11,9 @@ $ pip3 install pandas
 $ pip3 install jupyter
 $ pip3 install notebook
 $ pip3 install matplotlib
-
-# To nstall pytorch, go to [this](https://pytorch.org/get-started/locally/) page and generate the command easily. 
+```
+To install pytorch, go to [this](https://pytorch.org/get-started/locally/) page and generate the command easily. 
+```
 # The generated command looks like this:
 $ pip install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 ```
