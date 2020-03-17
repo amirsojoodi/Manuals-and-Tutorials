@@ -1,23 +1,18 @@
-### Education and Schooling sample questions
+## Children and Families sample questions
 
-1. Which one do you think is the most important factor for a student to success at college or university?
-	- Tutors in university
-	- The encouragement from family and friends
-	- High-quality education from high school
+1. Children rely too much on the technology, like computers, smart phones, video games for fun and entertainment. Playing simpler toys or playing outside with friends would be better for children’s development. What do you think?
 
-2. The government want to improve education levels. Which of the following do you think is the best way?
-	- Hire more teachers to teach in a small class
-	- Preschool education before kindergarten
-	- Provide some training courses so that teachers can be more professional
+2. Parents give their children weekly money to buy whatever they want. Some people think this can cause bad habits and ideas about money in children. Others think the opposite. What’s your opinion?
 
-3. Schools always collect information about teaching performance and give rewards to those teachers who perform well. Which way do you think is more useful? Why?
-	- To evaluate teachers' performance by students.
-	- To evaluate teachers' performance by teachers.
+3. Do you agree or disagree with the following statement?
+Children should spend most of their time on studying and playing, they shouldn’t be required to help family with household chores, such as cleaning and cooking.
 
 4. Do you agree or disagree with the following statement?
-It’s the best way for teachers to help students become more interested in a subject by explaining how this subject can help students live better outside the school.
+The parents should let children make mistake and let them learn from their own mistake.
 
-5. School teachers have found that this year more and more students copy homework from others, which one of the following choices is the best way to reduce this phenomenon?
-	- Parents should supervise their children's study and homework and sigh their names to prove that their children do not cheat.
-	- Teachers should punish those children who copy homework from others.
-	- Teachers should assign homework that cannot be easily copied.
+5. Do you agree or disagree with the following statement?
+The best way for parents to teach their children about responsibility is to have them care for animals.
+
+6. When parents cannot afford time to accompany with their children, they could choose to send their children to child-care center where many children are cared together; or they could send their children to an individual caregiver. Which one is better?
+
+7. Some people think that older children should be required to take care of the younger children. Others think that this should be done by parents or other adults. Which do you prefer?

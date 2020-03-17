@@ -408,18 +408,16 @@
 
 46. Stool pigeon = a police informer
 
-47. Smart alec = an employee or clerk with a “boring” job, who handles a lot of paperwork
+47. Smart aleck; smart aleck = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as wise guy and know-it-all
 
-48. Smart aleck = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as wise guy and know-it-all
+48. Stick-in-the-mud = someone who prevents other people from having fun; same as a wet blanket
 
-49. Stick-in-the-mud = someone who prevents other people from having fun; same as a wet blanket
+49. Stickler for the rules = a person who insists on following rules and regulations exactly
 
-50. Stickler for the rules = a person who insists on following rules and regulations exactly
+50. Wet blanket = someone who prevents other people from having fun; same as a stick-in-the-mud
 
-51. Wet blanket = someone who prevents other people from having fun; same as a stick-in-the-mud
+51. Wise guy = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and know-it-all
 
-52. Wise guy = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and know-it-all
+52. Wolf in sheep’s clothing = a dangerous person who seems to be harmless
 
-53. Wolf in sheep’s clothing = a dangerous person who seems to be harmless
-
-54. Yes man = someone who always agrees with his/her superiors, mainly in order to gain their approval, even if he/she does not accept their ideas or practices
+53. Yes man = someone who always agrees with his/her superiors, mainly in order to gain their approval, even if he/she does not accept their ideas or practices
