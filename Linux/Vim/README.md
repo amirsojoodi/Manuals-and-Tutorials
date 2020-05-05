@@ -32,5 +32,24 @@ $ sudo apt-get install xdotool
 
 Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on your default browser.
 
+### Vim commands (summary):
+
+1. i -> insert mode
+2. x,X -> delete one char
+3. o,O -> insert new line and go to insert mode
+4. J -> join the current line with its next one
+5. r -> replace one character
+6. a -> append 
+7. u -> undo
+8. d -> delete (dw, dd, d$, d^, ..)
+9. G -> go to line (10G, 1G, G)
+10. y -> yank/copy (yy, yw, y$, ..)
+11. p,P -> paste
+12. /x -> search for x (n, N)
+13. $ -> end of line
+14. ^ -> start of line
+15. . -> repeat
+
+
 [Vundle]:http://github.com/VundleVim/Vundle.vim
 [Vim-Markdown-Preview]:https://github.com/JamshedVesuna/vim-markdown-preview
