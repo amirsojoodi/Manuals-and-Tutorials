@@ -49,6 +49,17 @@ Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on 
 13. $ -> end of line
 14. ^ -> start of line
 15. . -> repeat
+16. % -> swap to closing/opening bracket
+17. v -> visual mode, enter, and then run command
+18. split/Hexplore -> Horizontal split/explore
+19. Vsplit/Vexplore -> vertical split/explore
+20. ! -> run OS commands
+21. !! -> run OS commands and write the output
+22. s/a/b -> replace a by b 
+	- :%s/a/b/g -> replace a by b in entire file
+	- :12,20s/a/b/g -> replace a by b in lines 12-20
+	- :15,23s/^/\/\//g -> comment lines 15-23
+	- :15,23s/\/\/ -> uncomment lines 15-23
 
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
