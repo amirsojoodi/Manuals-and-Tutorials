@@ -52,6 +52,9 @@ Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on 
 16. % -> swap to closing/opening bracket
 17. v -> visual mode, enter, and then run command
 18. split/Hexplore -> Horizontal split/explore
+	- To change between windows -> Ctrl+w, up/down/left/right
+	- To open current file in split horizontal view -> Ctrl+w, s
+	- To open current file in split vertical view -> Ctrl+w, v
 19. Vsplit/Vexplore -> vertical split/explore
 20. ! -> run OS commands
 21. !! -> run OS commands and write the output
