@@ -63,6 +63,7 @@ Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on 
 	- :12,20s/a/b/g -> replace a by b in lines 12-20
 	- :15,23s/^/\/\//g -> comment lines 15-23
 	- :15,23s/\/\/ -> uncomment lines 15-23
+23. gg=G -> Auto Indent the source file
 
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
