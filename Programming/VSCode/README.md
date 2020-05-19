@@ -52,3 +52,10 @@ Full answer is [here](https://stackoverflow.com/a/50527994/2328389).
 4. Select Git Bash from the options.
 5. Click on the + icon in the terminal window.
 The new terminal now will be a Git Bash terminal.
+
+### VS Code currently do not support IBM power 9 servers remote development
+
+If that is your case, you can:
+1. Install the extention SFTP sftp/ftp sync
+2. Follow the instructions to add the server information from [here](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp).
+
