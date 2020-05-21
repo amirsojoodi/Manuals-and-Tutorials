@@ -59,6 +59,10 @@
 21. Install bower with `sudo npm install -g bower`
 
 22.	Put these useful aliases in .bashrc
+ - alias ll='ls -alF'
+ - alias la='ls -A'
+ - alias l='ls -CF'
+ - alias ls='ls --color'
  - alias c='clear'
  - alias cd..='cd ..'
  - alias ..='cd ..'
