@@ -46,6 +46,12 @@ $ module save list_name
 $ module list_name
 // Restore the modules in a module list
 $ module restore list_name
+
+//I mostly use these modules (add to bashrc):
+module load cuda/10.2.89
+module load gcc/8.4.0
+module load ibm-java
+module load openmpi/4.0.3
 ```
 
 - Run a parallel job for 1 hour, creat this file (job.sh):
