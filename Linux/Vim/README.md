@@ -65,6 +65,14 @@ Whenever you open a markdown file, hit `Ctrl+p` to preview the markdown file on 
 	- :15,23s/\/\/ -> uncomment lines 15-23
 23. gg=G -> Auto Indent the source file
 
+## Some other useful plugins:
+
+- Directory tree:
+```
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+```
 
 [Vundle]:http://github.com/VundleVim/Vundle.vim
 [Vim-Markdown-Preview]:https://github.com/JamshedVesuna/vim-markdown-preview

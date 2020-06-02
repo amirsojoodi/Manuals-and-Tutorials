@@ -49,6 +49,11 @@ set smarttab
 set smartindent
 set cindent
 set autoindent
+set showmatch
+set history=1000
+set undolevels=1000
+set visualbell
+set noerrorbells
 
 set foldmethod=indent
 set foldlevel=99
