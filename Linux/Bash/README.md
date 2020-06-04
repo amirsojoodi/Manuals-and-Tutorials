@@ -16,12 +16,24 @@ $ command >out 2>&1
 $ command &> out
 ```
 
+## Disable the annoying bell in bash:
+
+1. To disable the beep in **bash** you need to uncomment (or add if not already there) the line `set bell-style none` in your `/etc/inputrc` file.
+
+*Note:* Since it is a protected file you need to be a privileged user to edit it (i.e. launch your text editor with something like `sudo <editor> /etc/inputrc`).
+
+2. To disable the beep also in **vim** you need to add `set visualbell` in your `~/.vimrc` file.
+
+3. To disable the beep also in **less** (i.e. also in man pages and when using "git diff") you need to add `export LESS="$LESS -R -Q"` in your `~/.profile` file.
+
 ## Make your prompt look nicer:
 
 - Put this line inside of .bashrc
 ```
 export PS1="\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]\[\033[0m\]\n$ "
 ```
+
+## Helpful aliases:
 
 - Put these aliases in .bashrc
 ```
