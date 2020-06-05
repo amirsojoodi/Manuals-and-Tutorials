@@ -54,11 +54,12 @@ set history=1000
 set undolevels=1000
 set visualbell
 set noerrorbells
-
 set foldmethod=indent
 set foldlevel=99
 set number
 set tags=tags		" This is to use ctags
+
+colorscheme ron
 
 let vim_markdown_preview_github=1
 
