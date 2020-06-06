@@ -1,3 +1,4 @@
+# Place this file into your home directory
 # none, visible or audible
 set bell-style visible
 
@@ -5,7 +6,6 @@ set bell-style visible
 # on:  default on a Windows style console
 # off: default on a *nix style console
 set completion-ignore-case on
-
 
 set colored-stats On
 set completion-ignore-case On
