@@ -1,5 +1,16 @@
+## Run a specific command on a specific CPU(s):
+```
+# This will run the command on cpu 3:
+$ taskset -c 3 command
+
+# This will run the command on cores 64-127:
+$ taskset -c 64-127 command
+```
+
 ## Download multiple links with axel:
-```while read url; do axel -n 10 $url; done < myLinks```
+```
+while read url; do axel -n 10 $url; done < myLinks
+```
 
 ## Redirect the command output
 
@@ -18,13 +29,13 @@ $ command &> out
 
 ## Disable the annoying bell in bash:
 
-1. To disable the beep in **bash** you need to uncomment (or add if not already there) the line `set bell-style none` in your `/etc/inputrc` file.
+1. To disable the beep in __bash__ you need to uncomment (or add if not already there) the line `set bell-style none` in your `/etc/inputrc` file.
 
-*Note:* Since it is a protected file you need to be a privileged user to edit it (i.e. launch your text editor with something like `sudo <editor> /etc/inputrc`).
+_Note:_ Since it is a protected file you need to be a privileged user to edit it (i.e. launch your text editor with something like `sudo <editor> /etc/inputrc`).
 
-2. To disable the beep also in **vim** you need to add `set visualbell` in your `~/.vimrc` file.
+2. To disable the beep also in __vim__ you need to add `set visualbell` in your `~/.vimrc` file.
 
-3. To disable the beep also in **less** (i.e. also in man pages and when using "git diff") you need to add `export LESS="$LESS -R -Q"` in your `~/.profile` file.
+3. To disable the beep also in __less__ (i.e. also in man pages and when using `git diff`) you need to add `export LESS="$LESS -R -Q"` in your `~/.profile` file.
 
 ## Make your prompt look nicer:
 
@@ -76,3 +87,4 @@ alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
 alias top="htop"
 alias myip="curl http://ipecho.net/plain; echo"
 alias DU="du --max-depth=1 -B M |sort -rn"
+```
