@@ -330,22 +330,25 @@ git diff *commit_id1* *commit_id2*
 git diff --name-only *commit_id1* *commit_id2*
 ```
 
-## How to view the differences between two commits (stats: number of insertions and deletions):
+## How to view the differences between two commits 
+Stats: number of insertions and deletions:
 ```
 git diff --stat *commit_id1* *commit_id2*
 ```
 
-## To see the changes done by a commit, copy the first four or more characters of the commit ID with this command:
+## To see the changes done by a commit
+Copy the first four or more characters of the commit ID with this command:
 ```
 # if the commit id is : 27c0f0ce1340dkljadlk...
 git show 27c0
 ```
+
 ## Modify a specific commit
 ```
 # If the commit is the Z-th commit before the HEAD then,
 git rebase -i HEAD~Z  #Shows the last Z commits in a text editor
-#modify pick to edit/e in the line mentioning the specific commit
-#Edit your changes
+# Modify pick to edit/e in the line mentioning the specific commit
+# Edit your changes
 git commit --am 
 git rebase --continue
 ```
