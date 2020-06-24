@@ -340,3 +340,12 @@ git diff --stat *commit_id1* *commit_id2*
 # if the commit id is : 27c0f0ce1340dkljadlk...
 git show 27c0
 ```
+## Modify a specific commit
+```
+# If the commit is the Z-th commit before the HEAD then,
+git rebase -i HEAD~Z  #Shows the last Z commits in a text editor
+#modify pick to edit/e in the line mentioning the specific commit
+#Edit your changes
+git commit --am 
+git rebase --continue
+```
