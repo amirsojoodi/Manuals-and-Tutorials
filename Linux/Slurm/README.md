@@ -99,3 +99,7 @@ $ salloc -x11 --time=0-01:00 -n 1 -A user --mem=4G --gres=gpu:v100:1
 $ salloc -x11 --time=0-01:00 -n 1 -A user --mem=4G --gres=gpu:t4:1
 ```
 
+### How to check the used GPU-hours of a specific account
+```
+sreport cluster accountutilizationbyuser cluster=mist account=accountName  start=2020-04-01 end=2020-06-18 -t Hour --tres=GRES/gpu
+```
