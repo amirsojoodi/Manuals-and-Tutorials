@@ -1,0 +1,58 @@
+%% ---------------------------------------------------------------
+%% My References - Organized in Mendely
+%% (C) AmirHossein Sojoodi @ Queen's University - 2020
+%% ---------------------------------------------------------------
+
+@misc{nvidiaweb,
+	keywords = {Web},
+	title = {{NVIDIA}},
+	url = {https://www.nvidia.com/},
+	urldate = {2020-12-10}
+}
+@inproceedings{Bayatpour2020,
+	abstract = {Message Passing Interface (MPI) standard uses (source rank, tag, and communicator id) to properly place the incoming data into the application receive buffer. The act of searching through the receive queues and finding the appropriate match is called Tag Matching (TM). In the state-of-the-art MPI libraries, this operation is either being performed by the main thread or a separate communication progress thread. Either way leads to underutilization of the resources and major synchronization overheads leading to less optimal performance. Mellanox ConnectX-5 network architecture has introduced a feature to offload the Tag Matching and communication progress from host to InfiniBand network card. This paper proposes a Hardware Tag Matching aware MPI library and discusses various aspects and challenges of leveraging this feature in MPI library. Moreover, it characterizes hardware Tag Matching using different benchmarks and provides guidelines for the application developers to develop Hardware Tag Matching-aware applications to maximize their usage of this feature. Our proposed designs are able to improve the performance of non-blocking collectives up to 42{\%} on 512 nodes and improve the performance of 3Dstencil application kernel on 7168 processes and Nekbone on 512 processes by a factor 40{\%} and 3.5{\%}, respectively.},
+	author = {Bayatpour, Mohammadreza and Ghazimirsaeed, S. Mahdieh and Xu, Shulei and Subramoni, Hari and Panda, Dhabaleswar K.},
+	booktitle = {Proceedings of 20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (CCGRID)},
+	doi = {10.1109/CCGrid49817.2020.00-83},
+	isbn = {9781728160955},
+	keywords = {Hardware Offload,InfiniBand,MPI,Message{\_}Matching,Point-to-point communication,Tag Matching},
+	pages = {101--110},
+	title = {{Design and Characterization of InfiniBand Hardware Tag Matching in MPI}},
+	year = {2020}
+}
+@article{Li2020,
+	abstract = {High performance multi-GPU computing becomes an inevitable trend due to the ever-increasing demand on computation capability in emerging domains such as deep learning, big data and planet-scale simulations. However, the lack of deep understanding on how modern GPUs can be connected and the real impact of state-of-the-art interconnect technology on multi-GPU application performance become a hurdle. In this paper, we fill the gap by conducting a thorough evaluation on five latest types of modern GPU interconnects: PCIe, NVLink-V1, NVLink-V2, NVLink-SLI and NVSwitch, from six high-end servers and HPC platforms: NVIDIA P100-DGX-1, V100-DGX-1, DGX-2, OLCF's SummitDev and Summit supercomputers, as well as an SLI-linked system with two NVIDIA Turing RTX-2080 GPUs. Based on the empirical evaluation, we have observed four new types of GPU communication network NUMA effects: three are triggered by NVLink's topology, connectivity and routing, while one is caused by PCIe chipset design issue. These observations indicate that, for an application running in a multi-GPU node, choosing the right GPU combination can impose considerable impact on GPU communication efficiency, as well as the application's overall performance. Our evaluation can be leveraged in building practical multi-GPU performance models, which are vital for GPU task allocation, scheduling and migration in a shared environment (e.g., AI cloud and HPC centers), as well as communication-oriented performance tuning.},
+	author = {Li, Ang and Song, Shuaiwen Leon and Chen, Jieyang and Li, Jiajia and Liu, Xu and Tallent, Nathan R. and Barker, Kevin},
+	doi = {10.1109/TPDS.2019.2928289},
+	issn = {15582183},
+	journal = {IEEE Transactions on Parallel and Distributed Systems},
+	keywords = {GPU,GPUDirect,GPUDirect{\_}RDMA,Interconnect,NCCL,NUMA,NVLink,NVSwitch,PCI{\_}E,PCIe,Performance evaluation,RDMA,SLI,interconnect},
+	number = {1},
+	pages = {94--110},
+	title = {{Evaluating Modern GPU Interconnect: PCIe, NVLink, NV-SLI, NVSwitch and GPUDirect}},
+	volume = {31},
+	year = {2020}
+}
+@article{Ferreira2020,
+	abstract = {This paper explores key differences of MPI match lists for several important United States Department of Energy (DOE) applications and proxy applications. This understanding is critical in determining the most promising hardware matching design for any given high-speed network. The results of MPI match list studies for the major open-source MPI implementations, MPICH and Open MPI, are presented, and we modify an MPI simulator, LogGOPSim, to provide match list statistics. These results are discussed in the context of several different potential design approaches to MPI matching–capable hardware. The data illustrate the requirements for different hardware designs in terms of performance and memory capacity. This paper's contributions are the collection and analysis of data to help inform hardware designers of common MPI requirements and highlight the difficulties in determining these requirements by only examining a single MPI implementation.},
+	author = {Ferreira, Kurt and Grant, Ryan E. and Levenhagen, Michael J. and Levy, Scott and Groves, Taylor},
+	doi = {10.1002/cpe.5150},
+	issn = {15320634},
+	journal = {Concurrency and Computation: Practice and Experience (CCPE)},
+	keywords = {MPI,MPI matching,Message{\_}Matching,hardware matching},
+	number = {3},
+	pages = {1--18},
+	title = {{Hardware MPI message matching: Insights into MPI matching behavior to inform design}},
+	volume = {32},
+	year = {2020}
+}
+@inproceedings{Chu2020,
+	author = {Chu, Ching-Hsiang and Kousha, Pouya and Awan, Ammar Ahmad and Khorassani, Kawthar Shafie and Subramoni, Hari and Panda, Dhabaleswar K.},
+	booktitle = {Proceedings of the 34th International Conference on Supercomputing (ICS)},
+	doi = {10.1145/3392717.3392771},
+	isbn = {9781450379830},
+	keywords = {2020,Deep{\_}Learning,GPU,MPI,MPI{\_}Allreduce,NV{\_}Group,acm reference format,allreduce,anonymous author,deep learning,gpu,link-efficient reduction for dis-,mpi,nv-group,nvlink},
+	pages = {1--12},
+	title = {{NV-Group: Link-Efficient Reduction for Distributed Deep Learning on Modern Dense GPU Systems}},
+	year = {2020}
+}
