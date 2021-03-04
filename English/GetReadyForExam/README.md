@@ -204,7 +204,7 @@
 
 4. Spectacular -> amazing, phenomenal, surprising, startling, remarkable, astonishing, astounding
 
-5. Improve -> ameliorate, refine, upgrade, revive, enhance, supplement, augment, boost
+5. Improve -> ameliorate, refine, upgrade, revive, enhance, supplement, augment, boost, reform, progress, florish, advance
 
 6. Difference -> disparity, unlike, discernible
 
@@ -223,6 +223,14 @@
 13. Increase -> soar, rise, exceed, rocket, leap, surge
 
 14. Allot -> allocate, assign to, apportion to, distribute to
+
+15. Solution -> remedy, answer, key, resolution
+
+16. Worsen -> deteriorate, exacerbate, aggravate
+
+17. Change -> acclimatize, adapt, adjust, amend, modify, transform
+
+18. Problem -> dilemma, difficulty, challenge, obstacle
 
 ## Good Words
 
