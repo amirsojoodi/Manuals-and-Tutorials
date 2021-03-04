@@ -1,0 +1,360 @@
+%% ---------------------------------------------------------------
+%% Used Packages
+%% AmirHossein Sojoodi @ Queen's University - 2020
+%% ---------------------------------------------------------------
+
+\ProvidesPackage{preamble}
+
+\usepackage{tocbibind}
+\usepackage{xspace} % for spacing after macros 
+\usepackage{rotating} % Rotating columns on table
+\usepackage{graphicx} % For Queen's Logo
+\usepackage{indentfirst} % Indent first paragraph after header
+\usepackage{setspace} % For use of \singlespacing and \doublespacing
+\usepackage{xcolor}
+\usepackage{lipsum} 
+\usepackage{tikz} % for software stack program
+\usetikzlibrary{chains}
+
+\usepackage{subcaption}
+\captionsetup[subfigure]{format=hang}
+
+\usepackage{microtype}
+
+\usepackage{paralist}
+
+\usepackage{csquotes}
+\usepackage[section]{placeins}
+
+
+%% ---------------------------------------------------------------
+%% Other Packages
+%% ---------------------------------------------------------------
+%%\usepackage{fancyhdr} % For Header Formatting
+
+%\usepackage[english]{babel}
+%\usepackage{titlesec} % For title formatting
+%\usepackage[compact]{titlesec}
+
+%% ---------------------------------------------------------------
+%% Reference 
+%% ---------------------------------------------------------------
+% https://it.overleaf.com/learn/latex/Bibliography_management_in_LaTeX
+% sorting=nyt,
+\usepackage[backend=biber,bibstyle=ieee,citestyle=numeric,sorting=nyt,isbn=false]{biblatex}
+\addbibresource{References/references.bib}
+
+%% ---------------------------------------------------------------
+%% Listings and colors
+%% ---------------------------------------------------------------
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\definecolor{ForestGreen}{RGB}{0,200,0}
+\definecolor{myteal}{RGB}{0,115,115}
+%% ---------------------------------------------------------------
+%% Graphicx, images, and figures
+%% ---------------------------------------------------------------
+\usepackage{graphicx}
+\graphicspath{Tex/Figures}
+
+%% ---------------------------------------------------------------
+%% Links and hyper references
+%% ---------------------------------------------------------------
+\usepackage[bookmarks,pdfauthor={\@author},pdftitle={PhD Comp I},colorlinks=true,citecolor=ForestGreen]{hyperref}
+
+%% ---------------------------------------------------------------
+%% Glossary
+%% ---------------------------------------------------------------
+%\usepackage[style=long3colheaderborder,acronym,automake,footnote,toc]{glossaries}
+
+% https://www.dickimaw-books.com/gallery/index.php?label=mixed-glossary-emph2
+% style=tree, stylemods=mcols
+\usepackage[stylemods=mcols,toc]{glossaries-extra}
+\newglossary[slg]{symbol}{sym}{sdn}{List of Symbols}
+
+\makeglossaries
+
+%\setabbreviationstyle[acronym]{short-sc-postfootnote}
+\setabbreviationstyle[acronym]{long-postshort-user}
+%\setabbreviationstyle[acronym]{long-em-short-em}
+%\setabbreviationstyle[acronym]{short-footnote}
+%\setabbreviationstyle[acronym]{long-short-user}
+\setabbreviationstyle[slg]{long-postshort-user}
+
+\renewcommand*{\glsfirstlonguserfont}[1]{\emph{#1}}
+
+\renewcommand{\glsxtrregularfont}[1]{\textcolor{violet}{\glsxtrifwasfirstuse{{#1}}{#1}}}
+%\renewcommand{\glsxtrabbreviationfont}[1]{\textcolor{myteal}{\glsxtrifwasfirstuse{{#1}}{\texttt{#1}}}}
+%\renewcommand{\glsxtrabbreviationfont}[1]{\textcolor{myteal}{\glsxtrifwasfirstuse{}{\let\glsfirstlonguserfont\glslonguserfont}#1}}
+\renewcommand{\glsxtrabbreviationfont}[1]{\textcolor{myteal}{\glsxtrifwasfirstuse{{{\let\glsfirstlonguserfont\glslonguserfont}#1}}{\texttt{#1}}}}
+
+\renewcommand*{\glsxtrsetupfulldefs}{%
+	\renewcommand*{\glsxtrifwasfirstuse}[2]{##2}%
+}
+
+%% ---------------------------------------------------------------
+%% Declare If Statements for Optional Pages
+%% ---------------------------------------------------------------
+\newif\ifPageFigures 
+\newif\ifPageTables
+\newif\ifPageGlossaries
+\newif\ifPageContents
+\newif\ifPageCodeSnippets
+\newif\ifPageEquations
+
+%% ---------------------------------------------------------------
+%% Set Default States for Optional Pages
+%% ---------------------------------------------------------------
+\PageFiguresfalse 
+\PageTablesfalse
+\PageGlossariesfalse
+\PageContentsfalse
+\PageCodeSnippetsfalse
+\PageEquationsfalse
+
+%% ---------------------------------------------------------------
+%% fonts
+%% ---------------------------------------------------------------
+%\renewcommand{\rmdefault}{ptm}
+%\renewcommand{\sfdefault}{phv}
+
+%% ---------------------------------------------------------------
+%% font sizes with reduced leading
+%% ---------------------------------------------------------------
+%\renewcommand{\chapterheadstartvskip}{\vspace{0.5cm}}
+%\renewcommand{\chapterheadendvskip}{\vspace{0.5cm}}
+\RedeclareSectionCommand[style=section,beforeskip=0.07cm,afterskip=0.07cm]{chapter}
+%indent=0pt
+\RedeclareSectionCommand[beforeskip=0.07cm,afterskip=0.07cm]{section}
+\RedeclareSectionCommand[beforeskip=0.07cm,afterskip=0.07cm]{subsection}
+\RedeclareSectionCommand[beforeskip=0.07cm,afterskip=0.07cm]{subsubsection}
+
+%\RedeclareSectionCommands[beforeskip=1\baselineskip, afterskip=1\baselineskip,
+%font=\normalsize
+%]{chapter,section,subsection,subsubsection,paragraph,subparagraph}
+%\renewcommand{\normalsize}{
+%	\@setfontsize\normalsize\@xipt\@xiipt
+%	\abovedisplayskip      7\p@ \@plus 2\p@ \@minus 5\p@
+%	\abovedisplayshortskip \z@ \@plus 3\p@
+%	\belowdisplayskip      \abovedisplayskip
+%	\belowdisplayshortskip 4\p@ \@plus 3\p@ \@minus 3\p@
+%}
+%\normalsize
+%\renewcommand{\small}{%
+%	\@setfontsize\small\@ixpt\@xpt
+%	\abovedisplayskip      6\p@ \@plus 1.5\p@ \@minus 4\p@
+%	\abovedisplayshortskip \z@  \@plus 2\p@
+%	\belowdisplayskip      \abovedisplayskip
+%	\belowdisplayshortskip 3\p@ \@plus 2\p@   \@minus 2\p@
+%}
+%\renewcommand{\footnotesize}{\@setfontsize\footnotesize\@ixpt\@xpt}
+%\renewcommand{\scriptsize}{\@setfontsize\scriptsize\@viipt\@viiipt}
+%\renewcommand{\tiny}{\@setfontsize\tiny\@vipt\@viipt}
+%\renewcommand{\large}{\@setfontsize\large\@xiipt{14}}
+%\renewcommand{\Large}{\@setfontsize\Large\@xivpt{16}}
+%\renewcommand{\LARGE}{\@setfontsize\LARGE\@xviipt{20}}
+%\renewcommand{\huge}{\@setfontsize\huge\@xxpt{23}}
+%\renewcommand{\Huge}{\@setfontsize\Huge\@xxvpt{28}}
+
+%% ---------------------------------------------------------------
+%% set page geometry - https://www.overleaf.com/learn/latex/page_size_and_margins
+%% ---------------------------------------------------------------
+\usepackage[verbose=true,letterpaper]{geometry}
+\AtBeginDocument{
+	\newgeometry{
+		%textheight=9in,
+		%textwidth=5.5in,
+		%headheight=12pt,
+		%headsep=25pt,
+		left=20mm,
+		top=20mm,
+		right=20mm,
+		bottom=20mm,
+		footskip=8mm
+	}
+}
+
+%% ---------------------------------------------------------------
+
+% \usepackage{placeins}
+\usepackage{cleveref}
+
+\lstset{
+    backgroundcolor=\color{white},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    commentstyle=\color{mygreen},
+    deletekeywords={...},
+    escapeinside={\%*}{*)},
+    extendedchars=true,
+    firstnumber=0,
+    frame=single,
+    keepspaces=true,
+    keywordstyle=\color{blue},
+    language=C++,
+    morekeywords={*,...},
+    numbers=left,
+    numbersep=5pt,
+    numberstyle=\tiny\color{mygray},
+    rulecolor=\color{black},
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    stepnumber=1,
+    stringstyle=\color{mymauve},
+    tabsize=2,
+    title=\lstname
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Draw fancy lines
+%% Usage example: \sectionline{DarkGreen}{88}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[object=vectorian]{pgfornament} %%  http://altermundus.com/pages/tkz/ornament/index.html
+
+\newcommand{\sectionline}[2]{%
+	\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+	{\color{#1}
+		\resizebox{0.4\linewidth}{2ex}
+		{{%
+			{\begin{tikzpicture}
+				\node  (C) at (0,0) {};
+				\node (D) at (9,0) {};
+				\path (C) to [ornament=#2] (D);
+			\end{tikzpicture}}}}}%
+	\hspace{\fill}
+	\par\nointerlineskip \vspace{.5\baselineskip}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% MPI Functions
+\def\allreduce{\texttt{MPI\_Allreduce}\xspace}
+\def\alltoall{\texttt{MPI\_Alltoall}\xspace}
+\def\allgather{\texttt{MPI\_Allgather}\xspace}
+\def\allgatherv{\texttt{MPI\_Allgatherv}\xspace}
+\def\anysource{\texttt{MPI\_ANY\_SOURCE}\xspace}
+\def\anytag{\texttt{MPI\_ANY\_TAG}\xspace}
+\def\band{\texttt{MPI\_BAND}\xspace}
+\def\barrier{\texttt{MPI\_Barrier}\xspace}
+\def\bcast{\texttt{MPI\_Bcast}\xspace}
+\def\finalize{\texttt{MPI\_Finalize}\xspace}
+\def\gather{\texttt{MPI\_Gather}\xspace}
+\def\gatherv{\texttt{MPI\_Gatherv}\xspace}
+\def\iallgather{\texttt{MPI\_Iallgather}\xspace}
+\def\iallreduce{\texttt{MPI\_Iallreduce}\xspace}
+\def\initthread{\texttt{MPI\_Init\_thread}\xspace}
+\def\irecv{\texttt{MPI\_Irecv}\xspace}
+\def\isend{\texttt{MPI\_Isend}\xspace}
+\def\longlongint{\texttt{MPI\_LONG\_LONG\_INT}\xspace}
+\def\mpit{\texttt{MPI\_T}\xspace}
+\def\pmpi{\texttt{PMPI}\xspace}
+\def\rank{\texttt{rank}\xspace}
+\def\ranks{\texttt{ranks}\xspace}
+\def\recv{\texttt{MPI\_Recv}\xspace}
+\def\reduce{\texttt{MPI\_Reduce}\xspace}
+\def\scan{\texttt{MPI\_Scan}\xspace}
+\def\scatter{\texttt{MPI\_Scatter}\xspace}
+\def\send{\texttt{MPI\_Send}\xspace}
+\def\tag{\texttt{tag}\xspace}
+\def\threadsingle{\texttt{MPI\_THREAD\_SINGLE}\xspace}
+\def\threadfunneled{\texttt{MPI\_THREAD\_FUNNELED}\xspace}
+\def\threadmultiple{\texttt{MPI\_THREAD\_MULTIPLE}\xspace}
+\def\threadserialized{\texttt{MPI\_THREAD\_SERIALIZED}\xspace}
+\def\threadult{\texttt{MPI\_THREAD\_ULT}\xspace}
+\def\wait{\texttt{MPI\_Wait}\xspace}
+\def\waitall{\texttt{MPI\_Waitall}\xspace}
+\def\waitany{\texttt{MPI\_Waitany}\xspace}
+\def\win{\texttt{MPI\_Win}\xspace}
+
+% Programming Models
+\def\cuda{\gls{CUDA}\xspace}
+\def\mpi{\gls{MPI}\xspace}
+\def\mpich{\texttt{MPICH}\xspace}
+\def\mpicuda{\gls{MPI}\texttt{+}\gls{CUDA}\xspace}
+\def\mpidash{\gls{MPI}-}
+\def\mpimpi{\gls{MPI}\texttt{+}\gls{MPI}\xspace}
+\def\mpinccl{\gls{MPI}\texttt{+}\gls{NCCL}\xspace}
+\def\mpiopencl{\gls{MPI}\texttt{+}\gls{OpenCL}\xspace}
+\def\mpithree{\gls{MPI}\texttt{-3}\xspace}
+\def\mpix{\gls{MPI}\texttt{+X}\xspace}
+\def\mvapich{\texttt{MVAPICH}\xspace}
+\def\mvapichtwo{\texttt{MVAPICH2}\xspace}
+\def\mvapichtwogdr{\texttt{MVAPICH2-}\gls{GDR}\xspace}
+\def\nccl{\gls{NCCL}\xspace}
+\def\nccldash{\gls{NCCL}\texttt{-}}
+\def\nccltwo{\gls{NCCL}\texttt{2}\xspace}
+\def\omp{\gls{OpenMP}\xspace}
+\def\ompi{\texttt{OpenMPI}\xspace}
+\def\opencl{\gls{OpenCL}\xspace}
+\def\openacc{\gls{OpenACC}\xspace}
+\def\openmpi{\texttt{Open MPI}\xspace}
+\def\openshmem{\gls{OpenSHMEM}\xspace}
+\def\pthreads{\gls{Pthreads}\xspace}
+\def\systemv{\texttt{System V}\xspace}
+
+% Frameworks, technologies and others
+\def\beluga{B\'eluga\xspace}
+\def\cntk{CNTK\xspace}
+\def\deep{Deep500\xspace}
+\def\dl{\gls{DL}\xspace}
+\def\git{\texttt{git}\xspace}
+\def\github{\texttt{GitHub}\xspace}
+\def\google{\texttt{Google}\xspace}
+\def\grep{\texttt{grep}\xspace}
+\def\hct{\texttt{HOROVOD\_CYCLE\_TIME}\xspace}
+\def\hpc{\gls{HPC}\xspace}
+\def\hft{\texttt{HOROVOD\_FUSION\_THRESHOLD}\xspace}
+\def\horovod{Horovod\xspace}
+\def\ib{\gls{IB}\xspace}
+\def\ibdash{\gls{IB}-}
+\def\ipc{\gls{IPC}\xspace}
+\def\keras{Keras\xspace}
+\def\linux{GNU/Linux\xspace}
+\def\matex{MaTEx\xspace}
+\def\ml{Machine Learning\xspace}
+\def\mxnet{MXNet\xspace}
+\def\nic{\gls{NIC}\xspace}
+\def\nics{\gls{NIC}\texttt{s}\xspace}
+\def\pt{PyTorch\xspace}
+\def\ptp{\gls{P2P}\xspace}
+\def\rl{Reinforcement Learning\xspace}
+\def\sharp{SHARP\texttrademark\xspace}
+\def\tf{\texttt{TensorFlow}\xspace}
+\def\tfbench{\textit{tf\_cnn\_benchmark}\xspace}
+
+% CUDA & NVIDIA
+\def\amd{\texttt{AMD}\xspace}
+\def\cudamemadvise{\texttt{cudaMemAdvise}\xspace}
+\def\cudamemprefetch{\texttt{cudaMemPrefetch}\xspace}
+\def\dgxone{\texttt{DGX-1}\xspace}
+\def\dgxtwo{\texttt{DGX-2}\xspace}
+%\def\gpudirect{GPUDirect\textsuperscript{\textregistered}\xspace}
+\def\gdr{\gls{GDR}\xspace}
+\def\gpudirect{\texttt{GPUDirect}\xspace}
+\def\gpudirectptp{\texttt{GPUDirect\_}\gls{P2P}\xspace}
+\def\gpudirectasync{\texttt{GPUDirect\_Async}\xspace}
+\def\gpudirectrdma{\texttt{GPUDirect\_}\gls{RDMA}\xspace}
+\def\hyperq{\texttt{Hyper-Q}\xspace}
+\def\nvidia{\texttt{NVIDIA}\xspace}
+\def\nvgroup{\texttt{NVGroup}\xspace}
+\def\nvlink{\texttt{NVLink}\xspace}
+\def\nvlinkone{\texttt{NVLink-V1}\xspace}
+\def\nvlinks{\texttt{NVLinks}\xspace}
+\def\nvlinktwo{\texttt{NVLink-V2}\xspace}
+\def\nvlinksli{\gls{NVLink-SLI}\xspace}
+\def\nvswitch{\texttt{NVSwitch}\xspace}
+\def\pcie{\gls{PCIe}\xspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\red}[1]{{\color{red} #1}}
+

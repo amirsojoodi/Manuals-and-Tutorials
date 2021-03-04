@@ -1,0 +1,124 @@
+%% ---------------------------------------------------------------
+%% My Comp 1 Report Main tex file
+%% AmirHossein Sojoodi @ Queen's University - 2020
+%% ---------------------------------------------------------------
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[paper=a4,pagesize=auto,fontsize=11pt,twoside=false,parskip=half,abstract=on,bibliography=totoc]{scrreprt}
+
+\usepackage{preamble}
+
+\pagestyle{plain}
+%\fancyhead{} % remove everything
+%\renewcommand{\headrulewidth}{0pt} % remove lines as well
+%\renewcommand{\footrulewidth}{0pt}
+%\cfoot{\thepage}
+%\frenchspacing 
+% http://www.tex.ac.uk/FAQ-floats.html
+%\renewcommand{\topfraction}{.85}
+%\renewcommand{\bottomfraction}{.7}
+%\renewcommand{\textfraction}{.15}
+%\renewcommand{\floatpagefraction}{.66}
+%\renewcommand{\dbltopfraction}{.66}
+%\renewcommand{\dblfloatpagefraction}{.66}
+\setcounter{topnumber}{9}
+\setcounter{bottomnumber}{9}
+\setcounter{totalnumber}{20}
+\setcounter{dbltopnumber}{9}
+
+%% ---------------------------------------------------------------
+%% Document type
+%% ---------------------------------------------------------------
+
+\begin{document}
+
+%% ---------------------------------------------------------------
+%% Front page
+%% ---------------------------------------------------------------
+
+\pagenumbering{roman}
+\input{TexFiles/Front}
+
+%% ---------------------------------------------------------------
+%% Table of contents, figures, tables, and glossary
+%% ---------------------------------------------------------------
+
+\KOMAoptions{fontsize=10.45pt}
+
+\begin{spacing}{0.75}
+	\hypersetup{linkcolor=black}
+	\setlength{\parskip}{0.5em}
+	\renewcommand{\contentsname}{Table of Contents}
+	\tableofcontents
+\end{spacing}
+
+\KOMAoptions{fontsize=11pt}
+%\setlength{\parskip}{1em}
+
+\begin{spacing}{1}
+	\hypersetup{linkcolor=black}
+	\listoffigures
+\end{spacing}
+
+\baselineskip=5mm %5.5mm
+\onehalfspacing
+
+\KOMAoptions{fontsize=10pt}
+
+\PageGlossariestrue
+\include{Glossaries/Glossary}
+
+% This line forces all entries into glossary, even if they have not been referenced
+% UNCOMMENT THIS LINE TO INCLUDE ALL GLOSSARY ITEMS (Not just those referenced)
+% \glsaddall
+
+\printglossary[type=\acronymtype,style=mcolindex]
+%\printglossary
+
+% UNCOMMENT INDIVIDUAL GLOSSARIES TO BE PRINTED (IF not using \PageGlossariestrue) %
+%\printglossaries % Prints ALL glossaries.
+%\printglossary % Print the terms glossary
+%\printglossary[title = Glossary of Terms] % Print the terms glossary
+%\printglossary[type=symbol, title=Glossary of Symbols] % Prints the acronym glossary
+%\printglossary[type=\acronymtype,title=Glossary of Abbreviations] % Prints the abbreviation glossary
+\KOMAoptions{fontsize=11pt}
+\setlength{\parskip}{0.5em}
+
+\baselineskip=5.7mm %5.5mm
+\onehalfspacing
+%% ---------------------------------------------------------------
+%% Chapters
+%% ---------------------------------------------------------------
+
+\cleardoublepage
+\pagenumbering{arabic}
+\input{TexFiles/Introduction}
+\input{TexFiles/Background}
+\input{TexFiles/OnGoingResearch}
+\input{TexFiles/Conclusion}
+
+%% ---------------------------------------------------------------
+%% References
+%% ---------------------------------------------------------------
+
+% Print all the references:
+% \nocite{*}
+
+\KOMAoptions{fontsize=10.2pt}
+
+%\setlength{\parskip}{0.5em}
+\begin{spacing}{0.999}
+\printbibliography[heading=bibintoc, title={References}]
+\end{spacing}
+
+%% ---------------------------------------------------------------
+%% Appendix
+%% ---------------------------------------------------------------
+
+\appendix
+% \input{Tex/appendix}
+
+%% ---------------------------------------------------------------
+%% End of the document
+%% ---------------------------------------------------------------
+
+\end{document}
