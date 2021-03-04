@@ -352,3 +352,21 @@ git rebase -i HEAD~Z  #Shows the last Z commits in a text editor
 git commit --am 
 git rebase --continue
 ```
+
+## Git submodules
+```
+# Adding a submodule
+git submodule add <submodule-url>
+
+# Cloning a repo with its submodule(s)
+git clone --recurse-submodules <repo-url>
+
+# Pulling in upstream changes from the submodules remote
+git submodule update --remote
+
+# Pulling in upstream changes from a specific submodule remote
+# Submodule names can be found in the local file .gitmodules
+git submodule update --remote <submodule-name>
+```
+More [information](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
