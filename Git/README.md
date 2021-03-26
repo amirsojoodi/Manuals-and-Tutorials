@@ -209,6 +209,15 @@ git checkout origin/your-branch
 ```
 You can continue working in the branch and pushing whenever you want without passing arguments to git push (argumentless git push will push the master to remote master, your-branch local to remote your-branch, etc...)
 
+To fetch all remote branches:
+```
+git fetch --all
+```
+To change local branch to a track a remote branch (after fetching it from remote):
+```
+git checkout -b local-branch origin/remote-branch
+```
+
 ## List all tags
 ```
 git tag
