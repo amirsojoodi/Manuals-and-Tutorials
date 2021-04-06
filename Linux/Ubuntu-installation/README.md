@@ -102,6 +102,7 @@
  - alias top="htop"
  - alias myip="curl http://ipecho.net/plain; echo"
  - alias DU="du --max-depth=1 -B M |sort -rn"
+ - alias filecount="find . -type f 2> /dev/null | wc -l"
 
 23.	Create multiple users 
 
