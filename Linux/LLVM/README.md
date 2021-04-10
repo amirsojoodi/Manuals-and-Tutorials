@@ -6,6 +6,7 @@ Follow the instructions on their websites:
 3. https://github.com/llvm/llvm-project
 4. https://llvm.org/docs/CompileCudaWithLLVM.html
 5. https://libcxx.llvm.org/docs/UsingLibcxx.html
+6. https://llvm.org/docs/WritingAnLLVMPass.html
 
 
 To get the source code and setting up the environment variables:
@@ -89,6 +90,101 @@ If you want to write the LLVM IR from the source, add option `-S -emit-llvm` to 
 
 Find more details, see [here](https://libcxx.llvm.org/docs/UsingLibcxx.html), and [here](https://releases.llvm.org/11.0.0/docs/CompileCudaWithLLVM.html).
 ```
-clang++ -stdlib=libc++ -Wall vectorOp.cu -o vectorOp --cuda-gpu-arch=sm_70 -L/scinet/mist/software/2020a/opt/cuda-10.2.89/gcc/8.4.0/lib/gcc/powerpc64le-unknown-linux-gnu/8.4.0 -lcudart_static -ldl -lrt -pthread
+clang++ -stdlib=libc++ -Wall vectorOp.cu -o vectorOp --cuda-gpu-arch=sm_70 \
+	-L/scinet/mist/software/2020a/opt/cuda-10.2.89/gcc/8.4.0/lib/gcc/powerpc64le-unknown-linux-gnu/8.4.0 \
+	-lcudart_static -ldl -lrt -pthread
 ```
 
+## Playing around with LLVM IR
+
+For more info, see the llvm lecture from [Mike Shah](http://www.mshah.io/#Teaching).
+
+Consider `hello.cpp`:
+
+```
+#include <stdio.h>
+
+int main(){
+    printf("Bonjour!\n");
+	return 0;
+}
+```
+
+You can compile this code with clang easily:
+```
+clang++ hello.cpp -o hello
+```
+
+To print out the LLVM IR of the code:
+```
+clang++ -S -emit-llvm hello.cpp
+```
+
+To run the IR with the LLVM JIT (lli):
+```
+lli hello.ll
+```
+
+To convert IR to Bitcode (BC); you can still run the BC with `lli`:
+```
+llvm-as hello.ll
+lli hello.bc
+```
+
+To convert BC to Assembly using `llc`: the static compiler:
+```
+llc hello.bc
+```
+
+To see the available targets:
+```
+llc hello.bc --version
+
+# The output in my case
+
+LLVM (http://llvm.org/):
+  LLVM version 11.1.0
+  Optimized build.
+  Default target: powerpc64le-unknown-linux-gnu
+  Host CPU: pwr9
+
+  Registered Targets:
+    nvptx   - NVIDIA PTX 32-bit
+    nvptx64 - NVIDIA PTX 64-bit
+    ppc32   - PowerPC 32
+    ppc64   - PowerPC 64
+    ppc64le - PowerPC 64 LE
+```
+
+## Playing with Optimizer (opt) to create pass(es):
+
+Using the previous `hello.cpp`, running opt with `--time-pass` to show timing of the passes:
+
+```
+# Adding the -debug-pass-manager flag to the opt commands shows what's going on.
+opt hello.ll -debug-pass-manager --time-pass
+```
+Refer to [this](https://llvm.org/docs/WritingAnLLVMPass.html) section to write passes.
+
+Types of passes:
+1. Analysis Pass
+2. Transform Pass
+
+Levels of passes:
+1. Module Pass
+2. Call Graph Pass
+3. Function Pass
+4. Basic Block Pass
+5. Immutable Pass
+6. Region Pass
+7. Machine Function Pass
+
+### Simple pass example using LLVM *Hello* example
+
+Go to the directory `$LLVM_BUILD/build/lib/Transforms/Hello` and run `make`.
+Then you should be able to see `LLVMHello.so` file in `$LLVM_BUILD/build/lib` directory.
+
+Then by running this command you should be able to see the results:
+```
+opt -enable-new-pm=0 -load $LLVM_BUILD/build/lib/LLVMHello.so -hello < hello.bc
+```
