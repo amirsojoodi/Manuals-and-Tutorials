@@ -95,49 +95,7 @@ clang++ -stdlib=libc++ -Wall vectorOp.cu -o vectorOp --cuda-gpu-arch=sm_70 \
 	-lcudart_static -ldl -lrt -pthread
 ```
 
-## Compile and create LLVM IR from CUDA soruces
-
-The LLVM IR from each branch of the compilation process must remain separate until directly linkable objects are available. As a result, there are many intermediate steps which you will need to perform manually.
-
-LLVM IR code for the GPU must be compiled firstly to PTX code, and then assembled to a binary payload which can be linked against host object files.
-
-There is a CUDA source in this directory, named `axpy.cu`. Let's work on that!
-```
-# First:
-clang++ -stdlib=libc++ -Wall axpy.cu --cuda-gpu-arch=sm_70 -S -c -emit-llvm
-# Or
-clang++ -std=c++17 -Wall axpy.cu --cuda-gpu-arch=sm_70 -S -c -emit-llvm
-```
-
-This instruction emits two separate IR files. The GPU code needs to be compiled to PTX.
-```
-llc -mcpu=sm_70 axpy-cuda-nvptx64-nvidia-cuda-sm_70.ll -o axpy.ptx
-```
-
-Now the PTX code can be assembled into an ELF file and then an object file with nvcc:
-```
-ptxas --gpu-name=sm_70 axpy.ptx -o axpy.ptx.o
-fatbinary --64 --create axpy.fatbin --image=profile=sm_70,file=axpy.ptx.o
-
-nvcc axpy.fatbin -arch=sm_70 -dlink
-```
-
-For the host code:
-```
-# Option -mcpu=ppc64 is for PowerPC 64 bit
-llc -mcpu=ppc64 axpy.ll -o axpy.s
-clang++ -c axpy.s -o axpy.o
-```
-
-Link both object files together with a linker. In my case this worked:
-```
-clang++ -stdlib=libc++ axpy.o a_dlink.o -o axpy -lcudart \
-  -L/scinet/mist/software/2020a/opt/cuda-10.2.89/gcc/8.4.0/lib/gcc/powerpc64le-unknown-linux-gnu/8.4.0
-
-./axpy
-```
 There was a weird bug that only resolved when I placed files `crtbegin.o` and `crtend.o` in the working directory. The linker was not able to find the files with -L option.
-
 
 ## Playing around with LLVM IR
 
