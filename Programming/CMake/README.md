@@ -49,4 +49,20 @@ For full documentation, see [here](https://cmake.org/documentation/).
 | `install(TARGETS targets...)` | Used to place build output into certain directories on the user's system (as well as do things like assign privileges to these files). |
 
 
+## Test the project executables with CTest
+
+In the Cmake file, add the following lines:
+```
+include(CTest)
+
+add_test(NAME validate COMMAND ${PROJECT_NAME})
+set_tests_properties(validate PROPERTIES PROCESSOR_AFFINITY ON PROCESSORS 4)
+```
+Then, after running `cmake ..` and `make` in the build directory, run this:
+```
+$ cmake -T memcheck -VV
+# -VV means verbose
+```
+If you have valgrind installed, this command runs your test(s) and valgrind's memcheck on your project.
+
 
