@@ -27,6 +27,7 @@ You can create a directory named `Templates` in the obtained directory and put y
 
 ## Convert formats
 
+To convert from docx to markdown:
 ```
 pandoc.exe -f docx -t markdown_strict -i <source_filename> -o <output.md> --wrap=none --atx-headers --extract-media=.
 ```
@@ -34,6 +35,13 @@ pandoc.exe -f docx -t markdown_strict -i <source_filename> -o <output.md> --wrap
 - --wrap=none ensures that text in the new .md files doesn't get wrapped to new lines after 80 characters
 - --atx-headers makes headers in the new .md files appear as # h1, ## h2 and so on
 - --extract-media=. selects the current directory to store the media files.
+
+To convert from markdown to docx (gfm = github flavoured markdown):
+```
+pandoc.exe -f gfm -t docx -i Research-Ideas.md -o Research-Ideas1.docx
+# or 
+pandoc.exe -f markdown -t docx -i Research-Ideas.md -o Research-Ideas1.docx
+```
 
 On windows Powershell, one can run this command to convert all of the docx files in the current directory to markdown format:
 ```
