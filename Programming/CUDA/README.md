@@ -21,7 +21,20 @@ In the time of writing this document (2020-10) nvvp doesn't work with latest ver
 ### Profile with Nsight Systems CLI
 
 The basic command that provides most of the things you need:
-`nsys profile --stats true -o output your-application [arguments]`
+```
+nsys profile --stats true -o output your-application [arguments]
+```
+To profile mpi applications there are two options that produce different outputs:
+```
+nsys profile --trace=mpi,cuda,nvtx --stats true -o profile-output-file mpirun -np 2 ./application argument
+# or
+mpirun -np 2 nsys profile --trace=mpi,cuda,nvtx --stats true -o profile-output-file ./application argument
+```
+If you are using OpenMPI/4.0.3 you should add these options: `--mca pml ucx --mca btl ^smcuda` to mpirun in case you have errors.
+```
+# Complete command:
+nsys profile --trace=mpi,cuda,nvtx --stats true -o profile-output-file mpirun -np 2 --mca pml ucx --mca btl ^smcuda ./application argument
+```
 
 For more info, take a look at [here](https://docs.nvidia.com/nsight-systems/UserGuide/index.html)
 
