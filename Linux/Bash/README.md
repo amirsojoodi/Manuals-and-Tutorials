@@ -44,6 +44,18 @@ _Note:_ Since it is a protected file you need to be a privileged user to edit it
 export PS1="\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]\[\033[0m\]\n$ "
 ```
 
+## Display all IP addresses connected to your host:
+
+```
+netstat -lantp | grep ESTABLISHED |awk '{print $5}' | awk -F: '{print $1}' | sort -u
+```
+
+## List the commands you use more often:
+
+```
+history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
+```
+
 ## Helpful aliases:
 
 - Put these aliases in .bashrc
