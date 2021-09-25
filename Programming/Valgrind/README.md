@@ -23,9 +23,25 @@ $ export G_DEBUG=gc-friendly
 $ valgrind -v --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes \
   --num-callers=40 --log-file=valgrind.log $(which <program>) <arguments>
 ```
-
 The valgrind website: [here](http://valgrind.org/)
 A complete manual can be found [here](http://valgrind.org/docs/manual/valgrind_manual.pdf)
+
+## Visualize the call graph with kcachegrind
+
+Install kcachegrind on Ubuntu or Windows WSL:
+```
+$ sudo apt update
+$ sudo apt install kcachegrind
+```
+
+First, collect data with valgrind; then kacachegrind can open the output profile results:
+```
+$ valgrind --tool=callgrind -v ./application
+$ kcachegrind &
+# Open <callgrind.out.xxx> from the GUI
+# To open graphical apps with GUI on WSL you need a running X server.
+```
+Kcachegrind can be used in other ways as well. Check [here](https://kcachegrind.github.io/html/Usage.html).
 
 ## Build and installation on Windows:
 - Remember that Valgrind is OS-specific and cannot be installed and run on Windows. 
