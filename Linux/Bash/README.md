@@ -1,5 +1,35 @@
-## Run a specific command on a specific CPU(s):
+## Use "Exit Traps" to make scripts more robust and reliable
+
+You can place any code that you want to be certain to run in this "finish" function.
+
+```bash
+#!/bin/bash
+function finish {
+  # Your cleanup code here
+}
+trap finish EXIT
 ```
+More info: [here](http://redsymbol.net/articles/bash-exit-traps/)
+
+## Use Bash Strict Mode (Unless You Love Debugging!)
+
+Add this in your scripts to cause them exit immediately in case of errors, bugs, and exceptions.
+```bash
+#!/bin/bash
+set -euxo pipefail
+
+# which is the short version of:
+
+set -e
+set -u
+set -o pipefail
+set -x
+```
+
+Read more from [here](http://redsymbol.net/articles/unofficial-bash-strict-mode/) to understand what each does.
+
+## Run a specific command on a specific CPU(s):
+```bash
 # This will run the command on cpu 3:
 $ taskset -c 3 command
 
@@ -8,22 +38,22 @@ $ taskset -c 64-127 command
 ```
 
 ## Download multiple links with axel:
-```
+```bash
 while read url; do axel -n 10 $url; done < myLinks
 ```
 
 ## Redirect the command output
 
 1. Redirect stdout to one file and stderr to another file:
-```
+```bash
 $ command > out 2>error
 ```
 2. Redirect stdout to a file (>out), and then redirect stderr to stdout (2>&1):
-```
+```bash
 $ command >out 2>&1
 ```
 3. Redirect both to a file (this isn't supported by all shells, bash and zsh support it, for example, but sh and ksh do not):
-```
+```bash
 $ command &> out
 ```
 
@@ -40,26 +70,26 @@ _Note:_ Since it is a protected file you need to be a privileged user to edit it
 ## Make your prompt look nicer:
 
 - Put this line inside of .bashrc
-```
+```bash
 export PS1="\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]\[\033[0m\]\n$ "
 ```
 
 ## Display all IP addresses connected to your host:
 
-```
+```bash
 netstat -lantp | grep ESTABLISHED |awk '{print $5}' | awk -F: '{print $1}' | sort -u
 ```
 
 ## List the commands you use more often:
 
-```
+```bash
 history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 ```
 
 ## Helpful aliases:
 
 - Put these aliases in .bashrc
-```
+```bash
 alias c='clear'
 alias cd..='cd ..'
 alias ..='cd ..'

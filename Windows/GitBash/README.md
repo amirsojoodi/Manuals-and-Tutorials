@@ -2,7 +2,7 @@
 
 If you are using Git-Bash on Windows and connecting to a remote server via ssh, you can do the following to have access to graphical applications.
 
-1. Install & run Xming on Windows
+1. Install & run [Xming](https://sourceforge.net/projects/xming/) or [VCXSRV](https://sourceforge.net/projects/vcxsrv/) on Windows
 2. Export this variable in Git-Bash:
 ```
 $ export DISPLAY=localhost:0

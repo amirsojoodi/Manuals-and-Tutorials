@@ -20,7 +20,7 @@ A more complete way to use valgrind is:
 ```
 $ export G_SLICE=always-malloc
 $ export G_DEBUG=gc-friendly
-$ valgrind -v --tool=memcheck --leak-check=full --show-leak-kinds=all --track-origins=yes \
+$ valgrind --leak-check=full --tool=memcheck --show-leak-kinds=all --track-origins=yes \
   --num-callers=40 --log-file=valgrind.log $(which <program>) <arguments>
 ```
 The valgrind website: [here](http://valgrind.org/)
@@ -36,7 +36,7 @@ $ sudo apt install kcachegrind
 
 First, collect data with valgrind; then kacachegrind can open the output profile results:
 ```
-$ valgrind --tool=callgrind -v ./application
+$ valgrind --tool=callgrind --trace-children=yes -v ./application
 $ kcachegrind &
 # Open <callgrind.out.xxx> from the GUI
 # To open graphical apps with GUI on WSL you need a running X server.
