@@ -74,8 +74,6 @@ TotalCPU          UID               User              UserCPU
 WCKey             WCKeyID           WorkDir          
 ```
 
-Sc
-
 - Working with modules (adding popular modules to bashrc is also a good practice):
 ```bash
 # See what modules are loaded
@@ -107,7 +105,7 @@ module load openmpi/4.0.3
 - To run a parallel job for 1 hour, creat this file (job.sh):
 ```bash
 #!/bin/bash
-#SBATCH -A def-queensu
+#SBATCH -A <account>
 #SBATCH -t 0-01:00
 #SBATCH -n 64
 #SBATCH --mem-per-cpu=1G
