@@ -36,6 +36,14 @@
 |until    |unt  | Continue until line/function |
 |help     |h    | Print description of a command |
 
+## Debugging MPI applications with GDB
+
+If you have xserver running (use [VCXSRV or Xming](https://github.com/amirsojoodi/Manuals-and-Tutorials/blob/master/Windows/GitBash/README.md) on windows for ssh), compile your code with `-g` and debug it with:
+```bash
+$ mpirun -np 2 xterm -e gdb <application>
+```
+More information at [OpenMPI FAQ.](https://www.open-mpi.org/faq/?category=debugging)
+
 ## Inspecting the core file
 
 If the program crashes with *Segmentation fault* message, it is sometimes helpful to 
