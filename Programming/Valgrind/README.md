@@ -36,7 +36,7 @@ $ sudo apt install kcachegrind
 
 First, collect data with valgrind; then kacachegrind can open the output profile results:
 ```
-$ valgrind --tool=callgrind -v ./application
+$ valgrind --tool=callgrind --trace-children=yes -v ./application
 $ kcachegrind &
 # Open <callgrind.out.xxx> from the GUI
 # To open graphical apps with GUI on WSL you need a running X server.
