@@ -322,8 +322,7 @@ edit the file:
 vim .gitignore:
 logs/*.log
 ```
-
-## Add it to the repo so every body will have it.
+Add it to the repo so every body will have it.
 ```
 git add .gitignore
 git commit -m "Ignore all log files"
@@ -376,6 +375,12 @@ git submodule update --remote
 # Pulling in upstream changes from a specific submodule remote
 # Submodule names can be found in the local file .gitmodules
 git submodule update --remote <submodule-name>
-```
+
+# When you have submodules, everytime you checkout a tag in the 
+# parent repo,  you should update the submodules as well to make
+# sure that their heads point to the correct commit.
+git checkout <tag_name>
+git submodule update
+``` 
 More [information](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
