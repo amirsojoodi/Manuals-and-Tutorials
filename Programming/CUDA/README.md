@@ -66,7 +66,7 @@ mpirun -np 2 nsys profile --trace=mpi,cuda,nvtx --stats true -o profile-output-f
 If you are using OpenMPI/4.0.3 you should add these options: `--mca pml ucx --mca btl ^smcuda` to mpirun in case you have errors.
 ```
 # Complete command:
-nsys profile --trace=mpi,cuda,nvtx --stats true -o profile-output-file mpirun -np 2 --mca pml ucx --mca btl ^smcuda ./application argument
+nsys profile --gpu-metrics-device=0 --trace=mpi,cuda,ucx,nvtx --stats true -o profile-output-file mpirun -np 2 --mca pml ucx --mca btl ^smcuda ./application argument
 ```
 
 For more info, take a look at [here](https://docs.nvidia.com/nsight-systems/UserGuide/index.html)
@@ -101,3 +101,13 @@ ncu --export output --force-overwrite --target-processes application-only \
 ```
 
 For more info, see [here](https://docs.nvidia.com/nsight-compute/NsightCompute/index.html).
+
+## Enabling MPS
+
+Run these commands to enable MPS.
+
+```
+nvidia-smi -c EXCLUSIVE_PROCESS
+nvidia-cuda-mps-control -d
+```
+For more info, see [here](https://docs.nvidia.com/deploy/mps/)
