@@ -24,4 +24,48 @@ If that is your case, you can:
 If you are using your public/private key to login to the remote server, and if your key has a pass phrase, add this configuration as well:
 `"passphrase": true,`
 
+## Add multiple profiles to SFTP extension:
 
+Edit `sftp.json` as following:
+```json
+{
+    "name": "Project",
+    "protocol": "sftp",
+    "port": 22,
+    "defaultProfile": "HostA-debug",
+    "profiles": {
+        "HostA-debug": {
+            "host": "HostA",
+            "remotePath": "/path/to/Project-Debug",
+            "privateKeyPath": "~/.ssh/id_rsa",
+            "passphrase": true,
+            "uploadOnSave": true,
+            "interactiveAuth": true
+        },
+        "HostA-release": {
+            "host": "HostA",
+            "remotePath": "/path/to/Project-Release",
+            "privateKeyPath": "~/.ssh/id_rsa",
+            "passphrase": true,
+            "uploadOnSave": true,
+            "interactiveAuth": true
+        },
+        "HostB-debug": {
+            "host": "HostB",
+            "remotePath": "/path/to/Project-Debug",
+            "privateKeyPath": "~/.ssh/id_rsa",
+            "passphrase": true,
+            "uploadOnSave": true,
+            "interactiveAuth": true
+        },
+        "HostB-release": {
+            "host": "HostB",
+            "remotePath": "/path/to/Project-Release",
+            "privateKeyPath": "~/.ssh/id_rsa",
+            "passphrase": true,
+            "uploadOnSave": true,
+            "interactiveAuth": true
+        }
+    }
+}
+```
