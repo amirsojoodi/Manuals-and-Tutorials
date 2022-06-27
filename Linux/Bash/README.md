@@ -57,6 +57,31 @@ $ command >out 2>&1
 $ command &> out
 ```
 
+More detailed methods: (got from [here](https://askubuntu.com/a/731237))
+
+              || visible in terminal ||   visible in file   || existing
+      Syntax  ||  StdOut  |  StdErr  ||  StdOut  |  StdErr  ||   file   
+    ==========++==========+==========++==========+==========++===========
+        >     ||    no    |   yes    ||   yes    |    no    || overwrite
+        >>    ||    no    |   yes    ||   yes    |    no    ||  append
+              ||          |          ||          |          ||
+       2>     ||   yes    |    no    ||    no    |   yes    || overwrite
+       2>>    ||   yes    |    no    ||    no    |   yes    ||  append
+              ||          |          ||          |          ||
+       &>     ||    no    |    no    ||   yes    |   yes    || overwrite
+       &>>    ||    no    |    no    ||   yes    |   yes    ||  append
+              ||          |          ||          |          ||
+     | tee    ||   yes    |   yes    ||   yes    |    no    || overwrite
+     | tee -a ||   yes    |   yes    ||   yes    |    no    ||  append
+              ||          |          ||          |          ||
+     n.e. (*) ||   yes    |   yes    ||    no    |   yes    || overwrite
+     n.e. (*) ||   yes    |   yes    ||    no    |   yes    ||  append
+              ||          |          ||          |          ||
+    |& tee    ||   yes    |   yes    ||   yes    |   yes    || overwrite
+    |& tee -a ||   yes    |   yes    ||   yes    |   yes    ||  append
+    
+(*) Bash has no shorthand syntax that allows piping only StdErr to a second command, which would be needed here in combination with tee again to complete the table. If you really need something like that, please look at "[How to pipe stderr, and not stdout?](https://stackoverflow.com/questions/2342826/how-can-i-pipe-stderr-and-not-stdout)" on Stack Overflow for some ways how this can be done e.g. by swapping streams or using process substitution.
+
 ## Disable the annoying bell in bash:
 
 1. To disable the beep in __bash__ you need to uncomment (or add if not already there) the line `set bell-style none` in your `/etc/inputrc` file.
