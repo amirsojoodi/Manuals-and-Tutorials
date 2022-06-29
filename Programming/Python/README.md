@@ -73,3 +73,26 @@ $ coverage html
 # to create l[6][5][4] filled with zero
 >>> l = [[[0 for z in range(4)]for col in range(5)] for row in range(6)]
 ```
+
+## Utilizing Just in-time compiler (JIT)
+
+```python
+import random
+from numba import jit
+
+@jit
+def monte_carlo_pi(nsamples):
+    acc = 0
+    for i in range(nsamples):
+        x = random.random()
+        y = random.random()
+        if (x**2 + y**2) < 1.0:
+            acc += 1
+    return 4.0 * acc / nsamples
+```
+And then run the function by simply call it. The original function can still be called by `.py_func` attribute.
+```
+nsamples = 100000
+monte_carlo_pi(nsamples)
+monte_carlo_pi.py_func(nsamples)
+```
