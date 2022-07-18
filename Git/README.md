@@ -145,6 +145,13 @@ git branch
 git checkout branch
 ```
 
+## Stage an executable bit change
+
+If you need to stage an executable bit change, you should do something like:
+```
+git update-index --chmod=(+|-)x <path>
+```
+
 ## To merge branches
 ```
 git checkout master
