@@ -145,13 +145,6 @@ git branch
 git checkout branch
 ```
 
-## Stage an executable bit change
-
-If you need to stage an executable bit change, you should do something like:
-```
-git update-index --chmod=(+|-)x <path>
-```
-
 ## To merge branches
 ```
 git checkout master
@@ -366,6 +359,22 @@ git rebase -i HEAD~Z  #Shows the last Z commits in a text editor
 # Edit your changes
 git commit --am 
 git rebase --continue
+```
+
+## Deal with "old mode 100755 new mode 100644" message
+
+Ignore filemode in current git repo:
+```
+git config core.filemode false
+```
+You can also apply the settings globally. See [here](https://stackoverflow.com/q/1257592/2328389).
+However, if you do want to stage the file modes, see the next item.
+
+## Stage an executable bit change or file mode
+
+If you need to stage an executable bit change, you should do something like:
+```
+git update-index --chmod=(+|-)x <path>
 ```
 
 ## Git submodules
