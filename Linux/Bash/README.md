@@ -156,3 +156,25 @@ alias myip="curl http://ipecho.net/plain; echo"
 alias DU="du --max-depth=1 -B M |sort -rn"
 alias filecount="find . -type f 2> /dev/null | wc -l"
 ```
+
+## Query the linked libraries of an executable
+
+To see which libraries have been linked to a specific executable, e.g. `mpirun`
+```bash
+$ ldd `which mpirun`
+```
+
+Query the executable header, e.g. check RUNPATH entry
+```bash
+$ readelf -d /home/sojoodi/projects/def-queenspp/sojoodi/OpenMPI-Debug/build/bin/mpirun | grep RUNPATH
+```
+
+## LD_PRELOAD Trick
+
+In summary, you can preload the specified shared libraries at runtime to resolve some conflicts happened at link-time, or to overright any previously statically bound libraries, like stubs. For instance, if you want to preload NVIDIA ML library to make sure your program points at the current location at runtime, you can do something like the following:
+```bash
+$ export LD_PRELOAD=/usr/lib64/nvidia/libnvidia-ml.so
+$ /path/to/executable
+```
+To find more information about LD_PRELOAD trick, read [here](https://www.baeldung.com/linux/ld_preload-trick-what-is).
+
