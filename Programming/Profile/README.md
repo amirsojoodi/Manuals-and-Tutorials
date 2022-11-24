@@ -1,4 +1,4 @@
-# Profile and performance tuning CPU codes
+# Profile and performance tuning of CPU codes
 
 ## Separate debug code from compiled executable
 
@@ -50,7 +50,7 @@ memusagestat -t mem.dat mem.png
 
 ## Get performance stats
 
-Get information including cache mist, page faults, branch prediction, etc.
+Get information including cache miss, page faults, branch prediction, etc.
 
 ```bash
 perf stat ./program.out
