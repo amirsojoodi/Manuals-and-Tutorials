@@ -58,6 +58,7 @@ set foldmethod=indent
 set foldlevel=99
 set number
 set tags=tags		" This is to use ctags
+set mouse=a
 
 colorscheme ron
 
