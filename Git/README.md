@@ -378,7 +378,7 @@ git update-index --chmod=(+|-)x <path>
 ```
 
 ## Git submodules
-```
+```bash
 # Adding a submodule
 git submodule add <submodule-url>
 
@@ -399,4 +399,47 @@ git checkout <tag_name>
 git submodule update
 ``` 
 More [information](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+## Fork a public repo to a private one
+
+Assume you want to fork a repo named *oldRepo* on Github and make it private.
+```bash
+# 1. Create an empty repo on Github (e.g. newRepo)
+
+# 2. Clone the old repo locally
+git clone --recursive (url of oldRepo)
+cd oldRepo
+
+# 3. (Optional) Fetch all other information
+git fetch --all
+
+# 4. (Optional) Create local branches for all remote ones
+for remote in `git branch -r`; do git branch --track ${remote#origin/} $remote; done
+
+# 5. Push to the newRepo
+git push --mirror (url to newRepo)
+
+# 6. (Optional) You can give the newRepo upstream a name
+git remote add (newRepo upstream) (newRepo url)
+
+# 7. Push all other info
+git push --all (newRepo upstream)
+
+# 8. (Optional) Set default push behavior
+git push (newRepo upstream) -u (localBranch)
+
+# Check the remote branches and upstreams
+git remote -v
+git branch -r
+
+# 9. (Optional) Disable "push" to the oldRepo upstream
+git remote set-url --push (oldRepo upstream) DISABLE
+
+# 10. (Optional) Update the newRepo with the oldRepo changes
+git fetch (oldRepo upstream)
+git rebase (oldRepo upstream)/master
+# Then resolve any conflicts
+```
+
+See [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) and [there](https://stackoverflow.com/questions/10312521/how-do-i-fetch-all-git-branches) for more information.
 
