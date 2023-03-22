@@ -15,9 +15,36 @@ my_app: my_app.c
 
 ### Debugging multiple processes
 
-```
-xterm -e gdb \
+- If you want to start the application using GDB:
+```bash
+$ xterm -e gdb \
   ./program args
+
+# and using mpirun
+$ mpirun -n 4 xterm -e gdb my_mpi_application
+```
+If you want to debug multi-node applications, you should specify `$DISPLAY` variable prior to running the app. See [here](https://docs.open-mpi.org/en/v5.0.x/app-debug/serial-debug.html)
+
+- If you want to attach to the process using GDB, you can add the following code snippet to the source and attach GDB to the process(es) you would like:
+
+```c
+// At the beginning of the code, or anywhere before the section you want to debug.
+{ 
+    volatile int i = 0;
+    char hostname[256];
+    gethostname(hostname, sizeof(hostname));
+    printf("PID %d on %s ready for attach\n", getpid(), hostname);
+    fflush(stdout);
+    while (0 == i)
+        sleep(5);
+}
+```
+
+And after running the app, use `gdb --pid [pid]` to attach to the process.
+
+Once, attached, set variable `i` to something else, so it can break the while.
+```
+(gdb) set var i = 7
 ```
 
 ### Profile with Nsight Systems
