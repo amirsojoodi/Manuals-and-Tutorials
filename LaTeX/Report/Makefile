@@ -14,35 +14,49 @@ OUT_DIR=Out
 # FILE=$(shell ls -p | grep -v / | grep tex)
 
 MAIN=Main
-SOURCES=$(MAIN).tex Makefile 
-TEX := $(shell find Tex/*.tex -type f)
+SOURCES=$(MAIN).tex Makefile preamble.sty
+TEX := $(shell find TexFiles/*.tex -type f)
 REFERENCES := $(shell find References/*.bib -type f)
-FIGURES := $(shell find Tex/Figures/* -type f)
+FIGURES := $(shell find TexFiles/Figures/* -type f)
 PDF=$(MAIN).pdf
 
 all: $(PDF)
 
-.refresh:
-	touch .refresh
+$(PDF): $(OUT_DIR)/$(PDF)
+	cp $(OUT_DIR)/$(PDF) .
 
-$(PDF): .refresh $(SOURCES) $(REFERENCES) $(FIGURES)
-	latexmk -pdf -outdir=$(OUT_DIR) -r .latexmkrc
+$(OUT_DIR)/$(PDF): $(SOURCES) $(TEX) $(REFERENCES) $(FIGURES)
+	latexmk -pdf -outdir=$(OUT_DIR) -f 
 
-force:
-	touch .refresh
-	rm $(OUT_DIR)/$(PDF)
-	cd $(OUT_DIR) && makeglossaries $(MAIN)
-	latexmk -pdf -outdir=$(OUT_DIR) -r .latexmkrc
+# -shell-escape
+
+$(OUT_DIR):
+	mkdir -p $(OUT_DIR)
+
+force: | $(OUT_DIR)
+	latexmk -pdf -outdir=$(OUT_DIR) -g -f
+	makeglossaries -d $(OUT_DIR) $(MAIN)
+	latexmk -pdf -outdir=$(OUT_DIR) -g
+	cp $(OUT_DIR)/$(PDF) .
 
 clean:
-	rm -r $(OUT_DIR)/*
+	rm -rf $(OUT_DIR)/*
+	rm -f $(PDF)
 
 open: $(PDF)
 	nohup $(PDF_READER) $(PDF) > /dev/null &
 
+format:
+	for file in $(shell ls TexFiles/*.tex); do \
+		echo $$file; \
+		./latexindent.exe -m -w $$file; \
+	done
+	rm TexFiles/*.bak0
+	rm TexFiles/indent.log
+		# perl latexindent.pl -w $$file;
+
 spell:
-	for file in $(shell ls tex/*.tex); do \
+	for file in $(shell ls TexFiles/*.tex); do \
 		echo $$file; \
 		aspell -d $(SPELL_LANG) --mode=tex -c $$file; \
 	done
-		#aspell -d $(SPELL_LANG) --mode=tex -c $$file; \
