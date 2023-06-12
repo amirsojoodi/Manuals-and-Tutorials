@@ -91,6 +91,11 @@ esac
 numactl --physcpubind=${CPU_BIND} $*
 ```
 
+Another way to bind application and memory to the NUMA node:
+```
+numactl --cpunodebind=0 --membind=0 ./app
+```
+
 ### Use compute-sanitizer
 
 Options `--log-file` and `--save` do the same thing.
