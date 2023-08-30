@@ -55,8 +55,7 @@ Kcachegrind can be used in other ways as well. Check [here](https://kcachegrind.
 
 ## Build and installation on Windows
 
-- Remember that Valgrind is OS-specific and cannot be installed and run on Windows.
-However, with Linux subsystem there can be something done.
+- Remember that Valgrind is OS-specific and cannot be installed and run on Windows. However, with Linux subsystem there can be something done.
 
 - First you need to install `Windows Subsystem for Linux`
 - After completing the previous installation and configuration, follow these steps:

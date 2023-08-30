@@ -68,27 +68,17 @@ Open MPI:
 
 ### Framework notes
 
-Each framework typically has one or more components that are used at
-run-time.  For example, the `btl` framework is used by the MPI layer
-to send bytes across different types underlying networks.  The `tcp`
-`btl`, for example, sends messages across TCP-based networks; the
-`ucx` `pml` sends messages across InfiniBand-based networks.
+Each framework typically has one or more components that are used at run-time.  For example, the `btl` framework is used by the MPI layer to send bytes across different types underlying networks.  The `tcp` `btl`, for example, sends messages across TCP-based networks; the `ucx` `pml` sends messages across InfiniBand-based networks.
 
-Each component typically has some tunable parameters that can be
-changed at run-time.  Use the `ompi_info` command to check a component
-to see what its tunable parameters are.  For example:
+Each component typically has some tunable parameters that can be changed at run-time.  Use the `ompi_info` command to check a component to see what its tunable parameters are.  For example:
 
 ```bash
 shell$ ompi_info --param btl tcp
 ```
 
-shows some of the parameters (and default values) for the `tcp` `btl`
-component (use `--level` to show *all* the parameters; see below).
+shows some of the parameters (and default values) for the `tcp` `btl` component (use `--level` to show *all* the parameters; see below).
 
-Note that `ompi_info` only shows a small number a component's MCA
-parameters by default.  Each MCA parameter has a "level" value from 1
-to 9, corresponding to the MPI-3 MPI_T tool interface levels.  In Open
-MPI, we have interpreted these nine levels as three groups of three:
+Note that `ompi_info` only shows a small number a component's MCA parameters by default.  Each MCA parameter has a "level" value from 1 to 9, corresponding to the MPI-3 MPI_T tool interface levels.  In Open MPI, we have interpreted these nine levels as three groups of three:
 
 1. End user / basic
 2. End user / detailed
@@ -102,23 +92,15 @@ MPI, we have interpreted these nine levels as three groups of three:
 
 Here's how the three sub-groups are defined:
 
-1. End user: Generally, these are parameters that are required for
-   correctness, meaning that someone may need to set these just to
-   get their MPI/OpenSHMEM application to run correctly.
-2. Application tuner: Generally, these are parameters that can be
-   used to tweak MPI application performance.
-3. MPI/OpenSHMEM developer: Parameters that either don't fit in the
-   other two, or are specifically intended for debugging /
-   development of Open MPI itself.
+1. End user: Generally, these are parameters that are required for correctness, meaning that someone may need to set these just to get their MPI/OpenSHMEM application to run correctly.
+2. Application tuner: Generally, these are parameters that can be used to tweak MPI application performance.
+3. MPI/OpenSHMEM developer: Parameters that either don't fit in the other two, or are specifically intended for debugging/development of Open MPI itself.
 
 Each sub-group is broken down into three classifications:
 
-1. Basic: For parameters that everyone in this category will want to
-   see.
-2. Detailed: Parameters that are useful, but you probably won't need
-   to change them often.
-3. All: All other parameters -- probably including some fairly
-   esoteric parameters.
+1. Basic: For parameters that everyone in this category will want to see.
+2. Detailed: Parameters that are useful, but you probably won't need to change them often.
+3. All: All other parameters -- probably including some fairly esoteric parameters.
 
 To see *all* available parameters for a given component, specify that
 ompi_info should use level 9:
@@ -127,27 +109,17 @@ ompi_info should use level 9:
 shell$ ompi_info --param btl tcp --level 9
 ```
 
-These values can be overridden at run-time in several ways.  At
-run-time, the following locations are examined (in order) for new
-values of parameters:
+These values can be overridden at run-time in several ways. At run-time, the following locations are examined (in order) for new values of parameters:
 
 1. `PREFIX/etc/openmpi-mca-params.conf`:
-   This file is intended to set any system-wide default MCA parameter
-   values -- it will apply, by default, to all users who use this Open
-   MPI installation.  The default file that is installed contains many
-   comments explaining its format.
+   This file is intended to set any system-wide default MCA parameter values -- it will apply, by default, to all users who use this Open
+   MPI installation.  The default file that is installed contains many comments explaining its format.
 
 2. `$HOME/.openmpi/mca-params.conf`:
-   If this file exists, it should be in the same format as
-   `PREFIX/etc/openmpi-mca-params.conf`.  It is intended to provide
-   per-user default parameter values.
+   If this file exists, it should be in the same format as `PREFIX/etc/openmpi-mca-params.conf`.  It is intended to provide per-user default parameter values.
 
-3. environment variables of the form `OMPI_MCA_<name>` set equal to a
-   `VALUE`:
-
-   Where `<name>` is the name of the parameter.  For example, set the
-   variable named `OMPI_MCA_btl_tcp_frag_size` to the value 65536
-   (Bourne-style shells):
+3. environment variables of the form `OMPI_MCA_<name>` set equal to a `VALUE`:
+   Where `<name>` is the name of the parameter.  For example, set the variable named `OMPI_MCA_btl_tcp_frag_size` to the value 65536 (Bourne-style shells):
 
    ```bash
    OMPI_MCA_btl_tcp_frag_size=65536
@@ -162,48 +134,28 @@ values of parameters:
    mpirun --mca btl_tcp_frag_size 65536 -np 2 hello_world_mpi
    ```
 
-These locations are checked in order.  For example, a parameter value
-passed on the `mpirun` command line will override an environment
-variable; an environment variable will override the system-wide
-defaults.
+These locations are checked in order.  For example, a parameter value passed on the `mpirun` command line will override an environment variable; an environment variable will override the system-wide defaults.
 
-Each component typically activates itself when relevant.  For example,
-the usNIC component will detect that usNIC devices are present and
-will automatically be used for MPI communications.  The SLURM
-component will automatically detect when running inside a SLURM job
-and activate itself.  And so on.
+Each component typically activates itself when relevant.  For example, the usNIC component will detect that usNIC devices are present and will automatically be used for MPI communications.  The SLURM component will automatically detect when running inside a SLURM job and activate itself.  And so on. Components can be manually activated or deactivated if necessary, of course.  The most common components that are manually activated, deactivated, or tuned are the `btl` components -- components that are used for MPI point-to-point communications on many types common networks.
 
-Components can be manually activated or deactivated if necessary, of
-course.  The most common components that are manually activated,
-deactivated, or tuned are the `btl` components -- components that are
-used for MPI point-to-point communications on many types common
-networks.
-
-For example, to *only* activate the `tcp` and `self` (process loopback)
-components are used for MPI communications, specify them in a
-comma-delimited list to the `btl` MCA parameter:
+For example, to *only* activate the `tcp` and `self` (process loopback) components are used for MPI communications, specify them in a comma-delimited list to the `btl` MCA parameter:
 
 ```bash
 mpirun --mca btl tcp,self hello_world_mpi
 ```
 
-To add shared memory support, add `sm` into the command-delimited list
-(list order does not matter):
+To add shared memory support, add `sm` into the command-delimited list (list order does not matter):
 
 ```bash
 mpirun --mca btl tcp,sm,self hello_world_mpi
 ```
 
-(there used to be a `vader` BTL for shared memory support; it was
-renamed to `sm` in Open MPI v5.0.0, but the alias `vader` still works
-as well)
+(there used to be a `vader` BTL for shared memory support; it was renamed to `sm` in Open MPI v5.0.0, but the alias `vader` still works as well)
 
-To specifically deactivate a specific component, the comma-delimited
-list can be prepended with a `^` to negate it:
+To specifically deactivate a specific component, the comma-delimited list can be prepended with a `^` to negate it:
 
 ```bash
 mpirun --mca btl ^tcp hello_mpi_world
 ```
 
-The above command will use any other `btl` component other than the
-`tcp` component.
+The above command will use any other `btl` component other than the `tcp` component.

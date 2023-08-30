@@ -40,8 +40,7 @@ java -cp ../../libs/*:../../libs/optional/*:../../libs/ignite-spring/*:ignite-ex
 
 ## Detailed Instructions to build Ignite
 
-### It's recommended to update mvn at least to version 3.5.x
-
+It's recommended to update mvn at least to version 3.5.x
 But it's not mandatory. If the process failed, try this option.
 
 ### Get the source code
@@ -50,9 +49,7 @@ But it's not mandatory. If the process failed, try this option.
 git clone https://git-wip-us.apache.org/repos/asf/ignite
 ```
 
-It will take some time according to your network speed.
-Then you have to checkout to a stable version of the code. (Currently 2.6.0)
-And then create a simple branch.
+It will take some time according to your network speed. Then you have to checkout to a stable version of the code. (Currently 2.6.0) Then create a simple branch.
 
 ```bash
 git checkout 2.6.0
@@ -81,8 +78,7 @@ to
 <mirrorOf>external:*</mirrorOf>
 ```
 
-You have to add these maven repositories(proxy) to the Nexus:
-(It's pretty simple. but don't forget to add all of them to the proxy group)
+You have to add these maven repositories(proxy) to the Nexus: (It's pretty simple. but don't forget to add all of them to the proxy group)
 
 - http://clojars.org/repo/
 - http://central.maven.org/maven2/
@@ -92,7 +88,7 @@ You have to add these maven repositories(proxy) to the Nexus:
 
 Sometimes you have to use -U for maven to force update the packages through Nexus.
 
-### Netbeans configuarions for example projects
+## Netbeans configuarions for example projects
 
 In this path: run -> configuarion -> customise
 Add these options to the the run config:
@@ -108,6 +104,5 @@ Add these options to the the run config:
 -XX: +DisableExplicitGC
 ```
 
-### You can check Ignite tutorials and docs pages for more
-
+Check Ignite tutorials and docs pages for more:
 https://ignite.apache.org

@@ -38,16 +38,14 @@ You can view its documentation here. https://help.sonatype.com/repomanager3/inst
 - gcc (4.9 or higher)
 - maven (3.3 or higher)
 
-Check the cmake and maven version. They have to be at lease the mentioned version.
-If default cmake in Ubuntu was not higher than 3.6, you have to install it manually:
+Check the cmake and maven version. They have to be at lease the mentioned version. If default cmake in Ubuntu was not higher than 3.6, you have to install it manually:
 
 ```bash
 sudo apt-get remove cmake
 sudo apt-get purge --auto-remove cmake
 ```
 
-Then download cmake from: http://www.cmake.org/download
-Extract it by `tar xzf nameOfThefile.tar.gz` and cd into it. like:
+Then download cmake from: http://www.cmake.org/download Extract it by `tar xzf nameOfThefile.tar.gz` and cd into it. like:
 
 ```bash
 cd cmake-3.13.0-rc1/
@@ -75,10 +73,7 @@ sudo apt-get install maven build-essential libgomp1 git
 sudo apt-get install libopenblas-dev
 ```
 
-You will also need to ensure that /opt/OpenBLAS/lib (or any other home directory for OpenBLAS)
-is on your PATH. In order to get OpenBLAS to work with Apache Spark,
-you will also need to make sure that libraries `liblapack.so.3` and `libblas.so.3` are present in /usr/lib/openblas-base.
-If they don't exist you can do the following:
+You will also need to ensure that /opt/OpenBLAS/lib (or any other home directory for OpenBLAS) is on your PATH. In order to get OpenBLAS to work with Apache Spark, you will also need to make sure that libraries `liblapack.so.3` and `libblas.so.3` are present in /usr/lib/openblas-base. If they don't exist you can do the following:
 
 ```bash
 sudo cp libopenblas.so liblapack.so.3
@@ -99,22 +94,16 @@ sudo apt-get install libatlas-base-dev libatlas-dev
 git clone https://github.com/deeplearning4j/deeplearning4j.git
 ```
 
-It will take some time according to your network speed.
-Then you have to checkout to a stable version of the code.
-And then create a simple branch.
+It will take some time according to your network speed. Then you have to checkout to a stable version of the code. Then create a simple branch.
 
 ```bash
 git checkout latest_release
 git checkout -b newBranch
 ```
 
-Before running the DL4J stack build script, you must ensure
-certain environment variables are defined before running your build.
+Before running the DL4J stack build script, you must ensure certain environment variables are defined before running your build.
 
-You will need to know the exact path of the directory where you are running
-the DL4J build script (you are encouraged to use a clean empty directory).
-Otherwise, your build will fail. Once you determine this path, add /libnd4j
-to the end of that path and export it to your local environment. This will look like:
+You will need to know the exact path of the directory where you are running the DL4J build script (you are encouraged to use a clean empty directory). Otherwise, your build will fail. Once you determine this path, add /libnd4j to the end of that path and export it to your local environment. This will look like:
 
 ```bash
 export LIBND4J_HOME="/path/to/deeplearning4j/libnd4j"
@@ -144,6 +133,7 @@ mvn clean install -Dmaven.test.skip -DskipTests -Dmaven.javadoc.skip=true -pl '!
 ```
 
 And run this command if you have intend to use Cuda:
+
 replace `libnd4j.cuda=x.x` with your cuda version, like `-Dlibnd4j.cuda=8.0`
 replace `libnd4j.compute=xx` with your gpu capabality, like `-Dlibnd4j.compute=30` for GTX 680.
 Checkout your device compute capability here: https://en.wikipedia.org/wiki/CUDA

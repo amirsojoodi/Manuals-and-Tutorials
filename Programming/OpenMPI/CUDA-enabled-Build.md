@@ -43,7 +43,9 @@ export PATH=$BUILD_DIR/bin/:$PATH
 ## Building script
 
 These scripts are used to build OpenMPI with internal libraries (OpenPMIX, Libevent, and HWLOC), tested on Mist (PowerPC, ppc64le).
+
 `Ompi` needs `flex` in order to build `pmix`, but mist's flex had issues and I needed to install a couple of things first to prepare the environment.
+
 So I have commented those commands required for resolving the problems in my machine, but if you have any problem, feel free to read, uncomment, and use.
 
 ```bash

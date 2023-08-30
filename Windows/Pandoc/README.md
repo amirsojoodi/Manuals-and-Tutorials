@@ -36,10 +36,10 @@ To convert from docx to markdown:
 pandoc.exe -f docx -t markdown_strict -i <source_filename> -o <output.md> --wrap=none --atx-headers --extract-media=.
 ```
 
-- markdown-strict is the type of Markdown. Other variants exist in the Pandoc [documentation](https://pandoc.org/MANUAL.html#markdown-variants). For example, gfm is for Github-Flavored Markdown.
-- --wrap=none ensures that text in the new .md files doesn't get wrapped to new lines after 80 characters
-- --atx-headers makes headers in the new .md files appear as # h1, ## h2 and so on
-- --extract-media=. selects the current directory to store the media files.
+- `markdown-strict` is the type of Markdown. Other variants exist in the Pandoc [documentation](https://pandoc.org/MANUAL.html#markdown-variants). For example, gfm is for Github-Flavored Markdown.
+- `--wrap=none` ensures that text in the new .md files doesn't get wrapped to new lines after 80 characters
+- `--atx-headers` makes headers in the new .md files appear as # h1, ## h2 and so on
+- `--extract-media=.` selects the current directory to store the media files.
 
 To convert from markdown to docx (gfm = github flavoured markdown):
 

@@ -196,7 +196,7 @@ Levels of passes:
 6. Region Pass
 7. Machine Function Pass
 
-### Simple pass example using LLVM *Hello* example
+## Simple pass example using LLVM *Hello* example
 
 Go to the directory `$LLVM_BUILD/build/lib/Transforms/Hello` and run `make`.
 Then you should be able to see `LLVMHello.so` file in `$LLVM_BUILD/build/lib` directory.
@@ -207,7 +207,7 @@ Then by running this command you should be able to see the results:
 opt -enable-new-pm=0 -load $LLVM_BUILD/build/lib/LLVMHello.so -hello < hello.bc
 ```
 
-### How to apply a *transforming* pass
+## How to apply a *transforming* pass
 
 Take the previous example, `LLVMHello.so` lib:
 

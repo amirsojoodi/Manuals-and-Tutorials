@@ -1,6 +1,7 @@
 # Create LLVM IR from CUDA soruces and orchestrate the build process manually
 
 The LLVM IR from each branch of the compilation process must remain separate until directly linkable objects are available. As a result, there are many intermediate steps which you will need to perform manually. LLVM IR code for the GPU must be compiled firstly to PTX code, and then assembled to a binary payload which can be linked against host object files.
+
 There is a CUDA source in this directory, named `axpy.cu`. Let's work on that!
 
 **The important hint:**

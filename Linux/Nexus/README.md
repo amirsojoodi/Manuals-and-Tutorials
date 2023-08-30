@@ -10,8 +10,7 @@ You will have to determine your existing installation data directory location. R
 
 ## Download the Latest Installer Archive
 
-Download the latest installer archive for your platform from the official downloads.
-Extract the newest downloaded distribution archive using the standard approach.
+Download the latest installer archive for your platform from the official downloads. Extract the newest downloaded distribution archive using the standard approach.
 
 ## Preparing the new Install
 
@@ -35,7 +34,7 @@ If you have enabled jetty HTTPS access, make sure your `etc/jetty/jetty-https.xm
 
 If you manually adjusted any other install files under ./etc you will need to manually perform a diff between the old files and the new files and apply your changes if applicable to the new version.
 
-Perform the Upgrade
+Perform the Upgrade.
 
 Ensure you have taken recent backups of the existing Data Directory and any custom blobstore locations according to our recommended practices. Because of involved Upgrade steps, downgrading a NXRM version is not supported and will almost always result in failures.If you have issues, restore from this backup instead.
 

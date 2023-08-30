@@ -55,19 +55,11 @@ viewsource: client.c server.c
 
 5. `$<`
 
-If you only need the first dependency, then `$<` is for you. Using `$<` can be safer than relying
-on `$^` when you have only a single dependency that needs to appear in the commands executed by the
-target. If you start by using `$^` when you have a single dependency, if you then add a second,
-it may be problematic, whereas if you had used `$<` from the beginning, it will continue to work.
-(Of course, you may want to have all dependencies show up. Consider your needs carefully.)
+If you only need the first dependency, then `$<` is for you. Using `$<` can be safer than relying on `$^` when you have only a single dependency that needs to appear in the commands executed by the target. If you start by using `$^` when you have a single dependency, if you then add a second, it may be problematic, whereas if you had used `$<` from the beginning, it will continue to work. (Of course, you may want to have all dependencies show up. Consider your needs carefully.)
 
 ## Wildcards
 
-The percent sign `%` can be used to perform wildcard matching to write more general targets.
-When a `%` appears in the dependencies list, it replaces the same string of text throughout the
-command in makefile target. If you wish to use the matched text in the target itself, use the
-special variable `$*`. For instance, the following example will let you type make *name of .c file*
-to build an executable file with the given name:
+The percent sign `%` can be used to perform wildcard matching to write more general targets. When a `%` appears in the dependencies list, it replaces the same string of text throughout the command in makefile target. If you wish to use the matched text in the target itself, use the special variable `$*`. For instance, the following example will let you type make *name of .c file* to build an executable file with the given name:
   
 ```Makefile
 %:
@@ -78,10 +70,7 @@ E.g. `make test` would run `gcc -o test test.c
 
 ## Replacing text
 
-It is possible to create a new macro based on replacing part of an old macro. For instance,
-given a list of source files, called `SRC`, you might wish to generate the corresponding object
-files, stored in a macro called `OBJ`. To do so, you can specify that `OBJ` is equivalent to `SRC`,
-except with the `.c` extension replaced with a `.o` extension:
+It is possible to create a new macro based on replacing part of an old macro. For instance, given a list of source files, called `SRC`, you might wish to generate the corresponding object files, stored in a macro called `OBJ`. To do so, you can specify that `OBJ` is equivalent to `SRC`, except with the `.c` extension replaced with a `.o` extension:
 
 ```Makefile
 BIN = $(SRC:.c=.o)
