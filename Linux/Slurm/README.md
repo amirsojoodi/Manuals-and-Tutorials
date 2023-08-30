@@ -1,6 +1,7 @@
-## SLURM: job scheduler
+# SLURM: job scheduler
 
 A simple job submission to slurm:
+
 ```bash
 #!/bin/bash
 #SBATCH -t 0-00:10
@@ -9,12 +10,15 @@ A simple job submission to slurm:
 ./serial_hello
 sleep 10m
 ```
+
 - Then you can run the bash script with:
+
 ```bash
 sbatch job_serial.sh
 ```
 
 - Using these commands users can view job queue, cancel any specific jobs, and see history:
+
 ```bash
 # Show what's waiting in the queue
 squeue -u user_name
@@ -47,6 +51,7 @@ sacct -aX -u guest171 -S2020-06-14T18:50 -o jobid,jobname%36,submit,start,state
 ```
 
 For a list of output format variables available to be returned by sacct call it with the --helpformat flag as follows:
+
 ```bash
 sacct --helpformat
 # Output:
@@ -75,6 +80,7 @@ WCKey             WCKeyID           WorkDir
 ```
 
 - Working with modules (adding popular modules to bashrc is also a good practice):
+
 ```bash
 # See what modules are loaded
 module list
@@ -103,6 +109,7 @@ module load openmpi/4.0.3
 ```
 
 - To run a parallel job for 1 hour, creat this file (job.sh):
+
 ```bash
 #!/bin/bash
 #SBATCH -A <account>
@@ -111,8 +118,10 @@ module load openmpi/4.0.3
 #SBATCH --mem-per-cpu=1G
 srun ./mpi_application
 ```
+
 - Then run with this command:
-```
+
+```bash
 sbatch job.sh
 ```
 
@@ -152,10 +161,11 @@ Get system information:
   
 ![image](https://user-images.githubusercontent.com/10928452/137381360-62cea602-438b-4b71-b90a-4cdfebb577c1.png)
 
-### Interactive jobs:
+## Interactive jobs
 
 - Using `salloc` command instead of `sbatch`
 In this way there is no need to creat a batch file. You can submit your job with the command line itself.
+
 ```bash
 # Options are: 10 minutes, 1 cpu core, 
 # 4 GB of total memory, and enabled GUI:
@@ -183,7 +193,8 @@ salloc -x11 --time=0-01:00 -n 1 -A user --mem=4G --gres=gpu:v100:1
 salloc -x11 --time=0-01:00 -n 1 -A user --mem=4G --gres=gpu:t4:1
 ```
 
-### How to check the used GPU-hours of a specific account
-```
+## How to check the used GPU-hours of a specific account
+
+```bash
 sreport cluster accountutilizationbyuser cluster=mist account=accountName  start=2020-04-01 end=2020-06-18 -t Hour --tres=GRES/gpu
 ```

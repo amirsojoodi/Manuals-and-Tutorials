@@ -1,6 +1,6 @@
-### Education and Schooling Related Words and Collocations
+# Education and Schooling Related Words and Collocations
 
-#### Good Sentences
+## Good Sentences
 
 1. This image is incorporated in new pedagogic techniques.
 
@@ -61,13 +61,13 @@ will lose focus.
 
 29. She has a **thirst for knowledge** and is a **quick learner**.
 
-30. Students has an **insatiable curiousity**(Their curiousity never ends; never be pleased). 
+30. Students has an **insatiable curiousity**(Their curiousity never ends; never be pleased).
 
 31. They **demonstrate the ability** to apply what they learn to the **wider world**.
 
 32. They **show** considerable **initiative** in the way they approach their projects.
 
-33. Although he has a **proven ability** for chess, he will not **make any progress** until he stops **playing truant**(being absent without permission). 
+33. Although he has a **proven ability** for chess, he will not **make any progress** until he stops **playing truant**(being absent without permission)
 
 34. The only time he shows any initiative is in **devising excuses** for not having done his howework.
 
@@ -87,13 +87,13 @@ will lose focus.
 
 42. Physicists have recently begun to **formulate**(develop, produce, propose) **new theories** about the nature of the universe.
 
-43. Although the book **covers a lot of ground**, it doesn not offer a **full explanation** of the events leading to the civil war. 
+43. Although the book **covers a lot of ground**, it doesn not offer a **full explanation** of the events leading to the civil war.
 
 44. Indeed, the **thrust of his argument** is that such an account cannot be written, since the people with **first-hand knowledge**(experienced directly) of those events are no longer living.
 
-45. This essay provides a **critical analysis** of international trade agreements. 
+45. This essay provides a **critical analysis** of international trade agreements.
 
-#### Good Words
+## Good Words
 
 1. Curriculum = the full range of subjects offered by a school or group of shools
 
@@ -127,7 +127,7 @@ will lose focus.
 
 16. Rote(n) = the process of learning something by repetition, rather than by really understanding it; ex = She learned multiplication by rote.
 
-#### Good Collocations
+## Good Collocations
 
 1. Delivering (effective) lessons = the lessons are effective
 
@@ -172,7 +172,7 @@ will lose focus.
 21. Assimilate knowledge = to absorb and understand knowledge
 
 22. Exam:
-	- sit/take an exam = do an exam
+    - sit/take an exam = do an exam
 
 23. *Carry out / Conduct* a research project = do research; do a research project
 
@@ -279,24 +279,24 @@ will lose focus.
 74. Have a (bachelor's, master's, doctorate, Ph.D.) degree
 
 75. Research:
-	- Detailed research
-	- In-depth research
-	- Extensive research
-	- Basic research
-	- Further research
-	- Ground-breaking research
-	- Pioneering research
-	- Collaborative research
-	- Empirical research
-	- The research demonstrate/indicate/reveal/prove sth
-	- The research show/suggest/produce/yield sth
-	- Research exhaustively/extensively/meticulously
-	- Research fully/properly/well/poorly
+    - Detailed research
+    - In-depth research
+    - Extensive research
+    - Basic research
+    - Further research
+    - Ground-breaking research
+    - Pioneering research
+    - Collaborative research
+    - Empirical research
+    - The research demonstrate/indicate/reveal/prove sth
+    - The research show/suggest/produce/yield sth
+    - Research exhaustively/extensively/meticulously
+    - Research fully/properly/well/poorly
 
 76. Learning:
-	- Effective learning
-	- Rapid learning
-	- Independent/autonomous learning
-	- Learning environment
-	- Learning curve
-	- Learning process/experience
+    - Effective learning
+    - Rapid learning
+    - Independent/autonomous learning
+    - Learning environment
+    - Learning curve
+    - Learning process/experience

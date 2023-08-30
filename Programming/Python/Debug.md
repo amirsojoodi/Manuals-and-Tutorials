@@ -1,4 +1,4 @@
-## How to debug multi-process Python code in VS Code
+# How to debug multi-process Python code in VS Code
 
 Create a debug configuration file and store it at `.vscode/launch.json`.
 
@@ -97,6 +97,6 @@ If the code has C/C++ parts, you can attach GDB to the running process to debug 
 
 This method also works for debugging on docker images. Just perform all these steps on the docker image, using VS Code docker extension.
 
-### Resources:
+## Resources
 
 [Here](https://gist.github.com/kongdd/f49fabdbf0af20ec7fd6b4f8cd1f450d) and [there](https://github.com/microsoft/ptvsd/issues/1427)

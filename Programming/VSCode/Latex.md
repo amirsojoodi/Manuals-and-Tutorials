@@ -1,6 +1,6 @@
-## Setting up latex in VS Code
+# Setting up latex in VS Code
 
-Install [LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop) extension, and follow the instruction to setting up the environment. 
+Install [LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop) extension, and follow the instruction to setting up the environment.
 
 If your latex installation has an embedded `latexindent` you don't need to do anything else. However, if you have `MiKTeX` installed you should do the following to make the extensions's formatter work properly:
 
@@ -12,6 +12,3 @@ If your latex installation has an embedded `latexindent` you don't need to do an
   6. Find the one saying `Latex-workshop › Latexindent: Args`, and add `-m` as another item.
   7. Test and enjoy! If the editor raised any error, test it with command line: `latexindent a.tex -m -w`
   8. For wrapping the lines, just change the value of the `columns` under `textWrapOptions` in `defaultSettings.yaml` file.
-
-
-

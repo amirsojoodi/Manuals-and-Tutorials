@@ -4,11 +4,11 @@
 
 1. `$@`
 
-`$@` is the name of the target. This allows you to easily write a generic action that can be used for 
-multiple different targets that produce different output files. For example, the following two targets 
+`$@` is the name of the target. This allows you to easily write a generic action that can be used for
+multiple different targets that produce different output files. For example, the following two targets
 produce output files named client and server respectively.
 
-```bash
+```Makefile
 client: client.c
     $(CC) client.c -o $@
  
@@ -22,7 +22,7 @@ The `$?` macro stores the list of dependents more recent than the target (i.e., 
 since the last time make was invoked for the given target). We can use this to make the build commands
 from the above example even more general:
 
-```bash
+```Makefile
 client: client.c
     $(CC) $? -o $@
  
@@ -32,11 +32,11 @@ server: server.c
 
 3. `$^`
 
-`$^` gives you all dependencies, regardless of whether they are more recent than the target. 
+`$^` gives you all dependencies, regardless of whether they are more recent than the target.
 Duplicate names, however, will be removed. This might be useful if you produce transient output
 (such as displaying a result to the screen rather than saving it to a file).
 
-```bash
+```Makefile
 # print the source to the screen
 viewsource: client.c server.c
     less $^
@@ -47,7 +47,7 @@ viewsource: client.c server.c
 `$+` is like `$^`, but it keeps duplicates and gives you the entire list of dependencies in the order
 they appear.
 
-```bash
+```Makefile
 # print the source to the screen
 viewsource: client.c server.c
     less $+
@@ -65,14 +65,15 @@ it may be problematic, whereas if you had used `$<` from the beginning, it will 
 
 The percent sign `%` can be used to perform wildcard matching to write more general targets.
 When a `%` appears in the dependencies list, it replaces the same string of text throughout the
-command in makefile target. If you wish to use the matched text in the target itself, use the 
+command in makefile target. If you wish to use the matched text in the target itself, use the
 special variable `$*`. For instance, the following example will let you type make *name of .c file*
 to build an executable file with the given name:
   
-```bash
+```Makefile
 %:
     gcc -o $* $*.c
 ```
+
 E.g. `make test` would run `gcc -o test test.c
 
 ## Replacing text
@@ -82,12 +83,13 @@ given a list of source files, called `SRC`, you might wish to generate the corre
 files, stored in a macro called `OBJ`. To do so, you can specify that `OBJ` is equivalent to `SRC`,
 except with the `.c` extension replaced with a `.o` extension:
 
-```bash
+```Makefile
 BIN = $(SRC:.c=.o)
 
 $(BIN): $(SRC)
     gcc -o $@ $^
 ```
+
 Note that this is effectively saying that in the macro SRC, .c should be replaced with .o.
 
 [Reference](https://www.cprogramming.com/tutorial/makefiles_continued.html)
@@ -96,13 +98,14 @@ Note that this is effectively saying that in the macro SRC, .c should be replace
 
 Makefile commands can be suppressed with `@`.
 
-```bash
+```Makefile
 greet:
     @echo hello
     echo bye
 ```
 
 When running:
+
 ```bash
 $ make greet
 hello
@@ -120,7 +123,7 @@ bye
 
 ## Creating folders
 
-```bash
+```Makefile
 BIN_DIR=./bin
 
 run: | $(BIN_DIR)
@@ -132,9 +135,9 @@ $(BIN_DIR):
 
 ## Makefile cookbook
 
-Taken from https://makefiletutorial.com/:
+Taken from [makefiletutorial](https://makefiletutorial.com/):
 
-```bash
+```Makefile
 # Thanks to Job Vranish (https://spin.atomicobject.com/2016/08/26/makefile-c-projects/)
 TARGET_EXEC := final_program
 
@@ -164,25 +167,26 @@ CPPFLAGS := $(INC_FLAGS) -MMD -MP
 
 # The final build step.
 $(BUILD_DIR)/$(TARGET_EXEC): $(OBJS)
-	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+    $(CXX) $(OBJS) -o $@ $(LDFLAGS)
 
 # Build step for C source
 $(BUILD_DIR)/%.c.o: %.c
-	mkdir -p $(dir $@)
-	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+    mkdir -p $(dir $@)
+    $(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
 
 # Build step for C++ source
 $(BUILD_DIR)/%.cpp.o: %.cpp
-	mkdir -p $(dir $@)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+    mkdir -p $(dir $@)
+    $(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
 
 
 .PHONY: clean
 clean:
-	rm -r $(BUILD_DIR)
+    rm -r $(BUILD_DIR)
 
 # Include the .d makefiles. The - at the front suppresses the errors of missing
 # Makefiles. Initially, all the .d files will be missing, and we don't want those
 # errors to show up.
 -include $(DEPS)
+
 ```

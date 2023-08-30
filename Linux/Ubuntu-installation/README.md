@@ -1,74 +1,79 @@
-## Installation
+# Installation
 
-1.	Right click on the server click on new VM
-2.	Select your preferred configuration
-3.	Attach installation iso (e.g. Ubuntu 16.04 x64.iso)
-4.	Start the VM
- - If you face the error after creating a VM, that it cannot boot any ISO or CD Image to install your system, probably the boot order is not correctly set.
- - Login to XenServer with secure shell
- - Find the VM uuid by # xe vm-list
- - Check the boot parameter first by # xe vm-param-list uuid=<vm-uuid> |grep HVM-boot
- - Set the boot order by # xe vm-param-set uuid=<vm-uuid> HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
-5.	Proceed the Installation process
-6.	Configure apt:
+1. Right click on the server click on new VM
+2. Select your preferred configuration
+3. Attach installation iso (e.g. Ubuntu 16.04 x64.iso)
+4. Start the VM
+   - If you face the error after creating a VM, that it cannot boot any ISO or CD Image to install your system, probably the boot order is not correctly set.
+   - Login to XenServer with secure shell
+   - Find the VM uuid by # xe vm-list
+   - Check the boot parameter first by # xe vm-param-list uuid=`<vm-uuid>` |grep HVM-boot
+   - Set the boot order by # xe vm-param-set uuid=`<vm-uuid>` HVM-boot-policy=BIOS\ order HVM-boot-params:order=dc
+5. Proceed the Installation process
+6. Configure apt:
 
+```bash
+sudo gedit /etc/apt/apt.conf
 ```
-$ sudo gedit /etc/apt/apt.conf
-```
- - Put these lines in it:
-```
+
+- Put these lines in it:
+
+```bash
 Acquire::http::proxy "http://user:pass@proxy:port";
 Acquire::https::proxy "https://user:pass@proxy:port";
 ```
- - If you have configured local repository, you can add its address as the proxy.
 
- 7.	Configure network:
+- If you have configured local repository, you can add its address as the proxy.
+
+7. Configure network:
+
 ```bash
 $ sudo apt-get purge network-manager
-$ sudo gedit /etc/network/interfaces
+$ sudo vim /etc/network/interfaces
 # E.g.
 
 auto eth0
 iface eth0 inet static
-	address 192.168.2.200
-	netmask 255.255.255.0
-	gateway 192.168.2.193
- 	dns-nameserver 10.0.10.9 10.0.10.8
+  address 192.168.2.200
+  netmask 255.255.255.0
+  gateway 192.168.2.193
+  dns-nameserver 10.0.10.9 10.0.10.8
 
 $ sudo ifup eth0
 $ sudo ifdown eth0
 $ sudo ifup eth0
 ```
 
-8.	Attach xen-tools.iso to the VM
+8. Attach xen-tools.iso to the VM
 
-9.	`$ sudo mount /dev/sr0 /media`
+9. `$ sudo mount /dev/sr0 /media`
 
-10.	`$ sudo /media/Linux/install.sh`
+10. `$ sudo /media/Linux/install.sh`
 
-11.	Reboot VM
+11. Reboot VM
 
-12.	`$ sudo apt-get update`
+12. `$ sudo apt-get update`
 
-13.	Install a good editor with `sudo apt-get install vim`
+13. Install a good editor with `sudo apt-get install vim`
 
-14.	Install ssh server with `sudo apt-get install openssh-server` 
+14. Install ssh server with `sudo apt-get install openssh-server`
 
-15.	Install Java with `sudo apt-get install openjdk-8-jdk`
+15. Install Java with `sudo apt-get install openjdk-8-jdk`
 
-16.	Install git with `sudo apt-get install git`
+16. Install git with `sudo apt-get install git`
 
-17.	Install maven with `sudo apt-get install maven`
+17. Install maven with `sudo apt-get install maven`
 
-18.	Install axel with `sudo apt-get install axel`
+18. Install axel with `sudo apt-get install axel`
 
-19. Install gradle with	`sudo apt-get install gradle`
+19. Install gradle with `sudo apt-get install gradle`
 
 20. Install npm with `sudo apt-get install npm`
 
 21. Install bower with `sudo npm install -g bower`
 
-22.	Put these useful aliases in .bashrc
+22. Put these useful aliases in .bashrc
+
 ```bash
 alias ll='ls -alF'
 alias la='ls -A'
@@ -119,23 +124,25 @@ alias my-sbatch-report='sacct -aX -o jobid,jobname%36,NNodes,NCPUS,start,elapsed
 alias sbatch-report='sacct -aX -o jobid,jobname%36,NNodes,NCPUS,start,elapsed,state'
 ```
 
-23.	Create multiple users 
+23. Create multiple users
 
- - Open a terminal and type: `vim /tmp/name` to create a file and the names of the users. e.g:
- - vim /tmp/name
-```
+- Open a terminal and type: `vim /tmp/name` to create a file and the names of the users. e.g:
+- vim /tmp/name
+
+```bash
 kalam
 havij
 etc
 ```
 
- - Create User with Home Dir and default shell:
-```
+- Create User with Home Dir and default shell:
+
+```bash
 for i in `cat /tmp/name`; do useradd -m -d /home/$i -s /bin/bash $i; done
 ```
 
- - Create password for each user:
- - `for i in cat /tmp/name; do passwd $i; done`
+- Create password for each user:
+- `for i in cat /tmp/name; do passwd $i; done`
 
 24. Configure remote desktop connection
 
@@ -145,13 +152,16 @@ sudo apt-get install xfce4-terminal
 sudo apt-get install gnome-icon-theme-full tango-icon-theme
 echo xfce4-session >~/.xsession
 ```
- - Put this line instead of the last line in this file (/etc/xrdp/startwm.sh):
+
+- Put this line instead of the last line in this file (/etc/xrdp/startwm.sh):
+
 ```bash
 startxfce4
 sudo service xrdp restart
 ```
 
 25. To make your prompt status look nicer, put this line in .bashrc:
-```
+
+```bash
 export PS1="\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]\[\033[0m\]\n$ "
 ```

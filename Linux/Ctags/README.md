@@ -1,46 +1,54 @@
-## Install and Configure Ctags
+# Install and Configure Ctags
 
 On Ubuntu you can install ctags, with:
-```
-$ sudo apt-get install ctags
+
+```bash
+sudo apt-get install ctags
 # or
-$ sudo apt-get install exuberant-ctags
+sudo apt-get install exuberant-ctags
 ```
 
-After installation, add the following line in `~/.vimrc` to make it available in VIM. 
-```
+After installation, add the following line in `~/.vimrc` to make it available in VIM.
+
+```bash
 set tags=tags
 ```
 
 ## Usage
 
 In the base directory of the project, hit:
+
+```bash
+ctags -R
 ```
-$ ctags -R
-```
-- Then, when editing, put your cursor over a variable, method or class and hit `Ctrl-]` to jump to its definition. 
+
+- Then, when editing, put your cursor over a variable, method or class and hit `Ctrl-]` to jump to its definition.
 - Type `Ctrl-t` to jump back. Pop back to where you last were. Works until the stack of symbols is exhausted.
 - To search for a specific tag and open the output in Vim to its definition, run the following command in your shell: `vim -t *tagname*`
 
 ## Add a new extention/language
 
 If you want to add a new language, you can create a file in home directory: `vim ~/.ctags` and add the following:
-```
+
+```bash
 #--langdef=name
 --langdef=CUDA
 ```
 
 Then add this line to map the new language with a file name extension(s), like:
-```
+
+```bash
 --langmap=CUDA:.cu.CU
 ```
 
 Or you can add the extension to the existing map with:
-```
+
+```bash
 --langmap=CUDA:+.cuh
 ```
 
 The list of langauges and their associated file names can be obtained by this command:
-```
-$ ctags --list-maps
+
+```bash
+ctags --list-maps
 ```

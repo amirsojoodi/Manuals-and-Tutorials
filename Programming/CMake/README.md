@@ -1,12 +1,14 @@
-## Using cmake on windows:
+# Using cmake on windows
 
 Using pip, it's pretty straightforward:
-```
-$ pip install cmake
+
+```bash
+pip install cmake
 ```
 
 In a sample project create the CMakeLists.txt, something like this:
-```
+
+```bash
 cmake_minimum_required(VERSION 3.5.1)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -15,25 +17,32 @@ project(HelloCmake)
 
 add_executable(HelloCmake src/main.cpp src/vect_add_one.cpp src/increment_and_sum.cpp)
 ```
+
 Then move the build directory and run:
+
+```bash
+cmake ..
 ```
-$ cmake ..
-```
+
 If you are using Git bash in Windows with MinGW toolchain, run this:
+
+```bash
+cmake -G "MSYS Makefiles" ..
 ```
-$ cmake -G "MSYS Makefiles" ..
-```
+
 Followed by `make`.
 
-### Another straightforward option to make life easier! 
+## Another straightforward option to make life easier!
 
 Set this alias in ~/.bashrc :
-```
+
+```bash
 alias cmake='cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug "-DCMAKE_C_COMPILER:FILEPATH=C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\gcc.exe" "-DCMAKE_CXX_COMPILER:FILEPATH=C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\g++.exe" -G "Unix Makefiles"'
 ```
+
 Remember to replace the paths with the correct ones.
 
-## Useful functions:
+## Useful functions
 
 For full documentation, see [here](https://cmake.org/documentation/).
 
@@ -48,21 +57,22 @@ For full documentation, see [here](https://cmake.org/documentation/).
 | `target_link_libraries(target_lib other_lib_1 other_lib_2 ...)` | Links the provided libraries to the specific target library. link_libraries() can be used to apply to libraries to all following targets (i.e. no specific target is provided), however, it is deprecated. |
 | `install(TARGETS targets...)` | Used to place build output into certain directories on the user's system (as well as do things like assign privileges to these files). |
 
-
 ## Test the project executables with CTest
 
 In the Cmake file, add the following lines:
-```
+
+```bash
 include(CTest)
 
 add_test(NAME validate COMMAND ${PROJECT_NAME})
 set_tests_properties(validate PROPERTIES PROCESSOR_AFFINITY ON PROCESSORS 4)
 ```
+
 Then, after running `cmake ..` and `make` in the build directory, run this:
-```
-$ cmake -T memcheck -VV
+
+```bash
+cmake -T memcheck -VV
 # -VV means verbose
 ```
+
 If you have valgrind installed, this command runs your test(s) and valgrind's memcheck on your project.
-
-

@@ -1,6 +1,6 @@
-## Common commands/scripts
+# Common commands/scripts
 
-### Building MPI applications 
+## Building MPI applications
 
 It is a good idea to run commands like `mpicc --showme:compile` in a dynamic fashion to find out what is required for building and linking. For instance, GNU Make allows running commands and assigning their results to variables:
 
@@ -13,9 +13,10 @@ my_app: my_app.c
         $(CC) $(MPI_COMPILE_FLAGS) app.c $(MPI_LINK_FLAGS) -o app
 ```
 
-### Debugging multiple processes
+## Debugging multiple processes
 
 - If you want to start the application using GDB:
+
 ```bash
 $ xterm -e gdb \
   ./program args
@@ -23,6 +24,7 @@ $ xterm -e gdb \
 # and using mpirun
 $ mpirun -n 4 xterm -e gdb my_mpi_application
 ```
+
 If you want to debug multi-node applications, you should specify `$DISPLAY` variable prior to running the app. See [here](https://docs.open-mpi.org/en/v5.0.x/app-debug/serial-debug.html)
 
 - If you want to attach to the process using GDB, you can add the following code snippet to the source and attach GDB to the process(es) you would like:
@@ -43,27 +45,29 @@ If you want to debug multi-node applications, you should specify `$DISPLAY` vari
 And after running the app, use `gdb --pid [pid]` to attach to the process.
 
 Once, attached, set variable `i` to something else, so it can break the while.
-```
+
+```bash
 (gdb) set var i = 7
 ```
 
-### Profile with Nsight Systems
+## Profile with Nsight Systems
 
 If MPI build is CUDA-enabled, profiling with nsys is available:
 
-```
+```bash
 nsys profile --gpu-metrics-device=0 --trace=mpi,ucx,cuda -o reportName.%q{SLURM_PROCID} \
   ./program args
 ```
 
-### Find and use the topology of the system
+## Find and use the topology of the system
 
-```
+```bash
 nvidia-smi topo -m
 ```
 
 Use this Case to bind processes to cores correctly, e.g.:
-```
+
+```bash
 case ${SLURM_LOCALID} in
 0)
     export CUDA_VISIBLE_DEVICES=0
@@ -92,7 +96,8 @@ numactl --physcpubind=${CPU_BIND} $*
 ```
 
 Another way to bind application and memory to the NUMA node:
-```
+
+```bash
 numactl --cpunodebind=0 --membind=0 ./app
 ```
 
@@ -100,17 +105,18 @@ numactl --cpunodebind=0 --membind=0 ./app
 
 Options `--log-file` and `--save` do the same thing.
 
-```
+```bash
 mpirun -np 4 compute-sanitizer \
   --log-file report.%q{SLURM_PROCID}.log \
   --save report.%q{SLURM_PROCID}.compute-sanitizer \
   ./program arguments
 ```
 
-Compile with `–lineinfo` to get generate line correlation for device code
+Compile with `-lineinfo` to get generate line correlation for device code
 
 Read the log file using
-```
+
+```bash
 compute-sanitizer --read <save file>
 ```
 

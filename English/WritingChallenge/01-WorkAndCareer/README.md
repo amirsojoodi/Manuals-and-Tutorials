@@ -1,6 +1,6 @@
-## Work and Career Related Words and Collocations
+# Work and Career Related Words and Collocations
 
-### Good Sentences
+## Good Sentences
 
 1. In my country, **pay increments** have been very low because of the financial crisis.
 
@@ -48,17 +48,17 @@
 
 23. One day I **had a change of heart** and I started to **get my priorities right**.
 
-23. I decided that other aspects of my life should **take priority over** my work, therefore, I **handed in my resignation** and moved to the country.
+24. I decided that other aspects of my life should **take priority over** my work, therefore, I **handed in my resignation** and moved to the country.
 
-24. Their new model will **go into production** in the spring and this is expected to **bost** their **sales** and **profits** even more.
+25. Their new model will **go into production** in the spring and this is expected to **bost** their **sales** and **profits** even more.
 
-25. It will be easy for us to **maintain quality** and **promote the interests**  of our shareholders at the same time as **satisfying demands** of our **target market**.
+26. It will be easy for us to **maintain quality** and **promote the interests**  of our shareholders at the same time as **satisfying demands** of our **target market**.
 
-26. This **hike in prices**(rise in prices) will seriously **affect the bottom line**(affect the net income).
+27. This **hike in prices**(rise in prices) will seriously **affect the bottom line**(affect the net income).
 
-27. It is a considerable challenge for us as we already operate on **narrow profit margins**.
+28. It is a considerable challenge for us as we already operate on **narrow profit margins**.
 
-### Good Words
+## Good Words
 
 1. Subsidise
 
@@ -115,55 +115,55 @@
 11. Human Resources
 
 12. Job:
-	- A fulfilling job
-	- A demanding job = an intense job with lots of responsibilities
-	- A steady job
-	- An entry-level job
-	- To offer someone a job
-	- A high-powered job = an important job
-	- To apply for a job
-	- A permanent job
-	- Change job
-	- Lose a job
-	- Do a job-share = share the investment of a job with somebody
-	- Fit the job description = be good for a job
-	- Land a new job = (informal) get a new (and usually good) job
-	- Menial job = not requiring much skill and lacking prestige
-	- Job seeker
-	- A job offer
-	- Dream job
+    - A fulfilling job
+    - A demanding job = an intense job with lots of responsibilities
+    - A steady job
+    - An entry-level job
+    - To offer someone a job
+    - A high-powered job = an important job
+    - To apply for a job
+    - A permanent job
+    - Change job
+    - Lose a job
+    - Do a job-share = share the investment of a job with somebody
+    - Fit the job description = be good for a job
+    - Land a new job = (informal) get a new (and usually good) job
+    - Menial job = not requiring much skill and lacking prestige
+    - Job seeker
+    - A job offer
+    - Dream job
 
 13. Work:
-	- To carry out work
-	- To complete work
-	- Available to start work
-	- To take on work
-	- To work closely with
-	- To supervise work
-	- To work overtime = work extra hours
+    - To carry out work
+    - To complete work
+    - Available to start work
+    - To take on work
+    - To work closely with
+    - To supervise work
+    - To work overtime = work extra hours
 
 14. Career:
-	- To wreck/ruin someone's career
-	- At the height/peak of your career
-	- Her career lasted ...
-	- To climb the career ladder
-	- Start your career
-	- A promising career
-	- A brilliant career
-	- To embark on a career = to start a career
-	- A career change
+    - To wreck/ruin someone's career
+    - At the height/peak of your career
+    - Her career lasted ...
+    - To climb the career ladder
+    - Start your career
+    - A promising career
+    - A brilliant career
+    - To embark on a career = to start a career
+    - A career change
 
 15. Business:
-	- **Do business** NOT make business
-	- Go into business
-	- Set up a small business
-	- The business goes under = fails financially
-	- The business will fold = the business close because of failure
-	- Run a (successful) business 
-	- Close a business = **cease trading**
-	- Go out of business = stop doing business
-	- Business is booming = doing extremely well
-	- Generate business
+    - **Do business** NOT make business
+    - Go into business
+    - Set up a small business
+    - The business goes under = fails financially
+    - The business will fold = the business close because of failure
+    - Run a (successful) business
+    - Close a business = **cease trading**
+    - Go out of business = stop doing business
+    - Business is booming = doing extremely well
+    - Generate business
 
 16. We say **have a job**, not have a work.
 
@@ -198,24 +198,24 @@
 31. Rival Company
 
 32. Money:
-	- He **spends** a lot of **money** on travelling.
-	- We are **saving** a little **money** each month to buy a new house next year.
-	- She **wasted/squander** all her **money** on clothes.
-	- You can **change** some **money** at the airport.
-	- **Throw money around** = spend money in an obvious and careless way on unncessary things.
-	- **Throw money at** = spend a lot of money, possibly more than necessary, trying to solve a problem.
-	- Donate money
-	- Make (big) money; Earn Money
-	- I grew up in a family where **money was always tight**.
+    - He **spends** a lot of **money** on travelling.
+    - We are **saving** a little **money** each month to buy a new house next year.
+    - She **wasted/squander** all her **money** on clothes.
+    - You can **change** some **money** at the airport.
+    - **Throw money around** = spend money in an obvious and careless way on unncessary things.
+    - **Throw money at** = spend a lot of money, possibly more than necessary, trying to solve a problem.
+    - Donate money
+    - Make (big) money; Earn Money
+    - I grew up in a family where **money was always tight**.
 
 33. Price:
-	- **Prices** can be **high** or **low**.
-	- **Rock-bottom pricess** = very low prices
-	- **Prices** may **increase, go up, and rise**.
-	- **Prices soar** = prices go up very fast
-	- **Prices go down**
-	- **Reasonably priced**
-	- **Ridiculous price** = too cheap or too expensive
+    - **Prices** can be **high** or **low**.
+    - **Rock-bottom pricess** = very low prices
+    - **Prices** may **increase, go up, and rise**.
+    - **Prices soar** = prices go up very fast
+    - **Prices go down**
+    - **Reasonably priced**
+    - **Ridiculous price** = too cheap or too expensive
 
 34. Make a breakthrough
 
@@ -239,80 +239,80 @@
 
 44. Go part-time
 
-45. Lay off staff = dismiss staff 
+45. Lay off staff = dismiss staff
 
 46. Go freelance
 
-46. Earn a good living
+47. Earn a good living
 
-47. Practice medicine = work as a doctor
+48. Practice medicine = work as a doctor
 
-48. Carve a niche for myself = make a special for myself
+49. Carve a niche for myself = make a special for myself
 
-49. Take up the post of editor = started working as editor
+50. Take up the post of editor = started working as editor
 
-50. Hold a position
+51. Hold a position
 
-51. Be open to offers
+52. Be open to offers
 
-52. Put together my CV
+53. Put together my CV
 
-53. Tempting offer
+54. Tempting offer
 
-54. Work as a team
+55. Work as a team
 
-55. Mastering new skills
+56. Mastering new skills
 
-56. Taking on responsibility
+57. Taking on responsibility
 
-57. Be relieved of his duties = (formal) dismessed
+58. Be relieved of his duties = (formal) dismessed
 
-58. Wrongfully dismissed = (formal) unfairly dismissed
+59. Wrongfully dismissed = (formal) unfairly dismissed
 
-59. Heavy workload
+60. Heavy workload
 
-60. Throw a sickie = (informal) take a day off work pretending to be sick
+61. Throw a sickie = (informal) take a day off work pretending to be sick
 
-61. Get the sack = (informal) be dismissed
+62. Get the sack = (informal) be dismissed
 
-62. Sweated labour = workers who are paid very little and work in very bad conditions
+63. Sweated labour = workers who are paid very little and work in very bad conditions
 
-63. Meet the target
+64. Meet the target
 
-64. Allocate a part of budget; ex = Government allocates a large part of its development budget to ...
+65. Allocate a part of budget; ex = Government allocates a large part of its development budget to ...
 
-65. To describe **trends**:
-	- Use these subjects: **sales, profits, the market, exports/imports**
-	- with these verbs: **show, see, experience, and NOT had**
-	- with these objects: **a rise, a fall, a decline, a growth**.
+66. To describe **trends**:
+    - Use these subjects: **sales, profits, the market, exports/imports**
+    - with these verbs: **show, see, experience, and NOT had**
+    - with these objects: **a rise, a fall, a decline, a growth**.
 
-66. A slight decreas/increase; NOT a little decrease/increase
+67. A slight decreas/increase; NOT a little decrease/increase
 
-67. A substantial decrease/increase; NOT a strong decrease/increase
+68. A substantial decrease/increase; NOT a strong decrease/increase
 
-68. **Show an increase/decrease** and **show an upward / a downward trend**, NOT have an increase
+69. **Show an increase/decrease** and **show an upward / a downward trend**, NOT have an increase
 
-69. Figures **increase dramatically or significantly**, NOT increase strongly.
+70. Figures **increase dramatically or significantly**, NOT increase strongly.
 
-70. Minimum wage = the minimum salary required by law
+71. Minimum wage = the minimum salary required by law
 
-71. Get a promotion
+72. Get a promotion
 
-72. Get a raise = get an increase in salary
+73. Get a raise = get an increase in salary
 
-73. Generous benefits = extra benefits like health insurance, discounts, a company car, etc.
+74. Generous benefits = extra benefits like health insurance, discounts, a company car, etc.
 
-74. Financially savvy = intelligent, perceptive, and well-informed on the subject of money
+75. Financially savvy = intelligent, perceptive, and well-informed on the subject of money
 
-75. Dead-end job = a job that has few prospects of leading somewhere interesting or successful
+76. Dead-end job = a job that has few prospects of leading somewhere interesting or successful
 
-76. Glittering career = an impressive carrer, one that is admired by many people.
+77. Glittering career = an impressive carrer, one that is admired by many people.
 
-77. A **career spanning** five decades
+78. A **career spanning** five decades
 
-78. Lucrative job = a job where the person earns a lot of money for doing the work.
+79. Lucrative job = a job where the person earns a lot of money for doing the work.
 
-79. Rewarding job = a job where the person gets a lot of personal satisfaction - emotional rather than financial - from doing the work.
+80. Rewarding job = a job where the person gets a lot of personal satisfaction - emotional rather than financial - from doing the work.
 
 ### Good Phrases and Idioms
 
@@ -324,9 +324,9 @@
 
 4. Eager beaver = a very hard-working, enthusiastic employee
 
-5. Eagle eyes = a person who has eagle eyes (not “is eagle eyes”) can see or notice details very well
+5. Eagle eyes = a person who has eagle eyes (not "is eagle eyes") can see or notice details very well
 
-6. Gift of the gab = someone who has the gift of the gab (not “is the gift of the gab”) can speak easily, confidently, and well
+6. Gift of the gab = someone who has the gift of the gab (not "is the gift of the gab") can speak easily, confidently, and well
 
 7. Go-getter = someone with a lot of energy, drive, and motivation
 
@@ -362,9 +362,9 @@
 
 23. People person = a warm, friendly person who is good at working with others and communicates well with them
 
-24. Poker face = a person who has a poker face (not “is a poker face”) does not show or reveal any emotion
+24. Poker face = a person who has a poker face (not "is a poker face") does not show or reveal any emotion
 
-25. Quiet as a mouse = describes someone who doesn’t make any noise; a very quiet person
+25. Quiet as a mouse = describes someone who doesn't make any noise; a very quiet person
 
 26. Salt of the earth = describes a good person who is simple, reliable, and trustworthy; can also be negative because it implies the person is not sophisticated
 
@@ -378,9 +378,9 @@
 
 31. Armchair critic = a theoretical person who criticizes the way others handle problems or issues, without trying to do anything to solve the problem himself/herself
 
-32. Ambulance chaser = a lawyer who specializes in personal injury claims against large companies 
+32. Ambulance chaser = a lawyer who specializes in personal injury claims against large companies
 
-33. Bean counter = an accountant 
+33. Bean counter = an accountant
 
 34. Cog in a machine = a person who is or feels like he/she has a small, unimportant job in a large organization or company
 
@@ -390,7 +390,7 @@
 
 37. Fast talker = a confident person who can persuade others to do something dishonest because of his/her ability to speak well; someone who can get others to believe something that is not true
 
-38. Fuddy-duddy = an old-fashioned person who has not learned modern behavior or thinking 
+38. Fuddy-duddy = an old-fashioned person who has not learned modern behavior or thinking
 
 39. Know-it-all = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and wise guy
 
@@ -400,7 +400,7 @@
 
 42. Pain in the neck; pain in the ass = a difficult, unpleasant, or annoying person
 
-43. Pen pusher; pencil pusher = an employee or clerk with a “boring” job, who handles a lot of paperwork
+43. Pen pusher; pencil pusher = an employee or clerk with a "boring" job, who handles a lot of paperwork
 
 44. Rotten apple = a dishonest, corrupt person who has a negative influence on his/her colleagues; someone who usually causes problems for the management, organization, or company
 
@@ -418,6 +418,6 @@
 
 51. Wise guy = an irritating person who acts as if he/she knows everything; someone who acts as if he/she is very smart and clever, but in a boastful way; same as smart alec and know-it-all
 
-52. Wolf in sheep’s clothing = a dangerous person who seems to be harmless
+52. Wolf in sheep's clothing = a dangerous person who seems to be harmless
 
 53. Yes man = someone who always agrees with his/her superiors, mainly in order to gain their approval, even if he/she does not accept their ideas or practices

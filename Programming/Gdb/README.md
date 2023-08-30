@@ -1,8 +1,9 @@
-## First steps
-1. Compile with proper flags: `-g` 
+# First steps
+
+1. Compile with proper flags: `-g`
 2. (Optional) Turn off code optimization: `-O0`
 
-## Debugging 
+## Debugging
 
 1. Run gdb with the program not passing its arguments in this step: `gdb ./example`
 2. After executing gdb, you can start the program with **run** command (with any needed arguments)
@@ -39,20 +40,23 @@
 ## Debugging MPI applications with GDB
 
 If you have xserver running (use [VCXSRV or Xming](https://github.com/amirsojoodi/Manuals-and-Tutorials/blob/master/Windows/GitBash/README.md) on windows for ssh), compile your code with `-g` and debug it with:
+
 ```bash
-$ mpirun -np 2 xterm -e gdb <application>
+mpirun -np 2 xterm -e gdb <application>
 ```
+
 More information at [OpenMPI FAQ.](https://www.open-mpi.org/faq/?category=debugging)
 
 ## Inspecting the core file
 
-If the program crashes with *Segmentation fault* message, it is sometimes helpful to 
+If the program crashes with _Segmentation fault_ message, it is sometimes helpful to
 increase the maximum core file size to save the in-memory state of the program at the time it crashes.
-```
+
+```bash
 $ ./example
 Segmentation fault
 $ ulimit -c 2048
 $ ./example
 Segmentation fault (core dumped)
 $ gdb ./example <corefile>
-``` 
+```

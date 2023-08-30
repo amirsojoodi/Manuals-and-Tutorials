@@ -1,10 +1,11 @@
-## Setup and debug with Arm-forge client (Arm DDT)
+# Setup and debug with Arm-forge client (Arm DDT)
 
 [Arm Forge](https://www.arm.com/products/development-tools/server-and-hpc/forge) is a set of tools for HPC development, debugging, and profiling. The server version is not free, but if you have access to a cluster that has Arm Forge as one of its module, then you can access it with its free client. 
 
 0. Load Arm Forge module in the cluster node. If you want a specific version you need to specify it, like:
-```
-$ module load arm-forge/21.0.3
+
+```bash
+module load arm-forge/21.0.3
 ```
 
 1. [Download](https://developer.arm.com/tools-and-software/server-and-hpc/downloads/arm-forge) and install the same version of Arm Forge client.
@@ -17,19 +18,21 @@ $ module load arm-forge/21.0.3
 
 With Arm-forge you can launch the backend first and then attach the clients later. For this purpose, follow these steps:
 
-1. Configure and connect to the remote connection 
+1. Configure and connect to the remote connection.
 2. Select **Manual Launch (Advanced)** in the home screen.
 3. Select the number of processes as the number of MPI ranks you would like to attach.
-4. Specify the plugins. There is no need to pre-load any modules or run scripts from Arm-forge
+4. Specify the plugins. There is no need to pre-load any modules or run scripts from Arm-forge.
 5. After starting the backend, run the application with a command like this (options are arbitrary):
+
 ```bash
 mpirun -np 2 /path/to/forge-client/on/server /path/to/ddtsession/file application [args]
 
 # e.g.:
 
 mpirun -np $(np) --display bind --mca pml ucx -x UCX_LOG_LEVEL=trace -x UCX_LOG_FILE=ucx.%p.log \
-		/gpfs/fs1/scinet/mist/rhel8/software/2021a/opt/base/arm-forge/22.0.2/bin/forge-client \
-		--ddtsessionfile ~/.allinea/session/connection.local-1 \
-		application [args]
+  /gpfs/fs1/scinet/mist/rhel8/software/2021a/opt/base/arm-forge/22.0.2/bin/forge-client \
+  --ddtsessionfile ~/.allinea/session/connection.local-1 \
+  application [args]
 ```
+
 7. Simply debug the program

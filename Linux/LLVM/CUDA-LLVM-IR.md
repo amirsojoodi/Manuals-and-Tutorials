@@ -1,4 +1,4 @@
-## Create LLVM IR from CUDA soruces and orchestrate the build process manually
+# Create LLVM IR from CUDA soruces and orchestrate the build process manually
 
 The LLVM IR from each branch of the compilation process must remain separate until directly linkable objects are available. As a result, there are many intermediate steps which you will need to perform manually. LLVM IR code for the GPU must be compiled firstly to PTX code, and then assembled to a binary payload which can be linked against host object files.
 There is a CUDA source in this directory, named `axpy.cu`. Let's work on that!
@@ -6,7 +6,7 @@ There is a CUDA source in this directory, named `axpy.cu`. Let's work on that!
 **The important hint:**
 The `fatbin` file should be passed to the host-side compilation command with `-Xclang -fcuda-include-gpubinary -Xclang axpy.fatbin` to replicate the whole compilation behavior.
 
-```lang-mk
+```Makefile
 BIN_FILE=axpy
 SRC_FILE=$(BIN_FILE).cu
 
@@ -45,8 +45,10 @@ $(BIN_FILE)_dlink.o: $(BIN_FILE).fatbin
 $(BIN_FILE): $(BIN_FILE).o $(BIN_FILE)_dlink.o
     nvcc $(BIN_FILE).o $(BIN_FILE)_dlink.o -o $(BIN_FILE) -arch=sm_70 -lc++
 ```
+
 After running the executable file, the output should be like this:
-```
+
+```bash
 $ ./axpy 
 y[0] = 2
 y[1] = 4

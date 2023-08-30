@@ -1,11 +1,11 @@
-## Building OpenMPI 5.0 with UCX and CUDA 11.2
+# Building OpenMPI 5.0 with UCX and CUDA 11.2
 
 Lessons learned:
 
 - [Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html) are tricky but understanding how it works helps you customize packages, plugins, etc. I will add an entry on Autotools.
-- Never work on master branch just like a newbie and waste a week away. Always checkout to a (release) tag or a working branch. 
-- When you are working in a cluster node, it is best not to load any module in your `.bashrc`. This approach will mess things up. Add them to your scripts and load them purposefully. 
-- Make sure you have done all your searches and reads before going down the rabbit hole. You can safely assume that someone else has already done what you want to do. Don't be embarass to ask stupid questions. 
+- Never work on master branch just like a newbie and waste a week away. Always checkout to a (release) tag or a working branch.
+- When you are working in a cluster node, it is best not to load any module in your `.bashrc`. This approach will mess things up. Add them to your scripts and load them purposefully.
+- Make sure you have done all your searches and reads before going down the rabbit hole. You can safely assume that someone else has already done what you want to do. Don't be embarass to ask stupid questions.
 
 ## Loading necessary modules
 
@@ -43,8 +43,8 @@ export PATH=$BUILD_DIR/bin/:$PATH
 ## Building script
 
 These scripts are used to build OpenMPI with internal libraries (OpenPMIX, Libevent, and HWLOC), tested on Mist (PowerPC, ppc64le).
-`Ompi` needs `flex` in order to build `pmix`, but mist's flex had issues and I needed to install a couple of things first to prepare the environment. 
-So I have commented those commands required for resolving the problems in my machine, but if you have any problem, feel free to read, uncomment, and use. 
+`Ompi` needs `flex` in order to build `pmix`, but mist's flex had issues and I needed to install a couple of things first to prepare the environment.
+So I have commented those commands required for resolving the problems in my machine, but if you have any problem, feel free to read, uncomment, and use.
 
 ```bash
 #! /bin/bash -l

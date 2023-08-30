@@ -1,4 +1,4 @@
-## Set up logger for Python 
+# Set up logger for Python
 
 If you want to set up a logger for a multi-module Python project, you can set up the logger with a specific configuration once, and import it in other modules.
 
@@ -55,4 +55,3 @@ logger.warning("It's better to light a candle!")
 
 logger.error("No candle found!")
 ```
-

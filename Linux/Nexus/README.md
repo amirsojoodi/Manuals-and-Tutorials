@@ -1,7 +1,6 @@
+# Install Nexus Repository Manager
 
-## Install Nexus Repository Manager
-
-Get all the files and edit the *config.sh* files. I'm sure you are smart enough to use the script! Edit the variables and follow the instructions. You can execute script commands seperately on your own. 
+Get all the files and edit the *config.sh* files. I'm sure you are smart enough to use the script! Edit the variables and follow the instructions. You can execute script commands seperately on your own.
 
 ## Upgrading
 
@@ -19,7 +18,7 @@ Extract the newest downloaded distribution archive using the standard approach.
 Suppose 3.14.0-04 is the new version.
 Move the downloaded zip to your desired directory. (Basic place is /usr/local)
 
-```
+```bash
 sudo cp nexus-3.14.0-04-unix.tar.gz /usr/local
 sudo tar xzvf nexus-3.14.0-01-unix.tar.gz
 ```
@@ -42,20 +41,20 @@ Ensure you have taken recent backups of the existing Data Directory and any cust
 
 Stop your existing install using the scripts under ./bin or your operating system service. Make sure it stops completely.
 
-```
+```bash
 sudo service nexus stop
 ./nexus/bin/nexus stop
 ```
 
 Change owner of the new directory to the your desired user:
 
-```
+```bash
 sudo chown user:user nexus-3.14.0-04/ -R
 ```
 
 Remove previous soft links and create new one and update permissions of it:
 
-```
+```bash
 sudo rm nexus
 sudo ln -s /usr/local/nexus-3.14.0-04 /usr/local/nexus
 sudo chown user:user nexus -R
@@ -63,18 +62,19 @@ sudo chown user:user nexus -R
 
 If you have configure Nexus Service, update the service as well:
 
-```
+```bash
 sudo update-rc.d nexus defaults
 ```
 
 Update user in the file `/usr/local/nexus/bin/nexus.rc`
-```
+
+```bash
 run\_as\_user="user"
 ```
 
 Start the new installation using the scripts under ./bin or adjust your operating system service to use these scripts.
 
-```
+```bash
 ./nexus start
 sudo service nexus start
 ```

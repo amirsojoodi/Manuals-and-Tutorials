@@ -1,4 +1,4 @@
-## Color Customization
+# Color Customization
 
 In VSCode, you can install various themes and enable any of them for different languages. However, the cooler thing about it is that you can customize each theme very easily.
 
@@ -19,7 +19,7 @@ Open your `settings.json` file and add the following tags. In the following, the
 
 Also, you can change every entity's color separately. For that, go to the command palette (Ctrl+Shift+P) and find the option: `Developer: Inspect Editor Tokens and Scopes`. Now you can click on any word/character in the your source file and see what its scope is. Then, you can easily change its color and format. In the following, I have changed something in LaTeX and CUDA using this method. (I have changed functions and comments foreground color for all languages)
 
-```
+```json
     "editor.tokenColorCustomizations": {
         "[Default Dark+]": {
             "functions": {

@@ -7,6 +7,7 @@
 ```bash
 gcc -O3 -g3 -o program.out program.c
 ```
+
 GCC debug options: -g{1, 2, 3} or --gdb{1, 2, 3}
 
 2. Extract the debug information from the executable
@@ -34,7 +35,9 @@ The whole process works even with optimization flags.
 ```bash
 memusage ./program.out
 ```
+
 Creating a bit map:
+
 ```bash
 memusage --data=mem.dat ./program.out
 memusagestat mem.dat mem.png

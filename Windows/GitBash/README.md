@@ -1,48 +1,63 @@
-## Run applications remotely with GUI 
+# Run applications remotely with GUI
 
 If you are using Git-Bash on Windows and connecting to a remote server via ssh, you can do the following to have access to graphical applications.
 
 1. Install & run [Xming](https://sourceforge.net/projects/xming/) or [VCXSRV](https://sourceforge.net/projects/vcxsrv/) on Windows
 2. Export this variable in Git-Bash:
+
+```bash
+export DISPLAY=localhost:0
 ```
-$ export DISPLAY=localhost:0
-```
+
 You can add it to the end of your bashrc.
+
 3. Connect to the remote server with -X and -Y options.
+
+```bash
+ssh -XY havij@baghcheh
 ```
-$ ssh -XY havij@baghcheh
-```
+
 4. Test with the following:
+
+```bash
+xclock &
 ```
-$ xclock &
-```
+
 or
+
+```bash
+xeyes &
 ```
-$ xeyes &
-```
+
 5. If you want to skip -XY part, you can add the following lines to the config file under the .ssh directory:
-```
+
+```bash
 Host Kalam
-	ForwardAgent yes
-	ForwardX11 yes
+    ForwardAgent yes
+    ForwardX11 yes
 ```
+
 Then, connect without the options:
+
+```bash
+ssh havij@kalam
 ```
-$ ssh havij@kalam
-```
+
 6. Remember that the server should support X forwarding. Edit the file `/etc/sshd_config` and use the following settings:
-```
+
+```bash
 X11Forwarding yes
 X11DisplayOffset 10
 X11UseLocalhost no
 ```
+
 Then restart the sshd service.
 
-## Add hosts to make life easier:
+## Add hosts to make life easier
 
 Create a config file in ssh directory: `~/.ssh/config` and put the **updated!** content of these lines in it:
 
-```
+```bash
 Host basket
     HostName basket.baghcheh.farm
     User carrot
@@ -60,14 +75,14 @@ Host basket
     ServerAliveInterval 60
 ```
 
-## Add Git Bash to context menu:
+## Add Git Bash to context menu
 
 1. On your desktop right click "New"->"Text Document" with name OpenGitBash.reg
 2. Right click the file and choose "Edit"
 3. Copy-paste the code below, save and close the file (Remember to edit the path to Git-bash)
 4. Execute the file by double clicking it
 
-```
+```bash
 Windows Registry Editor Version 5.00
 ; Open files
 ; Default Git-Bash Location C:\Program Files\Git\git-bash.exe

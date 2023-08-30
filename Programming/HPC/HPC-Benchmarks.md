@@ -1,4 +1,4 @@
-# HPC Applications 
+# HPC Applications
 
 ## Benchmark Suites
 
@@ -30,69 +30,69 @@
 
 ## Generic HPC Benchmarks
 
-1. HPL – High Performance Linpack (https://netlib.org/benchmark/hpl/):
-- Factoring and solving large dense system of linear equations
-- Dominant calculation is matrix-matrix multiplication (mostly done by GPU today)
+1. HPL - High Performance Linpack (https://netlib.org/benchmark/hpl/):
+   - Factoring and solving large dense system of linear equations
+   - Dominant calculation is matrix-matrix multiplication (mostly done by GPU today)
 
 2. HPCG - High Performance Conjugate Gradient (https://hpcg-benchmark.org/)
-- Complement HPL and target a broader set of HPC applications governed by differential 
-equations, which tend to have much stronger needs for high bandwidth and low latency
-- Tend to access data using irregular patterns
-- Iterative and heavily use neighborhood collectives
+   - Complement HPL and target a broader set of HPC applications governed by differential
+   equations, which tend to have much stronger needs for high bandwidth and low latency
+   - Tend to access data using irregular patterns
+   - Iterative and heavily use neighborhood collectives
 
 3. HPCC (https://hpcchallenge.org/hpcc/)
-- Consist of 7 test (HPL is one of them)
-- Each test focuses on a different aspect, e.g. floating point, memory access, communication, etc.
+   - Consist of 7 test (HPL is one of them)
+   - Each test focuses on a different aspect, e.g. floating point, memory access, communication, etc.
 
 ## Some of HPC Application-Level Benchmarks
 
 1. WRF - Weather Research and Forecasting (https://www.mmm.ucar.edu/weather-research-and-forecasting-model)
-- Numerical weather prediction system
+   - Numerical weather prediction system
 
 2. GROMACS (https://www.gromacs.org)
-- Molecular dynamics
-- Primarily designed for biochemical molecules like proteins, lipids and nucleic acids
-- Differential equations, linear algebra, 3D stencil, 3D FFT
-- Uses OpenMP
+   - Molecular dynamics
+   - Primarily designed for biochemical molecules like proteins, lipids and nucleic acids
+   - Differential equations, linear algebra, 3D stencil, 3D FFT
+   - Uses OpenMP
 
 3. LAMMPS - Large-scale Atomic/Molecular Massively Parallel Simulator (https://www.lammps.org)
-- Molecular dynamics
-- Focus on materials modeling, solid state and soft matter
-- Conjugate gradient, DFT
-- Multiple benchmarks (Lenard-Jones, polymer chain, eam, etc.)
+   - Molecular dynamics
+   - Focus on materials modeling, solid state and soft matter
+   - Conjugate gradient, DFT
+   - Multiple benchmarks (Lenard-Jones, polymer chain, eam, etc.)
 
 4. OpenFOAM (https://www.openfoam.com/)
-- Computational Fluid Dynamic
-- Includes chemical reactions, turbulence/heat transfer, acoustics, solid mechanics/electromagnetics, aerodynamics
+   - Computational Fluid Dynamic
+   - Includes chemical reactions, turbulence/heat transfer, acoustics, solid mechanics/electromagnetics, aerodynamics
 
 5. NAMD (http://www.ks.uiuc.edu/Research/namd/)
-- Molecular dynamic – large bio-molecular systems
-- Based on Charm++
+   - Molecular dynamic - large bio-molecular systems
+   - Based on Charm++
 
 6. LS-Dyna (https://www.lstc.com/products/ls-dyna)
-- Structural analysis
-- Car crash, explosions, deformation, jet engine blade containment, bird strike
-- Stencils, system of PDEs
+   - Structural analysis
+   - Car crash, explosions, deformation, jet engine blade containment, bird strike
+   - Stencils, system of PDEs
 
-6. Fluent (https://www.ansys.com/products/fluids/ansys-fluent)
-- Fluids, acoustic, optics, avionics, etc.
+7. Fluent (https://www.ansys.com/products/fluids/ansys-fluent)
+   - Fluids, acoustic, optics, avionics, etc.
 
 ## ML Benchmarks
 
 1. Deep Bench from Baidu (https://github.com/baidu-research/DeepBench)
-- Uses the neural network libraries to benchmark the performance of basic operations
-- Dense matrix multiplication, convolutions and communication
+   - Uses the neural network libraries to benchmark the performance of basic operations
+   - Dense matrix multiplication, convolutions and communication
 
 2. PARAM from Meta (https://github.com/facebookresearch/param)
-- Repository of communication and compute micro-benchmarks as well as full workloads
-- stand-alone compute and communication benchmarks using cuDNN, MKL, NCCL, MPI libraries
-- Application benchmarks – DLRM at this point
-- ML Framework – pytorch
+   - Repository of communication and compute micro-benchmarks as well as full workloads
+   - stand-alone compute and communication benchmarks using cuDNN, MKL, NCCL, MPI libraries
+   - Application benchmarks - DLRM at this point
+   - ML Framework - pytorch
 
 ## Other Micro Benchmarks and Proxy Apps
 
 1. Adios (https://github.com/ornladios/ADIOS/releases): ADIOS is developed as
-part of the United States Department of Energy’s Exascale Computing Project. It is
+part of the United States Department of Energy's Exascale Computing Project. It is
 a framework for scientific data I/O to publish and subscribe to data when and where
 required.
 
@@ -111,7 +111,7 @@ Carlo algorithms on parallel architectures.
 
 5. OpenMD (https://github.com/OpenMD/OpenMD): OpenMD is an open source
 molecular dynamics engine which is capable of efficiently simulating liquids, proteins,
-nanoparticles, interfaces, and other complex systems using atom types with orientational degrees of freedom (e.g. ”sticky” atoms, point dipoles, and coarse-grained
+nanoparticles, interfaces, and other complex systems using atom types with orientational degrees of freedom (e.g. "sticky" atoms, point dipoles, and coarse-grained
 assemblies).
 
 6. SAMRAI (https://github.com/LLNL/SAMRAI): SAMRAI (Structured Adaptive Mesh Refinement Application Infrastructure) is an object-oriented C++ software
@@ -125,7 +125,7 @@ codes and simplifies the exploration of SAMR methods in new application domains.
 7. Siesta (https://gitlab.com/siesta-project/siesta/-/releases): SIESTA is both a
 method and its computer program implementation, to perform efficient electronic
 structure calculations and ab initio molecular dynamics simulations of molecules and
-solids. SIESTA’s efficiency stems from the use of strictly localized basis sets and
+solids. SIESTA's efficiency stems from the use of strictly localized basis sets and
 from the implementation of linear-scaling algorithms which can be applied to suitable
 systems.
 
@@ -235,7 +235,7 @@ architectures, such as sorting.
 32. Nek5000 (https://github.com/Nek5000/nekRS/releases/tag/v21.1): High-order
 methods have the potential to overcome the current limitations of standard CFD
 solvers.It features state-of-the-art, scalable algorithms that are fast and efficient on
-platforms ranging from laptops to the world’s fastest computers. Applications span a
+platforms ranging from laptops to the world's fastest computers. Applications span a
 wide range of fields, including fluid flow, thermal convection, combustion and magnetohydrodynamics.
 
 33. phyml (https://github.com/stephaneguindon/phyml): PhyML is a software package that uses modern statistical approaches to analyse alignments of nucleotide or
@@ -247,8 +247,8 @@ number of substitution models coupled to efficient options to search the space o
 CBEMD: Parallel Molecular Dynamics Under Various Thermodynamic Ensembles.
 
 35. Lulesh (https://github.com/LLNL/LULESH): LULESH is a highly simplified application, hard-coded to only solve a simple Sedov blast problem with analytic answers
-– but represents the numerical algorithms, data motion, and programming style typical
-in scientific C or C++ based applications.
+    - but represents the numerical algorithms, data motion, and programming style typical
+    in scientific C or C++ based applications.
 
 36. miniVite (https://github.com/Exa-Graph/miniVite): miniVite is a proxy app that implements a single phase of Louvain.
 
@@ -289,8 +289,9 @@ where the netlist is expected to be flat (no hierarchy via subcircuits is allowe
 Simulating the system of DAEs generates a nonsymmetric linear problem, which is solved
 using un-preconditioned GMRES. The time integration method used in miniXyce is
 backward Euler with a constant time-step. The simulator outputs all the solution
-variables at each time step in a ’prn’ file.
+variables at each time step in a 'prn' file.
 
 References:
+
 1. Broadcom presentation in MUG'22
 2. https://hpc.dmi.unibas.ch/wp-content/uploads/sites/87/2022/08/msc_project_nderim_shatri.pdf

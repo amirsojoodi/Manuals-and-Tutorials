@@ -1,6 +1,6 @@
-## Update gcc to gcc-9 on Ubuntu
+# Update gcc to gcc-9 on Ubuntu
 
-```
+```bash
 sudo apt update -y && 
 sudo apt upgrade -y && 
 sudo apt dist-upgrade -y && 
@@ -11,4 +11,5 @@ sudo apt install gcc-9 g++-9 -y &&
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-9 && 
 sudo update-alternatives --config gcc
 ```
-Select gcc-9.
+
+Select gcc-9

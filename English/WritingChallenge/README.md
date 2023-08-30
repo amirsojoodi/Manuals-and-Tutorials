@@ -1,4 +1,4 @@
-## What is Writing Challenge?
+# What is Writing Challenge?
 
 The idea came to my mind when one of my friends(Iman) and I talked about the importance of topic-specific writing in preparation of the English tests(TOEFL, IELTS, ...).
 
@@ -26,7 +26,7 @@ The writing challange takes 10 days to complete, and the selected topics are as 
 
 10. Government and authorities
 
-### Other Resources used for words, collocations, and good sentences:
+## Other Resources used for words, collocations, and good sentences
 
 1. Book: 1000 English Collocations
 
@@ -36,11 +36,11 @@ The writing challange takes 10 days to complete, and the selected topics are as 
 
 4. Internet!
 
-### Resources for writing, grammar, punctuations, cohesion, and etc.
+### Resources for writing, grammar, punctuations, cohesion, and etc
 
 1. Book: Writing Power
 
-2. Book: IELTS Academic and General Task 2 
+2. Book: IELTS Academic and General Task 2
 
 3. Internet
 

@@ -1,10 +1,11 @@
-## My sample essay
+# My sample essay
 
-### Question:
+## Question
+
 Do you agree or disagree with the following statement?
 Young people should try many different kinds of jobs or careers before they decide the long term career of their life.
 
-### Essay:
+## Essay
 
 Modern life has brought a wide variety of job opportunities to the Societies whereby people can seek their suitable jobs more liberally than the past. This variety, however, raises a discussion that although people have now more extensive options, their choice of a career has become more challenging to make. While some people are of the opinion that young people should stick to a single career, I believe, it is acceptable for some other groups of juveniles to be welcoming of career changes. The analyzing of the reasons behind this debate, which includes job satisfaction and improving soft skills, will be conducted hereunder.
 

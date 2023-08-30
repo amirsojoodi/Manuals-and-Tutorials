@@ -40,4 +40,3 @@ Check [here](https://github.com/muesli/duf) to find more about `duf`.
 7. `htop` instead of `top`
 
 8. `ack` instead of `grep`
-

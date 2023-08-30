@@ -1,6 +1,6 @@
-## Academic Writing
+# Academic Writing
 
-### Good Sentences
+## Good Sentences
 
 1. He **sets out** some **powerful arguments** which **shape our thinking** for years to come.
 
@@ -10,10 +10,10 @@
 
 4. There appears to be clear cause and effect evidence, but no **irrefutable proof**.
 
-### Good Words
+## Good Words
 
 1.
 
-### Good Collocations
+## Good Collocations
 
-1. 
+1.
