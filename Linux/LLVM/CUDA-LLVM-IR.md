@@ -2,7 +2,47 @@
 
 The LLVM IR from each branch of the compilation process must remain separate until directly linkable objects are available. As a result, there are many intermediate steps which you will need to perform manually. LLVM IR code for the GPU must be compiled firstly to PTX code, and then assembled to a binary payload which can be linked against host object files.
 
-There is a CUDA source in this directory, named `axpy.cu`. Let's work on that!
+Consider this CUDA source, named `axpy.cu`:
+
+```c
+#include <iostream>
+
+__global__ void axpy(float a, float* x, float* y) {
+  y[threadIdx.x] = a * x[threadIdx.x];
+}
+
+int main(int argc, char* argv[]) {
+  const int kDataLen = 4;
+
+  float a = 2.0f;
+  float host_x[kDataLen] = {1.0f, 2.0f, 3.0f, 4.0f};
+  float host_y[kDataLen];
+
+  // Copy input data to device.
+  float* device_x;
+  float* device_y;
+  cudaMalloc(&device_x, kDataLen * sizeof(float));
+  cudaMalloc(&device_y, kDataLen * sizeof(float));
+  cudaMemcpy(device_x, host_x, kDataLen * sizeof(float),
+             cudaMemcpyHostToDevice);
+
+  // Launch the kernel.
+  axpy<<<1, kDataLen>>>(a, device_x, device_y);
+
+  // Copy output data to host.
+  cudaDeviceSynchronize();
+  cudaMemcpy(host_y, device_y, kDataLen * sizeof(float),
+             cudaMemcpyDeviceToHost);
+
+  // Print the results.
+  for (int i = 0; i < kDataLen; ++i) {
+    std::cout << "y[" << i << "] = " << host_y[i] << "\n";
+  }
+
+  cudaDeviceReset();
+  return 0;
+}
+```
 
 **The important hint:**
 The `fatbin` file should be passed to the host-side compilation command with `-Xclang -fcuda-include-gpubinary -Xclang axpy.fatbin` to replicate the whole compilation behavior.

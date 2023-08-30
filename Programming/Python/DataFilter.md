@@ -1,3 +1,6 @@
+# How to filter data in Python
+
+```python
 from numpy import sin, cos, pi, linspace
 from numpy.random import randn
 from scipy.signal import lfilter, lfilter_zi, filtfilt, butter
@@ -41,3 +44,4 @@ legend(('noisy signal',
 grid(True)
 show()
 #savefig('plot.png', dpi=65)
+```

@@ -79,3 +79,190 @@ sudo service nexus start
 ```
 
 Review the log files for any possible issues and sign-in to the server to confirm things are working as expected.
+
+## Resources
+
+1. `changeRepo` script:
+
+```bash
+#!/bin/bash
+
+if [ -f ~/.m2/settings.xml ]
+then
+  if [ -f ~/.m2/settings.xml.orig ]
+  then
+    mv ~/.m2/settings.xml ~/.m2/settings.xml.tmp
+    mv ~/.m2/settings.xml.orig ~/.m2/settings.xml
+    mv ~/.m2/settings.xml.tmp ~/.m2/settings.xml.orig
+    # echo "settings.xml and settings.xml.orig replaced successfully!"
+    if grep --quiet "nexus" ~/.m2/settings.xml ; then
+      echo "Maven is behind nexus!"
+    else
+      echo "Maven isn't behind nexus!"
+    fi
+  else
+    echo "settings.xml.orig doesn't exist!"
+  fi
+else
+  echo "settings.xml doesn't exist!"
+fi
+
+exit 0
+```
+
+2. `config.sh` script:
+
+```bash
+#!/bin/bash
+
+# install 
+
+# change the user to your preferred user
+myUser="user"
+# This file should be next to this script
+nexusTarGz="nexus-3.1.0-04-unix.tar.gz"
+nexusVer="nexus-3.1.0-04"
+changeRepo="changeRepo"
+
+confirm () {
+    # call with a prompt string or use a default
+    read -r -p "${1:-Are you sure? [y/N]} " response
+    case $response in
+        [yY][eE][sS]|[yY]) 
+            true
+            ;;
+        *)
+            false
+            ;;
+    esac
+}
+
+sudo cp $changeRepo /usr/bin/
+sudo cp settings.xml.orig /home/$myUser/.m2
+
+sudo cp $nexusTarGz /usr/local
+cd /usr/local
+sudo tar xzf $nexusTarGz
+sudo rm $nexusTarGz
+sudo ln -s /usr/local/$nexusVer /usr/local/nexus
+sudo chown $myUser:$myUser nexus -R
+sudo chown $myUser:$myUser $nexusVer -R
+sudo chown $myUser:$myUser sonatype-work/ -R
+
+echo "export NEXUS_HOME=\"/usr/local/nexus\"" | tee -a /home/$myUser/.bashrc
+source /home/$myUser/.bashrc
+
+NEXUS_HOME="/usr/local/nexus"
+
+echo "Set this variable in $NEXUS_HOME/bin/nexus"
+echo "INSTALL4J_JAVA_HOME_OVERRIDE=/usr/lib/jvm/java-8-oracle"
+
+confirm "Do you want to viw nexus file now?(y/n recommended yes)" && sudo vim /usr/local/nexus/bin/nexus
+
+cd $NEXUS_HOME/bin
+./nexus run | echo "Type ctrl+c to continue the installation!"
+
+echo "run_as_user=\"$myUser\"" | sudo tee $NEXUS_HOME/bin/nexus.rc
+
+sudo service nexus stop
+
+sudo ln -s $NEXUS_HOME/bin/nexus /etc/init.d/nexus
+
+cd /etc/init.d
+sudo update-rc.d nexus defaults
+
+sudo service nexus restart
+
+changeRepo
+
+echo "Installation finished! you can visit configuration UI at (defaults)localhost:8081."
+echo "Also your settings.xml file updated in your home directory. to enable maven to nexus or not to use it, run changeRepo"
+echo "Make sure to edit settings.xml and settings.xml.orig in the ~/.m2/ directory and put the correct values for <localrepository> and <url> vice versa."
+
+```
+
+3. `ConfigBower.sh` script:
+
+```bash
+#!/bin/bash
+
+sudo npm install -g bower-nexus3-resolver
+
+# Edit file /home/user/.bowerrc and put these lines in it:
+# {
+#   "registry" : {
+#     "search" : [ "http://172.16.144.29:8081/repository/bower" ]
+#    },
+#  "resolvers" : [ "bower-nexus3-resolver" ]
+# }
+```
+
+4. `ConfigNPM` script:
+
+```bash
+#!/bin/bash
+
+# nexus= IP of nexus 
+nexus="192.168.1.83"
+
+npm config set registry http://$nexus:8081/repository/npm/
+
+# to revert back, edit /home/user/.npmrc and delete registry line
+```
+
+5. `settings.xml`
+
+```xml
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+  http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>/path/to/.m2/repository</localRepository>
+  <interactiveMode>true</interactiveMode>
+  <usePluginRegistry>false</usePluginRegistry>
+  <offline>false</offline>
+  
+</settings>
+```
+
+6. `settings.xml.orig`
+
+```xml
+<settings>
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>nexus</id>
+      <mirrorOf>external:*</mirrorOf>
+      <url>http://serverIP:8081/repository/maven-public</url>
+    </mirror>
+  </mirrors>
+  <profiles>
+    <profile>
+      <id>nexus</id>
+      <!--Enable snapshots for the built in central repo to direct -->
+      <!--all requests to nexus via the mirror -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>http://central</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <!--make the profile active all the time -->
+    <activeProfile>nexus</activeProfile>
+  </activeProfiles>
+</settings>
+```
