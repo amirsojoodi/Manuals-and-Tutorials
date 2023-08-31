@@ -1,6 +1,13 @@
-# Install chocolatey on windows
+---
+title: 'Install Chocolatey on Windows'
+date: 2020-03-17
+permalink: /posts/Install-Chocolatey-on-Windows/
+tags:
+  - Windows
+  - Chocolatey
+--- 
 
-Refer to [this](https://chocolatey.org/install) page.
+Refer to [this](https://chocolatey.org/install) page for more information.
 
 1. First, ensure that you are using an administrative shell.
 2. Install with powershell.exe
