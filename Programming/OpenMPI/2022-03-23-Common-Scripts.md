@@ -17,7 +17,7 @@ tags:
 
 It is a good idea to run commands like `mpicc --showme:compile` in a dynamic fashion to find out what is required for building and linking. For instance, GNU Make allows running commands and assigning their results to variables:
 
-```Makefile
+```make
 CC=mpicc
 MPI_COMPILE_FLAGS = $(shell mpicc --showme:compile)
 MPI_LINK_FLAGS = $(shell mpicc --showme:link)

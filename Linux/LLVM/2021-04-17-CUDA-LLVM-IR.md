@@ -57,7 +57,7 @@ int main(int argc, char* argv[]) {
 **The important hint:**
 The `fatbin` file should be passed to the host-side compilation command with `-Xclang -fcuda-include-gpubinary -Xclang axpy.fatbin` to replicate the whole compilation behavior.
 
-```Makefile
+```make
 BIN_FILE=axpy
 SRC_FILE=$(BIN_FILE).cu
 
