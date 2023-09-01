@@ -19,20 +19,23 @@ Profile and performance tuning of CPU codes
 gcc -O3 -g3 -o program.out program.c
 ```
 
-GCC debug options: -g{1, 2, 3} or --gdb{1, 2, 3}
+GCC debug options: `-g{1, 2, 3}` or `--gdb{1, 2, 3}`
 
+{:start="2"}
 2. Extract the debug information from the executable
 
 ```bash
 objcopy --only-keep-debug ./program.out ./program.out.debuginfo
 ```
 
+{:start="3"}
 3. Strip the debug information from the executable
 
 ```bash
 strip --strip-debug --strip-unneeded ./program.out
 ```
 
+{:start="4"}
 4. Set executable's debug information location to be the debug information file:
 
 ```bash
