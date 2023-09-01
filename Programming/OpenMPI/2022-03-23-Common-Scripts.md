@@ -10,6 +10,7 @@ tags:
   - Debug
   - Profile
   - UCX
+  - Tips
 ---
 
 ## Building MPI applications

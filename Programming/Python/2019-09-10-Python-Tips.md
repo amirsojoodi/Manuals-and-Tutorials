@@ -6,6 +6,7 @@ permalink: /posts/Python-Tips-and-Tricks
 tags:
   - Programming
   - Python
+  - Tips
 ---
 
 ## Install Python packages on Windows 10
