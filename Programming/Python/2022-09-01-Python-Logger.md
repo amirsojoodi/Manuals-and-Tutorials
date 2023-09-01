@@ -1,4 +1,12 @@
-# Set up logger for Python
+---
+title: 'Setup Logger for Python'
+date: 2022-09-01
+permalink: /posts/Setup-Logger-Python
+tags:
+  - Programming
+  - Python
+  - Logger
+---
 
 If you want to set up a logger for a multi-module Python project, you can set up the logger with a specific configuration once, and import it in other modules.
 

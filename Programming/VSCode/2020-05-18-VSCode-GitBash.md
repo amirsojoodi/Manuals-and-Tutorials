@@ -1,4 +1,12 @@
-# Change VS Code terminal to Git Bash
+---
+title: 'Update VSCode Terminal to GitBash'
+date: 2020-05-18
+permalink: /posts/Update-VSCode-Terminal-to-GitBash/
+tags:
+  - Programming
+  - VSCode
+  - GitBash
+---
 
 Full answer is [here](https://stackoverflow.com/a/50527994/2328389).
 

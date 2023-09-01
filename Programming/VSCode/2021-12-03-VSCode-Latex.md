@@ -1,4 +1,12 @@
-# Setting up latex in VS Code
+---
+title: 'Enabling LaTeX in VSCode'
+date: 2021-12-03
+permalink: /posts/Enabling-LaTeX-in-VSCode/
+tags:
+  - Programming
+  - LaTeX
+  - VSCode
+---
 
 Install [LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop) extension, and follow the instruction to setting up the environment.
 

@@ -1,4 +1,14 @@
-# Install Python packages on Windows 10
+---
+title: 'Python Tips and Tricks'
+date: 2019-09-10
+modified: 2022-06-29
+permalink: /posts/Python-Tips-and-Tricks
+tags:
+  - Programming
+  - Python
+---
+
+## Install Python packages on Windows 10
 
 **Preferably install python 3.7 (64 bit) and Git bash.**
 

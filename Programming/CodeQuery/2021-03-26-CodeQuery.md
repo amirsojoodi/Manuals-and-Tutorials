@@ -1,10 +1,12 @@
-# CodeQuery
-
-- [Website](https://ruben2020.github.io/codequery/)
-- [Github page](https://github.com/ruben2020/codequery)
-- [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ruben2020.codequery4vscode)
-
-## How to use
+---
+title: 'Code Query'
+date: 2021-03-26
+permalink: /posts/CodeQuery/
+tags:
+  - Programming
+  - CodeQuery
+  - C/C++
+---
 
 Find the complete manuals here:
 
@@ -57,3 +59,9 @@ codequery
 ```
 
 Use `cqmakedb -h` to get help on cqmakedb command line arguments.
+
+## Resources
+
+- [Website](https://ruben2020.github.io/codequery/)
+- [Github page](https://github.com/ruben2020/codequery)
+- [VS Code extension](https://marketplace.visualstudio.com/items?itemName=ruben2020.codequery4vscode)

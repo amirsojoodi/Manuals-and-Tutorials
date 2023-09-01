@@ -1,4 +1,12 @@
-# HPC Applications
+---
+title: 'HPC Applications and Benchmarks'
+date: 2022-09-19
+permalink: /posts/HPC-Applications-and-Benchmarks
+tags:
+  - Programming
+  - HPC
+  - Benchmark
+---
 
 ## Benchmark Suites
 

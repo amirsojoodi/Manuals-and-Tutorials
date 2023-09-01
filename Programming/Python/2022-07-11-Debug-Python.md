@@ -1,4 +1,14 @@
-# How to debug multi-process Python code in VS Code
+---
+title: 'Debug Multi-Process Code in Python'
+date: 2022-07-11
+permalink: /posts/Debug-Multi-Process-Python
+tags:
+  - Programming
+  - Debug
+  - Python
+  - MPI4Py
+  - VSCode
+---
 
 Create a debug configuration file and store it at `.vscode/launch.json`.
 

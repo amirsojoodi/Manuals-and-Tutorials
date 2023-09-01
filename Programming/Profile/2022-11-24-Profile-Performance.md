@@ -1,4 +1,15 @@
-# Profile and performance tuning of CPU codes
+---
+title: 'Profile Code performance'
+date: 2022-11-24
+permalink: /posts/Profile-Code-Performance
+tags:
+  - Programming
+  - Profile
+  - C/C++
+  - Performance
+---
+
+Profile and performance tuning of CPU codes
 
 ## Separate debug code from compiled executable
 

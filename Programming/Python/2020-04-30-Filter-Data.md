@@ -1,4 +1,11 @@
-# How to filter data in Python
+---
+title: 'Filter Data in Python'
+date: 2020-04-30
+permalink: /posts/Filter-Data-in-Python/
+tags:
+  - Programming
+  - Python
+---
 
 ```python
 from numpy import sin, cos, pi, linspace
@@ -6,7 +13,6 @@ from numpy.random import randn
 from scipy.signal import lfilter, lfilter_zi, filtfilt, butter
 
 from matplotlib.pyplot import plot, legend, show, grid, figure, savefig
-
 
 # Generate a noisy signal to be filtered.
 t = linspace(-1, 1, 200)

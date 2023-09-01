@@ -1,8 +1,18 @@
-# Building OpenMPI 5.0 with UCX and CUDA 11.2
+---
+title: 'Build OpenMPI+CUDA'
+date: 2021-12-03
+permalink: /posts/Build-OpenMPI-CUDA
+tags:
+  - Programming
+  - OpenMPI
+  - CUDA
+---
 
-Lessons learned:
+Building OpenMPI 5.0 with UCX 1.11 and CUDA 11.2 on Linux (RHEL works as well)
 
-- [Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html) are tricky but understanding how it works helps you customize packages, plugins, etc. I will add an entry on Autotools.
+## Lessons learned
+
+- [Autotools](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html) are tricky but understanding how it works helps you customize packages, plugins, etc. I will add an entry on Autotools later.
 - Never work on master branch just like a newbie and waste a week away. Always checkout to a (release) tag or a working branch.
 - When you are working in a cluster node, it is best not to load any module in your `.bashrc`. This approach will mess things up. Add them to your scripts and load them purposefully.
 - Make sure you have done all your searches and reads before going down the rabbit hole. You can safely assume that someone else has already done what you want to do. Don't be embarass to ask stupid questions.

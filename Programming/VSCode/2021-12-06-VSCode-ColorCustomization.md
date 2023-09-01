@@ -1,4 +1,12 @@
-# Color Customization
+---
+title: 'VSCode Color Customization'
+date: 2021-12-06
+permalink: /posts/VSCode-Color-Customization
+tags:
+  - Programming
+  - VSCode
+  - Theme
+---
 
 In VSCode, you can install various themes and enable any of them for different languages. However, the cooler thing about it is that you can customize each theme very easily.
 

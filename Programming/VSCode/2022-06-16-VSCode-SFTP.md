@@ -1,6 +1,14 @@
-# VS Code currently do not support IBM power 9 servers remote development
+---
+title: 'Setup SFTP Extension in VSCode'
+date: 2022-06-16
+permalink: /posts/Setup-SFTP-Extension-in-VSCode
+tags:
+  - Programming
+  - SFTP
+  - VSCode
+---
 
-If that is your case, you can:
+VS Code currently do not support IBM power 9 servers remote development. If this is your case, you can:
 
 1. Install the extention SFTP sftp/ftp sync
 2. Follow the instructions to add the server information from [here](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp).
