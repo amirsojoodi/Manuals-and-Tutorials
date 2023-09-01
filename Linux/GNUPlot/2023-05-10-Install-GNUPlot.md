@@ -1,4 +1,11 @@
-# Install GNU Plot on Rhel from source
+---
+title: 'Build and Install GNU Plot on RHEL'
+date: 2023-05-10
+permalink: /posts/Install-GNUPlot-on-RHEL
+tags:
+  - Linux
+  - GNUPlot
+---
 
 1. Obtain the source and checkout to the latest stable branch
 

@@ -1,4 +1,11 @@
-# Config Apt-Cacher
+---
+title: 'Config Apt Cacher'
+date: 2016-11-08
+permalink: /posts/Config-Apt-Cacher/
+tags:
+  - Linux
+  - Apt
+---
 
 ## On client side
 
@@ -31,6 +38,8 @@ confirm "you want to run apt-get update now?(y/N)" && sudo apt-get update
 ```
 
 ## On server side
+
+(The commands are not complete)
 
 ```bash
 #!/bin/bash

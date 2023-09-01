@@ -1,4 +1,13 @@
-# Update gcc to gcc-9 on Ubuntu
+---
+title: 'Update GCC in Ubuntu'
+date: 2021-04-08
+permalink: /posts/Update-GCC-in-Ubuntu
+tags:
+  - Linux
+  - GCC
+---
+
+## Update gcc to gcc-9 on Ubuntu
 
 ```bash
 sudo apt update -y && 

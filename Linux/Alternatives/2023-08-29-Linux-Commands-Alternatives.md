@@ -1,4 +1,12 @@
-# Some linux commands and their alternatives that I use
+---
+title: 'Alternatives to Some Linux Commands'
+date: 2023-08-29
+permalink: /posts/Alternatives-to-Linux-Commands/
+tags:
+  - Linux
+---
+
+Some linux commands and their alternatives that I use
 
 For most of them, it's easier to create aliases.
 
