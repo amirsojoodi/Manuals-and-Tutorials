@@ -1,6 +1,6 @@
-## Children and Families Related Words and Collocations
+# Children and Families Related Words and Collocations
 
-### Good Sentences
+## Good Sentences
 
 1. Many children start smoking due to **peer pressure** or bad **role models**.
 
@@ -146,7 +146,7 @@
 
 16. Whim(n) = a sudden feeling that you would like to do or have something, especially when there is no important or good reason.
 
-16. Pander to sb/sth (Ph.v.) = To give someone anything they want in order to please them, even if it seems unreasonable or unnecessary. 
+17. Pander to sb/sth (Ph.v.) = To give someone anything they want in order to please them, even if it seems unreasonable or unnecessary.
 
 18. Pamper(v.) = spoil
 
@@ -162,9 +162,9 @@
 
 24. Distraught(adj) = so upset and worried that you cannot think clearly; deeply upset and worried
 
-25. Frantic(adj.) = wild or distraught with fear, anxiety, or other emotion. 
+25. Frantic(adj.) = wild or distraught with fear, anxiety, or other emotion.
 
-### Good Collocations
+## Good Collocations
 
 1. Foster Parents; foster child = denoting someone that has a specified family connection through fostering rather than birth.
 
@@ -188,7 +188,7 @@
 
 11. A gifted child = extremely intelligent
 
-12. A bright child = intelligent 
+12. A bright child = intelligent
 
 13. Street children = living on the streets because they have no homes.
 
@@ -214,96 +214,96 @@
 
 24. Disaffected youth = young people who do not accept society's values.
 
-25. Home: 
-	- A secure/stable home
-	- A happy home
-	- A broken home
-	- A permanent/temporary home
-	- Home cooking = e.g: Home cooking always tastes best to me.
-	- Home life = e.g: Children need a proper home life.
-	- Deprived home = the family is poor or it doesn't have necessary things.
-	- Middle-class, working-class home
-	- Dream home
-	- Abandon home 
-	- Home study = The course is suitable for classroom or home study.
+25. Home:
+    - A secure/stable home
+    - A happy home
+    - A broken home
+    - A permanent/temporary home
+    - Home cooking = e.g: Home cooking always tastes best to me.
+    - Home life = e.g: Children need a proper home life.
+    - Deprived home = the family is poor or it doesn't have necessary things.
+    - Middle-class, working-class home
+    - Dream home
+    - Abandon home
+    - Home study = The course is suitable for classroom or home study.
 
 26. Child:
-	- (Dis)obedient child
-	- Well-behaved child
-	- Delinquent child
-	- Mischievous child
-	- Unruly child
-	- Well-cared for child
-	- Abondoned child
-	- Neglected child
-	- Indulge a child
-	- Pamper a child
-	- Spoil a child
-	- Child develops, grows up
-	- Have children; not ~~get~~ children
+    - (Dis)obedient child
+    - Well-behaved child
+    - Delinquent child
+    - Mischievous child
+    - Unruly child
+    - Well-cared for child
+    - Abondoned child
+    - Neglected child
+    - Indulge a child
+    - Pamper a child
+    - Spoil a child
+    - Child develops, grows up
+    - Have children; not ~~get~~ children
 
 27. Childhood:
-	- (Un)happy childhood
-	- A deprived childhood
-	- Early/late childhood
-	- Difficult, traumatic childhood
-	- Childhood experience = Our early childhood experiences make us who we are.
-	- Childhood dream/fantasy
-	- Carefree childhood
-	- Troubled childhood
-		
+    - (Un)happy childhood
+    - A deprived childhood
+    - Early/late childhood
+    - Difficult, traumatic childhood
+    - Childhood experience = Our early childhood experiences make us who we are.
+    - Childhood dream/fantasy
+    - Carefree childhood
+    - Troubled childhood
+
 28. Parent(father/mother):
-	- Caring parent
-	- Devoted parent
-	- Fond parent
-	- Loving parent
-	- Adoring parent
-	- Doting parent
-	- Over-protective parent
-	- Controlling parent
-	- Indulgent parent
-	- Stern, strict parent
-	- Firm, tough parent
-	- Harsh, violent parent
-	- Authoritarian parent
-	- Disciplinarian parent
-	- Domineering, dominant parent
-	- Overbearing parent
-	- Distraught, anxious parent
-	- Frantic parent
-	- Liberal parent
-		
+    - Caring parent
+    - Devoted parent
+    - Fond parent
+    - Loving parent
+    - Adoring parent
+    - Doting parent
+    - Over-protective parent
+    - Controlling parent
+    - Indulgent parent
+    - Stern, strict parent
+    - Firm, tough parent
+    - Harsh, violent parent
+    - Authoritarian parent
+    - Disciplinarian parent
+    - Domineering, dominant parent
+    - Overbearing parent
+    - Distraught, anxious parent
+    - Frantic parent
+    - Liberal parent
+
 29. Family:
-	- Immediate family
-	- Extended family
-	- Nuclear family = parents and children
-	- Close/close-knit family = the relationship is strong
-	- Close/immediate family = nearest blood relatives
-	- Loving family
-	- Respectable family
-	- Dysfunctional family
-	- Family background = He's come from a stable family background.
-	- Family unit
-	- Family business
-	- Family car = a car designed for families with children
-	- Family resemblance = when members of the same family look like each other
-	- Family time
-	- Family tree
-	- Family income
-	- Family values
-	- Family/parental expectations
-	- Start a family; not ~~begin~~ a family
-		
+    - Immediate family
+    - Extended family
+    - Nuclear family = parents and children
+    - Close/close-knit family = the relationship is strong
+    - Close/immediate family = nearest blood relatives
+    - Loving family
+    - Respectable family
+    - Dysfunctional family
+    - Family background = He's come from a stable family background.
+    - Family unit
+    - Family business
+    - Family car = a car designed for families with children
+    - Family resemblance = when members of the same family look like each other
+    - Family time
+    - Family tree
+    - Family income
+    - Family values
+    - Family/parental expectations
+    - Start a family; not ~~begin~~ a family
+
 30. Behavior:
-	- Exemplary behavior
-	- (Un)acceptable behavior
-	- (Un)desirable behavior
-	- Agressive behavior
-	- Disruptive behavior
-	- Violent behavior
-	- Threatening behavior
-	- (Anti)social behavior
-	- (Ab)normal behavior
-	- Behavior pattern
-	- Code of behavior = e.g.: Each tribe follows its own code of behavior
-	- (Im)proper behavior/conduct
+    - Exemplary behavior
+    - (Un)acceptable behavior
+    - (Un)desirable behavior
+    - Agressive behavior
+    - Disruptive behavior
+    - Violent behavior
+    - Threatening behavior
+    - (Anti)social behavior
+    - (Ab)normal behavior
+    - Behavior pattern
+    - Code of behavior = e.g.: Each tribe follows its own code of behavior
+    - (Im)proper behavior/conduct

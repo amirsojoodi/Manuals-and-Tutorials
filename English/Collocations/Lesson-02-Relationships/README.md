@@ -1,5 +1,4 @@
-## Lesson 02 - Relationships
+# Lesson 02 - Relationships
 
 It goes without a doubt that **making friends** is an essential ability. Everyone has to possess the power to make new friends and **casual acquaintances**. However, it seems even more vital to maintain **close friends** because those are the friends on which we can rely.
 Being able to make friends easily, I have had many **loyal friends**. One of those friends turns out to be my wife after a couple of years. I can remember that while I thought **she was not my type** at first glance, we had **strong chemistry**, and I almost **fall in love with her** at **first sight**. I could guess that our **feelings were mutual**, and not so long, she became my **college sweetheart**. We had only a couple of **mutual friends** at first, but after the time I **proposed to her**, and we **made a commitment** to live with each other, we share our friends, and now we have many mutual friends. I hope that we never **have an affair** or **cheat on each other**!
-
