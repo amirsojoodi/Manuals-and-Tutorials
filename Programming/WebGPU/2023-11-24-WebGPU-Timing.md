@@ -109,6 +109,14 @@ querryBuffer.destroy();
 queryReadBuffer.destroy();
 ```
 
+## Chrome options
+
+For now, to enable the timestamp feature in Chrome, we need to pass the `--enable-dawn-features=allow_unsafe_apis` flag to the Chrome executable. However, this feature will be enabled by default in the future, as it is discussed in dawn issue tracker.
+
+```bash
+chrome --enable-dawn-features=allow_unsafe_apis
+```
+
 ## References
 
 - [Timestamp in WebGPU Spec](https://www.w3.org/TR/webgpu/#timestamp)
