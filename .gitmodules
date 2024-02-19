@@ -1,0 +1,6 @@
+[submodule "LaTeX/IEEE-Conf-Template"]
+	path = LaTeX/IEEE-Conf-Template
+	url = git@github.com:amirsojoodi/IEEE-Conf-Template.git
+[submodule "LaTeX/ACM-Conf-Template"]
+	path = LaTeX/ACM-Conf-Template
+	url = git@github.com:amirsojoodi/ACM-Conf-Template.git
