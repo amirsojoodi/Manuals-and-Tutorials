@@ -49,3 +49,4 @@ Check [here](https://github.com/muesli/duf) to find more about `duf`.
 6. `colordiff` instead of `diff`
 7. `htop` instead of `top`
 8. `ack` instead of `grep`
+9. `cloc` instead of `wc`
