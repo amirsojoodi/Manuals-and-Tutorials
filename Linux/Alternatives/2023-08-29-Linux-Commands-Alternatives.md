@@ -50,3 +50,23 @@ Check [here](https://github.com/muesli/duf) to find more about `duf`.
 7. `htop` instead of `top`
 8. `ack` instead of `grep`
 9. `cloc` instead of `wc`
+10. Using `xclip` instead of copy and paste.
+
+```bash
+# installation on Ubuntu
+sudo apt install xclip
+
+# Optional aliases in the profile/bashrc
+alias "c=xclip" # copy to X clipboard
+alias "cs=xclip -selection clipboard" # copy to system wide clipboard
+alias "v=xclip -o" # output copied content (paste)
+alias "vs=xclip -o -selection clipboard" # paste from system wide clipboard
+
+# Some usages (notice the backticks)
+# Terminal 1
+echo pwd | c
+# Terminal 2
+cd `v`
+```
+
+
