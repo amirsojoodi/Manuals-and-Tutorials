@@ -34,11 +34,11 @@ And some of the associated performance metrics are:
 4. Mean Absolute Log Error (MALE)
    $${1 \over n} \sum_{k=1}^n |log(f_k/y_k)|$$
 5. Root Mean Square Log Error (RMSLE)
-   $$\sqrt{{1 \over n} \sum_{k=1}^n |log(f_k/y_k)|^2}$$
+   $$sqrt({1 \over n} \sum_{k=1}^n |log(f_k/y_k)|^2)$$
 6. Exponential Mean Absolute MALE (EMALE)
    $$\exp({1 \over n} \sum_{k=1}^n |log(f_k/y_k)|)$$
 7. Exponential Root Mean Square Log Error (ERMSLE)
-   $$\exp(\sqrt{{1 \over n} \sum_{k=1}^n |log(f_k/y_k)|^2})$$
+   $$\exp(sqrt({1 \over n} \sum_{k=1}^n |log(f_k/y_k)|^2))$$
 
 ### Python version
 
