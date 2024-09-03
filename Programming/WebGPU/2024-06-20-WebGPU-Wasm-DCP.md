@@ -1,6 +1,6 @@
 ---
 title: 'Wasm + WebGPU example on DCP'
-date: 2023-06-20
+date: 2024-06-20
 permalink: /posts/DCP-Wasm-WebGPU-Example/
 tags:
   - Programming

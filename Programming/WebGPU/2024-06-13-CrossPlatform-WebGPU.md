@@ -1,6 +1,6 @@
 ---
 title: 'Cross Platform WebGPU Example - Compute API'
-date: 2023-06-13
+date: 2024-06-13
 permalink: /posts/Cross-Platform-WebGPU/
 tags:
   - Programming
